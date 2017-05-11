@@ -1,0 +1,68 @@
+{
+	"a-comment":
+	{
+		"body":
+		[
+			"--[[",
+			"\t$0",
+			"]]"
+		],
+		"prefix": "a-comment",
+		"description": "Makes a block comment"
+	},
+	"a-forloop":
+	{
+		"body":
+		[
+			"for ${1:var} = ${2:index}, ${3:count} do",
+			"\t$0",
+			"end"
+		],
+		"prefix": "a-forloop",
+		"description": "Makes a for loop"
+	},
+	"a-whileloop":
+	{
+		"body":
+		[
+			"while (${1:condition}) do",
+			"\t$0",
+			"end"
+		],
+		"prefix": "a-whileloop",
+		"description": "Makes a while loop"
+	},
+	"a-pairsloop":
+	{
+		"body":
+		[
+			"for ${1:key}, ${2:value} in pairs(${3:table}) do",
+			"\t$0",
+			"end"
+		],
+		"prefix": "a-pairsloop",
+		"description": "Makes a pairs loop"
+	},
+	"a-ipairsloop":
+	{
+		"body":
+		[
+			"for ${1:key}, ${2:value} in ipairs(${3:table}) do",
+			"\t$0",
+			"end"
+		],
+		"prefix": "a-ipairsloop",
+		"description": "Makes an ipairs loop"
+	},
+	"a-if":
+	{
+		"body":
+		[
+			"if (${1:condition}) then",
+			"\t$0",
+			"end"
+		],
+		"prefix": "a-if",
+		"description": "Makes an if statement"
+	}
+}

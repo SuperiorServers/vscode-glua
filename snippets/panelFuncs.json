@@ -1,0 +1,2112 @@
+{
+  "ContentIcon:GetColor": {
+    "prefix": "GetColor",
+    "body": "GetColor()$0",
+    "description": "(Client) Method: ContentIcon:GetColor() Returns the color set by {{ClassFunction|ContentIcon|SetColor}}"
+  },
+  "ContentIcon:GetContentType": {
+    "prefix": "GetContentType",
+    "body": "GetContentType()$0",
+    "description": "(Client) Method: ContentIcon:GetContentType() Returns the content type used to save and restore the content icon in a spawnlist."
+  },
+  "ContentIcon:GetNPCWeapon": {
+    "prefix": "GetNPCWeapon",
+    "body": "GetNPCWeapon()$0",
+    "description": "(Client) Method: ContentIcon:GetNPCWeapon() Returns a table of weapon classes for the content icon with \"NPC\" content type to be randomly chosen from when user tries to spawn the NPC."
+  },
+  "ContentIcon:GetSpawnName": {
+    "prefix": "GetSpawnName",
+    "body": "GetSpawnName()$0",
+    "description": "(Client) Method: ContentIcon:GetSpawnName() Returns the internal \"name\" for the content icon, usually a class name for an entity."
+  },
+  "ContentIcon:OpenMenu": {
+    "prefix": "OpenMenu",
+    "body": "OpenMenu()$0",
+    "description": "(Client) Method: ContentIcon:OpenMenu() A hook for override, by default does nothing. Called when user right clicks on the content icon, you are supposed to open a {{GlobalFunction|DermaMenu}} here with additional options."
+  },
+  "ContentIcon:SetAdminOnly": {
+    "prefix": "SetAdminOnly",
+    "body": "SetAdminOnly(${1:boolean adminOnly})$0",
+    "description": "(Client) Method: ContentIcon:SetAdminOnly() Sets whether the content item is admin only. This makes the icon to display a admin icon in the top left corner of the icon."
+  },
+  "ContentIcon:SetColor": {
+    "prefix": "SetColor",
+    "body": "SetColor(${1:table clr})$0",
+    "description": "(Client) Method: ContentIcon:SetColor() Sets the color for the content icon. Currently is not used by the content icon panel."
+  },
+  "ContentIcon:SetContentType": {
+    "prefix": "SetContentType",
+    "body": "SetContentType(${1:string type})$0",
+    "description": "(Client) Method: ContentIcon:SetContentType() Sets the content type used to save and restore the content icon in a spawnlist."
+  },
+  "ContentIcon:SetMaterial": {
+    "prefix": "SetMaterial",
+    "body": "SetMaterial(${1:string path})$0",
+    "description": "(Client) Method: ContentIcon:SetMaterial() Sets the material to be displayed as the content icon."
+  },
+  "ContentIcon:SetName": {
+    "prefix": "SetName",
+    "body": "SetName(${1:string name})$0",
+    "description": "(Client) Method: ContentIcon:SetName() Sets the tool tip and the \"nice\" name to be displayed by the content icon."
+  },
+  "ContentIcon:SetNPCWeapon": {
+    "prefix": "SetNPCWeapon",
+    "body": "SetNPCWeapon(${1:table weapons})$0",
+    "description": "(Client) Method: ContentIcon:SetNPCWeapon() Sets a table of weapon classes for the content icon with \"NPC\" content type to be randomly chosen from when user tries to spawn the NPC."
+  },
+  "ContentIcon:SetSpawnName": {
+    "prefix": "SetSpawnName",
+    "body": "SetSpawnName(${1:string name})$0",
+    "description": "(Client) Method: ContentIcon:SetSpawnName() Sets the internal \"name\" for the content icon, usually a class name for an entity."
+  },
+  "ContextBase:ControlValues": {
+    "prefix": "ControlValues",
+    "body": "ControlValues(${1:table contextData})$0",
+    "description": "(Client) Method: ContextBase:ControlValues() Called by spawnmenu functions (when creating a context menu) to fill this control with data."
+  },
+  "ContextBase:ConVar": {
+    "prefix": "ConVar",
+    "body": "ConVar()$0",
+    "description": "(Client) Method: ContextBase:ConVar() Returns the <a href=\"http://wiki.garrysmod.com/page/Category:ConVar}} for the panel to change/handle, set by {{ClassFunction|ContextBase|SetConVar\">ConVar}} for the panel to change/handle, set by {{ClassFunction|ContextBase|SetConVar</a>"
+  },
+  "ContextBase:SetConVar": {
+    "prefix": "SetConVar",
+    "body": "SetConVar(${1:string cvar})$0",
+    "description": "(Client) Method: ContextBase:SetConVar() Sets the <a href=\"http://wiki.garrysmod.com/page/Category:ConVar\">ConVar</a> for the panel to change/handle."
+  },
+  "ContextBase:TestForChanges": {
+    "prefix": "TestForChanges",
+    "body": "TestForChanges()$0",
+    "description": "(Client) Method: ContextBase:TestForChanges() You should override this function and use it to check whether your convar value changed."
+  },
+  "ControlPanel:AddControl": {
+    "prefix": "AddControl",
+    "body": "AddControl(${1:string type}, ${2:table controlinfo})$0",
+    "description": "(Client) Method: ControlPanel:AddControl() {{Deprecated|It is recommended to use <a href=\"http://wiki.garrysmod.com/page/Category:DForm}}'s members instead.\">DForm}}'s members instead.</a>"
+  },
+  "ControlPresets:AddConVar": {
+    "prefix": "AddConVar",
+    "body": "AddConVar(${1:string convar})$0",
+    "description": "(Client) Method: ControlPresets:AddConVar() Adds a convar to be managed by this control."
+  },
+  "ControlPresets:GetConVars": {
+    "prefix": "GetConVars",
+    "body": "GetConVars()$0",
+    "description": "(Client) Method: ControlPresets:GetConVars() Get a list of all Console Variables being managed by this panel."
+  },
+  "ControlPresets:SetLabel": {
+    "prefix": "SetLabel",
+    "body": "SetLabel(${1:string name})$0",
+    "description": "(Client) Method: ControlPresets:SetLabel() Set the name label text."
+  },
+  "DAdjustableModelPanel:CaptureMouse": {
+    "prefix": "CaptureMouse",
+    "body": "CaptureMouse()$0",
+    "description": "(Client) Method: DAdjustableModelPanel:CaptureMouse() {{Internal}} Used by the panel to perform mouse capture operations when adjusting the model."
+  },
+  "DAdjustableModelPanel:FirstPersonControls": {
+    "prefix": "FirstPersonControls",
+    "body": "FirstPersonControls()$0",
+    "description": "(Client) Method: DAdjustableModelPanel:FirstPersonControls() {{Internal}} Used to adjust the perspective in the model panel via the keyboard, when the right mouse button is used."
+  },
+  "DAdjustableModelPanel:GetFirstPerson": {
+    "prefix": "GetFirstPerson",
+    "body": "GetFirstPerson()$0",
+    "description": "(Client) Method: DAdjustableModelPanel:GetFirstPerson() Gets whether mouse and keyboard-based adjustment of the perspective has been enabled. See {{ClassFunction|DAdjustableModelPanel|SetFirstPerson}} for more information."
+  },
+  "DAdjustableModelPanel:SetFirstPerson": {
+    "prefix": "SetFirstPerson",
+    "body": "SetFirstPerson(${1:boolean enable})$0",
+    "description": "(Client) Method: DAdjustableModelPanel:SetFirstPerson() Enables mouse and keyboard-based adjustment of the perspective."
+  },
+  "DAlphaBar:GetBarColor": {
+    "prefix": "GetBarColor",
+    "body": "GetBarColor()$0",
+    "description": "(Client) Method: DAlphaBar:GetBarColor() Returns the base color of the alpha bar. This is the color for which the alpha channel is being modified."
+  },
+  "DAlphaBar:GetValue": {
+    "prefix": "GetValue",
+    "body": "GetValue()$0",
+    "description": "(Client) Method: DAlphaBar:GetValue() Returns the alpha value of the alpha bar."
+  },
+  "DAlphaBar:OnChange": {
+    "prefix": "OnChange",
+    "body": "OnChange(${1:number alpha})$0",
+    "description": "(Client) Method: DAlphaBar:OnChange() Called when user changes the desired alpha value with the control."
+  },
+  "DAlphaBar:SetBarColor": {
+    "prefix": "SetBarColor",
+    "body": "SetBarColor(${1:table clr})$0",
+    "description": "(Client) Method: DAlphaBar:SetBarColor() Sets the base color of the alpha bar. This is the color for which the alpha channel is being modified. "
+  },
+  "DAlphaBar:SetValue": {
+    "prefix": "SetValue",
+    "body": "SetValue(${1:number alpha})$0",
+    "description": "(Client) Method: DAlphaBar:SetValue() Sets the alpha value or the alpha bar."
+  },
+  "DBinder:GetSelectedNumber": {
+    "prefix": "GetSelectedNumber",
+    "body": "GetSelectedNumber()$0",
+    "description": "(Client) Method: DBinder:GetSelectedNumber() Gets the code of the key currently bound by the DBinder. Same as {{ClassFunction|DBinder|GetValue}}."
+  },
+  "DBinder:GetValue": {
+    "prefix": "GetValue",
+    "body": "GetValue()$0",
+    "description": "(Client) Method: DBinder:GetValue() Gets the code of the key currently bound by the DBinder. Same as {{ClassFunction|DBinder|GetSelectedNumber}}."
+  },
+  "DBinder:SetSelected": {
+    "prefix": "SetSelected",
+    "body": "SetSelected(${1:number keyCode})$0",
+    "description": "(Client) Method: DBinder:SetSelected() Sets the current key bound by the DBinder, and updates the button's text."
+  },
+  "DBinder:SetSelectedNumber": {
+    "prefix": "SetSelectedNumber",
+    "body": "SetSelectedNumber(${1:number keyCode})$0",
+    "description": "(Client) Method: DBinder:SetSelectedNumber() {{Internal}} Sets the internal variable for the keycode only. To update the text and <a href=\"http://wiki.garrysmod.com/page/Category:ConVar}}, you should use {{ClassFunction|DBinder|SetSelected\">ConVar}}, you should use {{ClassFunction|DBinder|SetSelected</a>."
+  },
+  "DBinder:SetValue": {
+    "prefix": "SetValue",
+    "body": "SetValue(${1:number keyCode})$0",
+    "description": "(Client) Method: DBinder:SetValue() Alias of {{ClassFunction|DBinder|SetSelected}}."
+  },
+  "DBinder:UpdateText": {
+    "prefix": "UpdateText",
+    "body": "UpdateText()$0",
+    "description": "(Client) Method: DBinder:UpdateText() {{Internal}} Used to set the text of the DBinder to the current key binding, or ''NONE''."
+  },
+  "DBubbleContainer:OpenForPos": {
+    "prefix": "OpenForPos",
+    "body": "OpenForPos(${1:number x}, ${2:number y}, ${3:number w}, ${4:number h})$0",
+    "description": "(Client) Method: DBubbleContainer:OpenForPos() Sets the speech bubble position and size along with the dialog point position."
+  },
+  "DButton:GetDrawBorder": {
+    "prefix": "GetDrawBorder",
+    "body": "GetDrawBorder()$0",
+    "description": "(Client) Method: DButton:GetDrawBorder() {{Deprecated}}"
+  },
+  "DButton:IsDown": {
+    "prefix": "IsDown",
+    "body": "IsDown()$0",
+    "description": "(Client) Method: DButton:IsDown() Returns true if the DButton is currently depressed (a user is clicking on it)."
+  },
+  "DButton:SetConsoleCommand": {
+    "prefix": "SetConsoleCommand",
+    "body": "SetConsoleCommand(${1:string command}, ${2:string args})$0",
+    "description": "(Client) Method: DButton:SetConsoleCommand() Sets a console command to be called when the button is clicked."
+  },
+  "DButton:SetDisabled": {
+    "prefix": "SetDisabled",
+    "body": "SetDisabled(${1:boolean disable})$0",
+    "description": "(Client) Method: DButton:SetDisabled() {{Deprecated|Use {{ClassFunction|DButton|SetEnabled}} instead}}Sets whether or not the DButton is disabled."
+  },
+  "DButton:SetDrawBorder": {
+    "prefix": "SetDrawBorder",
+    "body": "SetDrawBorder(${1:boolean draw})$0",
+    "description": "(Client) Method: DButton:SetDrawBorder() {{Deprecated}}"
+  },
+  "DButton:SetEnabled": {
+    "prefix": "SetEnabled",
+    "body": "SetEnabled(${1:boolean enable})$0",
+    "description": "(Client) Method: DButton:SetEnabled() Sets whether or not the DButton is enabled."
+  },
+  "DButton:SetImage": {
+    "prefix": "SetImage",
+    "body": "SetImage(${1:string img=nil})$0",
+    "description": "(Client) Method: DButton:SetImage() Sets an image to be displayed as the button's background."
+  },
+  "DButton:UpdateColors": {
+    "prefix": "UpdateColors",
+    "body": "UpdateColors(${1:table skin})$0",
+    "description": "(Client) Method: DButton:UpdateColors() A hook called from within <a href=\"http://wiki.garrysmod.com/page/Category:DLabel}}'s {{HookFunction|PANEL|ApplySchemeSettings}} to determine the color of the text on display.\">DLabel}}'s {{HookFunction|PANEL|ApplySchemeSettings}} to determine the color of the text on display.</a>"
+  },
+  "DCategoryList:Add": {
+    "prefix": "Add",
+    "body": "Add(${1:string categoryName})$0",
+    "description": "(Client) Method: DCategoryList:Add() Adds a <a href=\"http://wiki.garrysmod.com/page/Category:DCollapsibleCategory\">DCollapsibleCategory</a> to the list."
+  },
+  "DCategoryList:AddItem": {
+    "prefix": "AddItem",
+    "body": "AddItem(${1:Panel element})$0",
+    "description": "(Client) Method: DCategoryList:AddItem() Adds an element to the list."
+  },
+  "DCategoryList:UnselectAll": {
+    "prefix": "UnselectAll",
+    "body": "UnselectAll()$0",
+    "description": "(Client) Method: DCategoryList:UnselectAll() Calls {{ClassFunction|Panel|UnselectAll}} on all child elements, if they have it."
+  },
+  "DCheckBox:DoClick": {
+    "prefix": "DoClick",
+    "body": "DoClick()$0",
+    "description": "(Client) Method: DCheckBox:DoClick() Called when the checkbox is clicked by a user. If you are overriding this, you must call {{ClassFunction|DCheckBox|Toggle}}, else the checkbox will not respond to user clicks."
+  },
+  "DCheckBox:GetChecked": {
+    "prefix": "GetChecked",
+    "body": "GetChecked()$0",
+    "description": "(Client) Method: DCheckBox:GetChecked() Gets the checked state of the checkbox."
+  },
+  "DCheckBox:IsEditing": {
+    "prefix": "IsEditing",
+    "body": "IsEditing()$0",
+    "description": "(Client) Method: DCheckBox:IsEditing() Returns whether the state of the checkbox is being edited. This means whether the user is currently clicking (mouse-down) on the checkbox, and applies to both the left and right mouse buttons."
+  },
+  "DCheckBox:OnChange": {
+    "prefix": "OnChange",
+    "body": "OnChange(${1:boolean bVal})$0",
+    "description": "(Client) Method: DCheckBox:OnChange() Called when the \"checked\" state is changed."
+  },
+  "DCheckBox:SetChecked": {
+    "prefix": "SetChecked",
+    "body": "SetChecked(${1:boolean checked})$0",
+    "description": "(Client) Method: DCheckBox:SetChecked() Sets the checked state of the checkbox. Does not call the checkbox's {{ClassFunction|DCheckBox|OnChange}} and {{ClassFunction|Panel|ConVarChanged}} methods, unlike {{ClassFunction|DCheckBox|SetValue}}."
+  },
+  "DCheckBox:SetValue": {
+    "prefix": "SetValue",
+    "body": "SetValue(${1:boolean checked})$0",
+    "description": "(Client) Method: DCheckBox:SetValue() Sets the checked state of the checkbox, and calls the checkbox's {{ClassFunction|DCheckBox|OnChange}} and {{ClassFunction|Panel|ConVarChanged}} methods."
+  },
+  "DCheckBox:Toggle": {
+    "prefix": "Toggle",
+    "body": "Toggle()$0",
+    "description": "(Client) Method: DCheckBox:Toggle() Toggles the checked state of the checkbox, and calls the checkbox's {{ClassFunction|DCheckBox|OnChange}} and {{ClassFunction|Panel|ConVarChanged}} methods. This is called by {{ClassFunction|DCheckBox|DoClick}}."
+  },
+  "DCheckBoxLabel:GetChecked": {
+    "prefix": "GetChecked",
+    "body": "GetChecked()$0",
+    "description": "(Client) Method: DCheckBoxLabel:GetChecked() Gets the checked state of the checkbox. This calls the checkbox's {{ClassFunction|DCheckBox|GetChecked}} function."
+  },
+  "DCheckBoxLabel:OnChange": {
+    "prefix": "OnChange",
+    "body": "OnChange(${1:boolean bVal})$0",
+    "description": "(Client) Method: DCheckBoxLabel:OnChange() Called when the \"checked\" state is changed."
+  },
+  "DCheckBoxLabel:SetChecked": {
+    "prefix": "SetChecked",
+    "body": "SetChecked(${1:boolean checked})$0",
+    "description": "(Client) Method: DCheckBoxLabel:SetChecked() Sets the checked state of the checkbox. Does not call {{ClassFunction|DCheckBoxLabel|OnChange}} or {{ClassFunction|Panel|ConVarChanged}}, unlike {{ClassFunction|DCheckBoxLabel|SetValue}}."
+  },
+  "DCheckBoxLabel:SetText": {
+    "prefix": "SetText",
+    "body": "SetText(${1:string text})$0",
+    "description": "(Client) Method: DCheckBoxLabel:SetText() Set the Text of the DCheckBoxLabel VGUI element."
+  },
+  "DCheckBoxLabel:SetTextColor": {
+    "prefix": "SetTextColor",
+    "body": "SetTextColor(${1:table color})$0",
+    "description": "(Client) Method: DCheckBoxLabel:SetTextColor() Sets the text color for the DCheckBoxLabel."
+  },
+  "DCheckBoxLabel:SetValue": {
+    "prefix": "SetValue",
+    "body": "SetValue(${1:boolean checked})$0",
+    "description": "(Client) Method: DCheckBoxLabel:SetValue() Sets the checked state of the checkbox, and calls {{ClassFunction|DCheckBoxLabel|OnChange}} and the checkbox's {{ClassFunction|Panel|ConVarChanged}} methods."
+  },
+  "DCollapsibleCategory:GetExpanded": {
+    "prefix": "GetExpanded",
+    "body": "GetExpanded()$0",
+    "description": "(Client) Method: DCollapsibleCategory:GetExpanded() Returns whether the DCollapsibleCategory is expanded or not."
+  },
+  "DCollapsibleCategory:OnToggle": {
+    "prefix": "OnToggle",
+    "body": "OnToggle()$0",
+    "description": "(Client) Method: DCollapsibleCategory:OnToggle() Called by {{ClassFunction|DCollapsibleCategory|Toggle}}."
+  },
+  "DCollapsibleCategory:SetAnimTime": {
+    "prefix": "SetAnimTime",
+    "body": "SetAnimTime(${1:number time})$0",
+    "description": "(Client) Method: DCollapsibleCategory:SetAnimTime() Sets the time in seconds it takes to expand the DCollapsibleCategory"
+  },
+  "DCollapsibleCategory:SetContents": {
+    "prefix": "SetContents",
+    "body": "SetContents(${1:Panel pnl})$0",
+    "description": "(Client) Method: DCollapsibleCategory:SetContents() Sets the contents of the DCollapsibleCategory."
+  },
+  "DCollapsibleCategory:SetExpanded": {
+    "prefix": "SetExpanded",
+    "body": "SetExpanded(${1:boolean expanded=true})$0",
+    "description": "(Client) Method: DCollapsibleCategory:SetExpanded() Sets whether the DCollapsibleCategory is expanded or not upon opening the container"
+  },
+  "DCollapsibleCategory:SetLabel": {
+    "prefix": "SetLabel",
+    "body": "SetLabel(${1:string label})$0",
+    "description": "(Client) Method: DCollapsibleCategory:SetLabel() Sets the name of the DCollapsibleCategory."
+  },
+  "DCollapsibleCategory:Toggle": {
+    "prefix": "Toggle",
+    "body": "Toggle()$0",
+    "description": "(Client) Method: DCollapsibleCategory:Toggle() Toggles the expanded state of the <a href=\"http://wiki.garrysmod.com/page/Category:DCollapsibleCategory\">DCollapsibleCategory</a>."
+  },
+  "DColorCube:GetRGB": {
+    "prefix": "GetRGB",
+    "body": "GetRGB()$0",
+    "description": "(Client) Method: DColorCube:GetRGB() Returns the color cube's current set color."
+  },
+  "DColorCube:OnUserChanged": {
+    "prefix": "OnUserChanged",
+    "body": "OnUserChanged(${1:table color})$0",
+    "description": "(Client) Method: DColorCube:OnUserChanged() Function which is called when the color cube slider is moved (through user input). Meant to be overridden."
+  },
+  "DColorCube:SetBaseRGB": {
+    "prefix": "SetBaseRGB",
+    "body": "SetBaseRGB(${1:table color})$0",
+    "description": "(Client) Method: DColorCube:SetBaseRGB() Sets the base color and the color used to draw the color cube panel itself."
+  },
+  "DColorCube:SetColor": {
+    "prefix": "SetColor",
+    "body": "SetColor(${1:table color})$0",
+    "description": "(Client) Method: DColorCube:SetColor() Sets the base color of the color cube and updates the slider position."
+  },
+  "DColorCube:TranslateValues": {
+    "prefix": "TranslateValues",
+    "body": "TranslateValues(${1:number x}, ${2:number y})$0",
+    "description": "(Client) Method: DColorCube:TranslateValues() Updates the color cube RGB based on the given x and y position and returns its arguments. Similar to {{ClassFunction|DColorCube|UpdateColor}}."
+  },
+  "DColorCube:UpdateColor": {
+    "prefix": "UpdateColor",
+    "body": "UpdateColor(${1:number x}, ${2:number y})$0",
+    "description": "(Client) Method: DColorCube:UpdateColor() Updates the color cube RGB based on the given x and y position. Similar to {{ClassFunction|DColorCube|TranslateValues}}."
+  },
+  "DColorMixer:GetAlphaBar": {
+    "prefix": "GetAlphaBar",
+    "body": "GetAlphaBar()$0",
+    "description": "(Client) Method: DColorMixer:GetAlphaBar() Return true if alpha bar is shown, false if not."
+  },
+  "DColorMixer:GetColor": {
+    "prefix": "GetColor",
+    "body": "GetColor()$0",
+    "description": "(Client) Method: DColorMixer:GetColor() Returns the current selected color."
+  },
+  "DColorMixer:GetPalette": {
+    "prefix": "GetPalette",
+    "body": "GetPalette()$0",
+    "description": "(Client) Method: DColorMixer:GetPalette() Return true if palette is shown, false if not."
+  },
+  "DColorMixer:GetWangs": {
+    "prefix": "GetWangs",
+    "body": "GetWangs()$0",
+    "description": "(Client) Method: DColorMixer:GetWangs() Return true if the wangs are shown, false if not."
+  },
+  "DColorMixer:SetAlphaBar": {
+    "prefix": "SetAlphaBar",
+    "body": "SetAlphaBar(${1:boolean show})$0",
+    "description": "(Client) Method: DColorMixer:SetAlphaBar() Show/Hide the alpha bar in DColorMixer"
+  },
+  "DColorMixer:SetColor": {
+    "prefix": "SetColor",
+    "body": "SetColor(${1:table color})$0",
+    "description": "(Client) Method: DColorMixer:SetColor() Sets the color of DColorMixer"
+  },
+  "DColorMixer:SetPalette": {
+    "prefix": "SetPalette",
+    "body": "SetPalette(${1:boolean enabled})$0",
+    "description": "(Client) Method: DColorMixer:SetPalette() Show or hide the palette panel"
+  },
+  "DColorMixer:SetWangs": {
+    "prefix": "SetWangs",
+    "body": "SetWangs(${1:boolean show})$0",
+    "description": "(Client) Method: DColorMixer:SetWangs() Show / Hide the colors indicators in DColorMixer"
+  },
+  "DColumnSheet:AddSheet": {
+    "prefix": "AddSheet",
+    "body": "AddSheet(${1:string name}, ${2:Panel pnl}, ${3:string icon=nil})$0",
+    "description": "(Client) Method: DColumnSheet:AddSheet() Adds a new column/tab."
+  },
+  "DColumnSheet:SetActiveButton": {
+    "prefix": "SetActiveButton",
+    "body": "SetActiveButton(${1:Panel active})$0",
+    "description": "(Client) Method: DColumnSheet:SetActiveButton() {{Internal}}Makes a button an active button for this DColumnSheet."
+  },
+  "DColumnSheet:UseButtonOnlyStyle": {
+    "prefix": "UseButtonOnlyStyle",
+    "body": "UseButtonOnlyStyle()$0",
+    "description": "(Client) Method: DColumnSheet:UseButtonOnlyStyle() Makes the tabs/buttons show only the image and no text."
+  },
+  "DComboBox:AddChoice": {
+    "prefix": "AddChoice",
+    "body": "AddChoice(${1:string value}, ${2:any data=nil}, ${3:boolean select=false})$0",
+    "description": "(Client) Method: DComboBox:AddChoice() Adds a choice to the combo box"
+  },
+  "DComboBox:ChooseOption": {
+    "prefix": "ChooseOption",
+    "body": "ChooseOption(${1:string value}, ${2:number index})$0",
+    "description": "(Client) Method: DComboBox:ChooseOption() Selects a combo box option by its index and changes the text displayed at the top of the combo box."
+  },
+  "DComboBox:ChooseOptionID": {
+    "prefix": "ChooseOptionID",
+    "body": "ChooseOptionID(${1:number index})$0",
+    "description": "(Client) Method: DComboBox:ChooseOptionID() Selects an option within a combo box based on its table index."
+  },
+  "DComboBox:Clear": {
+    "prefix": "Clear",
+    "body": "Clear()$0",
+    "description": "(Client) Method: DComboBox:Clear() Clears the combo box's text value, choices, and data values."
+  },
+  "DComboBox:CloseMenu": {
+    "prefix": "CloseMenu",
+    "body": "CloseMenu()$0",
+    "description": "(Client) Method: DComboBox:CloseMenu() Closes the combo box menu. Called when the combo box is clicked while open."
+  },
+  "DComboBox:GetOptionData": {
+    "prefix": "GetOptionData",
+    "body": "GetOptionData(${1:number index})$0",
+    "description": "(Client) Method: DComboBox:GetOptionData() Returns an option's data based on the given index."
+  },
+  "DComboBox:GetOptionText": {
+    "prefix": "GetOptionText",
+    "body": "GetOptionText(${1:number index})$0",
+    "description": "(Client) Method: DComboBox:GetOptionText() Returns an option's text based on the given index."
+  },
+  "DComboBox:GetSelected": {
+    "prefix": "GetSelected",
+    "body": "GetSelected()$0",
+    "description": "(Client) Method: DComboBox:GetSelected() Returns the currently selected option's text and data"
+  },
+  "DComboBox:GetSelectedID": {
+    "prefix": "GetSelectedID",
+    "body": "GetSelectedID()$0",
+    "description": "(Client) Method: DComboBox:GetSelectedID() Returns the index (ID) of the currently selected option."
+  },
+  "DComboBox:IsMenuOpen": {
+    "prefix": "IsMenuOpen",
+    "body": "IsMenuOpen()$0",
+    "description": "(Client) Method: DComboBox:IsMenuOpen() Returns whether or not the combo box's menu is opened."
+  },
+  "DComboBox:OnSelect": {
+    "prefix": "OnSelect",
+    "body": "OnSelect(${1:number index}, ${2:string value}, ${3:any data})$0",
+    "description": "(Client) Method: DComboBox:OnSelect() Internal function which is called when an option in the combo box is selected. This function does nothing by default and is meant to be overridden in order to make the combo box functional."
+  },
+  "DComboBox:OpenMenu": {
+    "prefix": "OpenMenu",
+    "body": "OpenMenu()$0",
+    "description": "(Client) Method: DComboBox:OpenMenu() Opens the combo box drop down menu. Called when the combo box is clicked."
+  },
+  "DComboBox:SetSortItems": {
+    "prefix": "SetSortItems",
+    "body": "SetSortItems(${1:boolean sort})$0",
+    "description": "(Client) Method: DComboBox:SetSortItems() Sets whether or not the items should be sorted alphabetically in the dropdown menu of the <a href=\"http://wiki.garrysmod.com/page/Category:DComboBox\">DComboBox</a>."
+  },
+  "DComboBox:SetValue": {
+    "prefix": "SetValue",
+    "body": "SetValue(${1:string value})$0",
+    "description": "(Client) Method: DComboBox:SetValue() Sets the text shown in the combo box when the menu is not collapsed."
+  },
+  "DDragBase:MakeDroppable": {
+    "prefix": "MakeDroppable",
+    "body": "MakeDroppable(${1:string name}, ${2:boolean allowCopy})$0",
+    "description": "(Client) Method: DDragBase:MakeDroppable() Makes the panel a receiver for any droppable panel with the same DnD name."
+  },
+  "DDrawer:GetOpenSize": {
+    "prefix": "GetOpenSize",
+    "body": "GetOpenSize()$0",
+    "description": "(Client) Method: DDrawer:GetOpenSize() Return the Open Size of DDrawer."
+  },
+  "DDrawer:GetOpenTime": {
+    "prefix": "GetOpenTime",
+    "body": "GetOpenTime()$0",
+    "description": "(Client) Method: DDrawer:GetOpenTime() Return the Open Time of DDrawer."
+  },
+  "DDrawer:SetOpenSize": {
+    "prefix": "SetOpenSize",
+    "body": "SetOpenSize(${1:number Value})$0",
+    "description": "(Client) Method: DDrawer:SetOpenSize() Set the height of DDrawer"
+  },
+  "DDrawer:SetOpenTime": {
+    "prefix": "SetOpenTime",
+    "body": "SetOpenTime(${1:number value})$0",
+    "description": "(Client) Method: DDrawer:SetOpenTime() Set the time (in seconds) for DDrawer to open."
+  },
+  "DDrawer:Toggle": {
+    "prefix": "Toggle",
+    "body": "Toggle()$0",
+    "description": "(Client) Method: DDrawer:Toggle() Toggle the DDrawer."
+  },
+  "DFileBrowser:Clear": {
+    "prefix": "Clear",
+    "body": "Clear()$0",
+    "description": "(Client) Method: DFileBrowser:Clear() Clears the file tree and list, and resets all values."
+  },
+  "DFileBrowser:GetBaseFolder": {
+    "prefix": "GetBaseFolder",
+    "body": "GetBaseFolder()$0",
+    "description": "(Client) Method: DFileBrowser:GetBaseFolder() Returns the root directory/folder of the file tree."
+  },
+  "DFileBrowser:GetCurrentFolder": {
+    "prefix": "GetCurrentFolder",
+    "body": "GetCurrentFolder()$0",
+    "description": "(Client) Method: DFileBrowser:GetCurrentFolder() Returns the current directory/folder being displayed."
+  },
+  "DFileBrowser:GetFileTypes": {
+    "prefix": "GetFileTypes",
+    "body": "GetFileTypes()$0",
+    "description": "(Client) Method: DFileBrowser:GetFileTypes() Returns the current file type filter on the file list."
+  },
+  "DFileBrowser:GetFolderNode": {
+    "prefix": "GetFolderNode",
+    "body": "GetFolderNode()$0",
+    "description": "(Client) Method: DFileBrowser:GetFolderNode() Returns the <a href=\"http://wiki.garrysmod.com/page/Category:DTree Node\">DTree Node</a> that the file tree stems from."
+  },
+  "DFileBrowser:GetModels": {
+    "prefix": "GetModels",
+    "body": "GetModels()$0",
+    "description": "(Client) Method: DFileBrowser:GetModels() Returns whether or not the model viewer mode is enabled. In this mode, files are displayed as <a href=\"http://wiki.garrysmod.com/page/Category:SpawnIcon\">SpawnIcon</a>s instead of a list."
+  },
+  "DFileBrowser:GetName": {
+    "prefix": "GetName",
+    "body": "GetName()$0",
+    "description": "(Client) Method: DFileBrowser:GetName() Returns the name being used for the file tree."
+  },
+  "DFileBrowser:SetOpen": {
+    "prefix": "SetOpen",
+    "body": "SetOpen()$0",
+    "description": "(Client) Method: DFileBrowser:SetOpen() Returns whether or not the file tree is open."
+  },
+  "DFileBrowser:SetPath": {
+    "prefix": "SetPath",
+    "body": "SetPath()$0",
+    "description": "(Client) Method: DFileBrowser:SetPath() Returns the access path of the file tree. This is ''GAME'' unless changed with {{ClassFunction|DFileBrowser|SetPath}}."
+  },
+  "DFileBrowser:GetSearch": {
+    "prefix": "GetSearch",
+    "body": "GetSearch()$0",
+    "description": "(Client) Method: DFileBrowser:GetSearch() Returns the current search filter on the file tree."
+  },
+  "DFileBrowser:OnDoubleClick": {
+    "prefix": "OnDoubleClick",
+    "body": "OnDoubleClick(${1:string filePath}, ${2:Panel selectedPanel})$0",
+    "description": "(Client) Method: DFileBrowser:OnDoubleClick() Called when a file is double-clicked."
+  },
+  "DFileBrowser:OnRightClick": {
+    "prefix": "OnRightClick",
+    "body": "OnRightClick(${1:string filePath}, ${2:Panel selectedPanel})$0",
+    "description": "(Client) Method: DFileBrowser:OnRightClick() Called when a file is right-clicked."
+  },
+  "DFileBrowser:OnSelect": {
+    "prefix": "OnSelect",
+    "body": "OnSelect(${1:string filePath}, ${2:Panel selectedPanel})$0",
+    "description": "(Client) Method: DFileBrowser:OnSelect() Called when a file is selected."
+  },
+  "DFileBrowser:SetBaseFolder": {
+    "prefix": "SetBaseFolder",
+    "body": "SetBaseFolder(${1:string baseDir})$0",
+    "description": "(Client) Method: DFileBrowser:SetBaseFolder() Sets the root directory/folder of the file tree."
+  },
+  "DFileBrowser:SetFileTypes": {
+    "prefix": "SetFileTypes",
+    "body": "SetFileTypes(${1:string fileTypes=\"*.*\"})$0",
+    "description": "(Client) Method: DFileBrowser:SetFileTypes() Sets the file type filter for the file list."
+  },
+  "DFileBrowser:SetModels": {
+    "prefix": "SetModels",
+    "body": "SetModels(${1:boolean showModels=false})$0",
+    "description": "(Client) Method: DFileBrowser:SetModels() Enables or disables the model viewer mode. In this mode, files are displayed as <a href=\"http://wiki.garrysmod.com/page/Category:SpawnIcon\">SpawnIcon</a>s instead of a list."
+  },
+  "DFileBrowser:SetName": {
+    "prefix": "SetName",
+    "body": "SetName(${1:string treeName=''baseFolder''})$0",
+    "description": "(Client) Method: DFileBrowser:SetName() Sets the name to use for the file tree."
+  },
+  "DFileBrowser:SetSearch": {
+    "prefix": "SetSearch",
+    "body": "SetSearch(${1:string filter=\"*\"})$0",
+    "description": "(Client) Method: DFileBrowser:SetSearch() Sets the search filter for the file tree."
+  },
+  "DFileBrowser:Setup": {
+    "prefix": "Setup",
+    "body": "Setup()$0",
+    "description": "(Client) Method: DFileBrowser:Setup() {{Internal}} Called to set up the <a href=\"http://wiki.garrysmod.com/page/Category:DTree\">DTree</a> and file viewer when a base path has been set."
+  },
+  "DFileBrowser:SetupTree": {
+    "prefix": "SetupTree",
+    "body": "SetupTree()$0",
+    "description": "(Client) Method: DFileBrowser:SetupTree() {{Internal}} Called to set up the <a href=\"http://wiki.garrysmod.com/page/Category:DListView}} or {{Type|DIconBrowser}} by {{ClassFunction|DFileBrowser|Setup\">DListView}} or {{Type|DIconBrowser}} by {{ClassFunction|DFileBrowser|Setup</a>."
+  },
+  "DFileBrowser:ShowFolder": {
+    "prefix": "ShowFolder",
+    "body": "ShowFolder(${1:string currentDir})$0",
+    "description": "(Client) Method: DFileBrowser:ShowFolder() {{Internal}}Builds the file or icon list for the current directory."
+  },
+  "DFileBrowser:SortFiles": {
+    "prefix": "SortFiles",
+    "body": "SortFiles(${1:boolean descending=false})$0",
+    "description": "(Client) Method: DFileBrowser:SortFiles() Sorts the file list."
+  },
+  "DForm:AddItem": {
+    "prefix": "AddItem",
+    "body": "AddItem(${1:Panel left}, ${2:Panel right})$0",
+    "description": "(Client) Method: DForm:AddItem() Adds one or two items to the DForm."
+  },
+  "DForm:Button": {
+    "prefix": "Button",
+    "body": "Button(${1:string text}, ${2:string concmd}, ${3:vararg concmd args})$0",
+    "description": "(Client) Method: DForm:Button() Adds a <a href=\"http://wiki.garrysmod.com/page/Category:DButton}} onto the {{Type|DForm\">DButton}} onto the {{Type|DForm</a>"
+  },
+  "DForm:CheckBox": {
+    "prefix": "CheckBox",
+    "body": "CheckBox(${1:string label}, ${2:string convar})$0",
+    "description": "(Client) Method: DForm:CheckBox() Adds a <a href=\"http://wiki.garrysmod.com/page/Category:DCheckBoxLabel}} onto the {{Type|DForm\">DCheckBoxLabel}} onto the {{Type|DForm</a>"
+  },
+  "DForm:Clear": {
+    "prefix": "Clear",
+    "body": "Clear()$0",
+    "description": "(Client) Method: DForm:Clear() Clears all items from the <a href=\"http://wiki.garrysmod.com/page/Category:DForm\">DForm</a>"
+  },
+  "DForm:ComboBox": {
+    "prefix": "ComboBox",
+    "body": "ComboBox(${1:string title}, ${2:string convar})$0",
+    "description": "(Client) Method: DForm:ComboBox() Adds a <a href=\"http://wiki.garrysmod.com/page/Category:DComboBox}} onto the {{Type|DForm\">DComboBox}} onto the {{Type|DForm</a>"
+  },
+  "DForm:ControlHelp": {
+    "prefix": "ControlHelp",
+    "body": "ControlHelp(${1:string help})$0",
+    "description": "(Client) Method: DForm:ControlHelp() Adds a <a href=\"http://wiki.garrysmod.com/page/Category:DLabel}} onto the {{Type|DForm}}. Unlike {{ClassFunction|DForm|Help\">DLabel}} onto the {{Type|DForm}}. Unlike {{ClassFunction|DForm|Help</a>, this is indented and is colored blue, depending on the derma skin."
+  },
+  "DForm:Help": {
+    "prefix": "Help",
+    "body": "Help(${1:string help})$0",
+    "description": "(Client) Method: DForm:Help() Adds a <a href=\"http://wiki.garrysmod.com/page/Category:DLabel}} onto the {{Type|DForm\">DLabel}} onto the {{Type|DForm</a> as a helper"
+  },
+  "DForm:ListBox": {
+    "prefix": "ListBox",
+    "body": "ListBox(${1:string label})$0",
+    "description": "(Client) Method: DForm:ListBox() Adds a <a href=\"http://wiki.garrysmod.com/page/Category:DListBox}} onto the {{Type|DForm\">DListBox}} onto the {{Type|DForm</a>"
+  },
+  "DForm:NumberWang": {
+    "prefix": "NumberWang",
+    "body": "NumberWang(${1:string label}, ${2:string convar}, ${3:number min}, ${4:number max}, ${5:number decimals=nil})$0",
+    "description": "(Client) Method: DForm:NumberWang() Adds a <a href=\"http://wiki.garrysmod.com/page/Category:DNumberWang}} onto the {{Type|DForm\">DNumberWang}} onto the {{Type|DForm</a>"
+  },
+  "DForm:NumSlider": {
+    "prefix": "NumSlider",
+    "body": "NumSlider(${1:string label}, ${2:string convar}, ${3:number min}, ${4:number max}, ${5:number decimals=nil})$0",
+    "description": "(Client) Method: DForm:NumSlider() Adds a <a href=\"http://wiki.garrysmod.com/page/Category:DNumSlider}} onto the {{Type|DForm\">DNumSlider}} onto the {{Type|DForm</a>"
+  },
+  "DForm:PanelSelect": {
+    "prefix": "PanelSelect",
+    "body": "PanelSelect()$0",
+    "description": "(Client) Method: DForm:PanelSelect() Creates a <a href=\"http://wiki.garrysmod.com/page/Category:DPanelSelect\">DPanelSelect</a> and docks it to the top of the DForm."
+  },
+  "DForm:SetName": {
+    "prefix": "SetName",
+    "body": "SetName(${1:string name})$0",
+    "description": "(Client) Method: DForm:SetName() Sets the title (header) name of the DForm. This is ''Label'' until set."
+  },
+  "DForm:TextEntry": {
+    "prefix": "TextEntry",
+    "body": "TextEntry(${1:string label}, ${2:string convar})$0",
+    "description": "(Client) Method: DForm:TextEntry() Adds a <a href=\"http://wiki.garrysmod.com/page/Category:DTextEntry}} to a {{Type|DForm\">DTextEntry}} to a {{Type|DForm</a>"
+  },
+  "DFrame:Center": {
+    "prefix": "Center",
+    "body": "Center()$0",
+    "description": "(Client) Method: DFrame:Center() Centers the frame relative to the whole screen and invalidates its layout. This overrides {{ClassFunction|Panel|Center}}."
+  },
+  "DFrame:Close": {
+    "prefix": "Close",
+    "body": "Close()$0",
+    "description": "(Client) Method: DFrame:Close() Hides or removes the DFrame, and calls {{ClassFunction|DFrame|OnClose}}."
+  },
+  "DFrame:GetBackgroundBlur": {
+    "prefix": "GetBackgroundBlur",
+    "body": "GetBackgroundBlur()$0",
+    "description": "(Client) Method: DFrame:GetBackgroundBlur() Gets whether the background behind the frame is being blurred."
+  },
+  "DFrame:GetDeleteOnClose": {
+    "prefix": "GetDeleteOnClose",
+    "body": "GetDeleteOnClose()$0",
+    "description": "(Client) Method: DFrame:GetDeleteOnClose() Determines whether or not the DFrame will be removed when it is closed. This is set with {{ClassFunction|DFrame|SetDeleteOnClose}}."
+  },
+  "DFrame:GetDraggable": {
+    "prefix": "GetDraggable",
+    "body": "GetDraggable()$0",
+    "description": "(Client) Method: DFrame:GetDraggable() Gets whether or not the frame is draggable by the user."
+  },
+  "DFrame:GetIsMenu": {
+    "prefix": "GetIsMenu",
+    "body": "GetIsMenu()$0",
+    "description": "(Client) Method: DFrame:GetIsMenu() Gets whether or not the frame is part of a derma menu. This is set with {{ClassFunction|DFrame|SetIsMenu}}."
+  },
+  "DFrame:GetMinHeight": {
+    "prefix": "GetMinHeight",
+    "body": "GetMinHeight()$0",
+    "description": "(Client) Method: DFrame:GetMinHeight() Gets the minimum height the DFrame can be resized to by the user."
+  },
+  "DFrame:GetMinWidth": {
+    "prefix": "GetMinWidth",
+    "body": "GetMinWidth()$0",
+    "description": "(Client) Method: DFrame:GetMinWidth() Gets the minimum width the DFrame can be resized to by the user."
+  },
+  "DFrame:GetPaintShadow": {
+    "prefix": "GetPaintShadow",
+    "body": "GetPaintShadow()$0",
+    "description": "(Client) Method: DFrame:GetPaintShadow() Gets whether or not the shadow effect bordering the DFrame is being drawn."
+  },
+  "DFrame:GetScreenLock": {
+    "prefix": "GetScreenLock",
+    "body": "GetScreenLock()$0",
+    "description": "(Client) Method: DFrame:GetScreenLock() Gets whether or not the DFrame is restricted to the boundaries of the screen resolution."
+  },
+  "DFrame:GetSizable": {
+    "prefix": "GetSizable",
+    "body": "GetSizable()$0",
+    "description": "(Client) Method: DFrame:GetSizable() Gets whether or not the DFrame can be resized by the user."
+  },
+  "DFrame:IsActive": {
+    "prefix": "IsActive",
+    "body": "IsActive()$0",
+    "description": "(Client) Method: DFrame:IsActive() Determines if the frame or one of its children has the screen focus."
+  },
+  "DFrame:OnClose": {
+    "prefix": "OnClose",
+    "body": "OnClose()$0",
+    "description": "(Client) Method: DFrame:OnClose() Called when the DFrame is closed with {{ClassFunction|DFrame|Close}}. This applies when the ''close'' button in the DFrame's control box is clicked."
+  },
+  "DFrame:SetBackgroundBlur": {
+    "prefix": "SetBackgroundBlur",
+    "body": "SetBackgroundBlur(${1:boolean blur})$0",
+    "description": "(Client) Method: DFrame:SetBackgroundBlur() Blurs background behind the frame."
+  },
+  "DFrame:SetDeleteOnClose": {
+    "prefix": "SetDeleteOnClose",
+    "body": "SetDeleteOnClose(${1:boolean shouldDelete})$0",
+    "description": "(Client) Method: DFrame:SetDeleteOnClose() Determines whether or not the DFrame is removed when it is closed with {{ClassFunction|DFrame|Close}}."
+  },
+  "DFrame:SetDraggable": {
+    "prefix": "SetDraggable",
+    "body": "SetDraggable(${1:boolean draggable})$0",
+    "description": "(Client) Method: DFrame:SetDraggable() Sets whether the frame should be draggable by the user. The DFrame can only be dragged from its title bar."
+  },
+  "DFrame:SetIsMenu": {
+    "prefix": "SetIsMenu",
+    "body": "SetIsMenu(${1:boolean isMenu})$0",
+    "description": "(Client) Method: DFrame:SetIsMenu() Sets whether the frame is part of a derma menu or not."
+  },
+  "DFrame:SetMinHeight": {
+    "prefix": "SetMinHeight",
+    "body": "SetMinHeight(${1:number minH})$0",
+    "description": "(Client) Method: DFrame:SetMinHeight() Sets the minimum height the DFrame can be resized to by the user."
+  },
+  "DFrame:SetMinWidth": {
+    "prefix": "SetMinWidth",
+    "body": "SetMinWidth(${1:number minW})$0",
+    "description": "(Client) Method: DFrame:SetMinWidth() Sets the minimum width the DFrame can be resized to by the user."
+  },
+  "DFrame:SetPaintShadow": {
+    "prefix": "SetPaintShadow",
+    "body": "SetPaintShadow(${1:boolean shouldPaint})$0",
+    "description": "(Client) Method: DFrame:SetPaintShadow() Sets whether or not the shadow effect bordering the DFrame should be drawn."
+  },
+  "DFrame:SetScreenLock": {
+    "prefix": "SetScreenLock",
+    "body": "SetScreenLock(${1:boolean lock})$0",
+    "description": "(Client) Method: DFrame:SetScreenLock() Sets whether the DFrame is restricted to the boundaries of the screen resolution."
+  },
+  "DFrame:SetSizable": {
+    "prefix": "SetSizable",
+    "body": "SetSizable(${1:boolean sizeable})$0",
+    "description": "(Client) Method: DFrame:SetSizable() Sets whether or not the DFrame can be resized by the user."
+  },
+  "DFrame:SetTitle": {
+    "prefix": "SetTitle",
+    "body": "SetTitle(${1:string title})$0",
+    "description": "(Client) Method: DFrame:SetTitle() Sets the title of the frame."
+  },
+  "DFrame:ShowCloseButton": {
+    "prefix": "ShowCloseButton",
+    "body": "ShowCloseButton(${1:boolean show})$0",
+    "description": "(Client) Method: DFrame:ShowCloseButton() Determines whether the DFrame's control box (close, minimise and maximise buttons) is displayed."
+  },
+  "DHTML:AddFunction": {
+    "prefix": "AddFunction",
+    "body": "AddFunction(${1:string library}, ${2:string name}, ${3:function callback})$0",
+    "description": "(Client) Method: DHTML:AddFunction() Defines a Javascript function that when called will call a Lua callback."
+  },
+  "DHTML:Call": {
+    "prefix": "Call",
+    "body": "Call(${1:string js})$0",
+    "description": "(Client) Method: DHTML:Call() Runs/Executes a string as JavaScript code."
+  },
+  "DHTML:ConsoleMessage": {
+    "prefix": "ConsoleMessage",
+    "body": "ConsoleMessage(${1:string msg})$0",
+    "description": "(Client) Method: DHTML:ConsoleMessage() Called when the page inside the <a href=\"http://wiki.garrysmod.com/page/Category:DHTML\">DHTML</a> window runs ''console.log''. This can also be called within the Lua environment to emulate ''console.log''. If the contained message begins with ''RUNLUA:'' the following text will be executed as code within the Lua environment (this is how Lua is called from DHTML windows)."
+  },
+  "DHTML:GetAllowLua": {
+    "prefix": "GetAllowLua",
+    "body": "GetAllowLua()$0",
+    "description": "(Client) Method: DHTML:GetAllowLua() Returns if the loaded page can run Lua code, set by {{ClassFunction|DHTML|SetAllowLua}}"
+  },
+  "DHTML:SetAllowLua": {
+    "prefix": "SetAllowLua",
+    "body": "SetAllowLua(${1:boolean allow=false})$0",
+    "description": "(Client) Method: DHTML:SetAllowLua() Determines whether the loaded page can run Lua code or not. See <a href=\"http://wiki.garrysmod.com/page/Category:DHTML\">DHTML</a> for how to run Lua from a DHTML window."
+  },
+  "DHTML:SetScrollbars": {
+    "prefix": "SetScrollbars",
+    "body": "SetScrollbars(${1:boolean show})$0",
+    "description": "(Client) Method: DHTML:SetScrollbars() {{Deprecated|Broken. Use the CSS ''overflow'' rule instead.}} Sets if the loaded window should display scrollbars when the webpage is larger than the viewing window. This is similar to the CSS ''overflow'' rule."
+  },
+  "DIconLayout:Copy": {
+    "prefix": "Copy",
+    "body": "Copy()$0",
+    "description": "(Client) Method: DIconLayout:Copy() Creates a replica of the DIconLayout it is called on."
+  },
+  "DIconLayout:CopyContents": {
+    "prefix": "CopyContents",
+    "body": "CopyContents(${1:Panel from})$0",
+    "description": "(Client) Method: DIconLayout:CopyContents() Copies the contents of the DIconLayout, including the children."
+  },
+  "DIconLayout:GetBorder": {
+    "prefix": "GetBorder",
+    "body": "GetBorder()$0",
+    "description": "(Client) Method: DIconLayout:GetBorder() Returns the size of the border."
+  },
+  "DIconLayout:GetLayoutDir": {
+    "prefix": "GetLayoutDir",
+    "body": "GetLayoutDir()$0",
+    "description": "(Client) Method: DIconLayout:GetLayoutDir() Returns the direction that it will be layed out, using the DOCK enumerations."
+  },
+  "DIconLayout:GetSpaceX": {
+    "prefix": "GetSpaceX",
+    "body": "GetSpaceX()$0",
+    "description": "(Client) Method: DIconLayout:GetSpaceX() Returns the distance between two 'icons' on the X axis."
+  },
+  "DIconLayout:GetSpaceY": {
+    "prefix": "GetSpaceY",
+    "body": "GetSpaceY()$0",
+    "description": "(Client) Method: DIconLayout:GetSpaceY() Returns distance between two \"Icons\" on the Y axis."
+  },
+  "DIconLayout:Layout": {
+    "prefix": "Layout",
+    "body": "Layout()$0",
+    "description": "(Client) Method: DIconLayout:Layout() Resets layout vars before calling {{ClassFunction|Panel|InvalidateLayout}}. This is called when children are added or removed, and must be called when the spacing, border or layout direction is changed."
+  },
+  "DIconLayout:OnModified": {
+    "prefix": "OnModified",
+    "body": "OnModified()$0",
+    "description": "(Client) Method: DIconLayout:OnModified() Called when the panel is modified."
+  },
+  "DIconLayout:SetBorder": {
+    "prefix": "SetBorder",
+    "body": "SetBorder(${1:number width})$0",
+    "description": "(Client) Method: DIconLayout:SetBorder() Sets the internal border (padding) within the DIconLayout. This will not change its size, only the positioning of children. You must call {{ClassFunction|DIconLayout|Layout}} in order for the changes to take effect."
+  },
+  "DIconLayout:SetLayoutDir": {
+    "prefix": "SetLayoutDir",
+    "body": "SetLayoutDir(${1:number Direction})$0",
+    "description": "(Client) Method: DIconLayout:SetLayoutDir() Sets the direction that it will be layed out, using the DOCK enumerations."
+  },
+  "DIconLayout:SetSpaceX": {
+    "prefix": "SetSpaceX",
+    "body": "SetSpaceX(${1:number xSpacing})$0",
+    "description": "(Client) Method: DIconLayout:SetSpaceX() Sets the horizontal (x) spacing between children within the DIconLayout. You must call {{ClassFunction|DIconLayout|Layout}} in order for the changes to take effect."
+  },
+  "DIconLayout:SetSpaceY": {
+    "prefix": "SetSpaceY",
+    "body": "SetSpaceY(${1:number ySpacing})$0",
+    "description": "(Client) Method: DIconLayout:SetSpaceY() Sets the vertical (y) spacing between children within the DIconLayout. You must call {{ClassFunction|DIconLayout|Layout}} in order for the changes to take effect."
+  },
+  "DImage:DoLoadMaterial": {
+    "prefix": "DoLoadMaterial",
+    "body": "DoLoadMaterial()$0",
+    "description": "(Client) Method: DImage:DoLoadMaterial() {{Internal}}"
+  },
+  "DImage:FixVertexLitMaterial": {
+    "prefix": "FixVertexLitMaterial",
+    "body": "FixVertexLitMaterial()$0",
+    "description": "(Client) Method: DImage:FixVertexLitMaterial() {{Internal}}"
+  },
+  "DImage:GetFailsafeMatName": {
+    "prefix": "GetFailsafeMatName",
+    "body": "GetFailsafeMatName()$0",
+    "description": "(Client) Method: DImage:GetFailsafeMatName() {{Internal}}"
+  },
+  "DImage:GetImage": {
+    "prefix": "GetImage",
+    "body": "GetImage()$0",
+    "description": "(Client) Method: DImage:GetImage() Returns the image loaded in the image panel."
+  },
+  "DImage:GetImageColor": {
+    "prefix": "GetImageColor",
+    "body": "GetImageColor()$0",
+    "description": "(Client) Method: DImage:GetImageColor() Returns the color override of the image panel."
+  },
+  "DImage:GetKeepAspect": {
+    "prefix": "GetKeepAspect",
+    "body": "GetKeepAspect()$0",
+    "description": "(Client) Method: DImage:GetKeepAspect() Returns whether the <a href=\"http://wiki.garrysmod.com/page/Category:DImage\">DImage</a> should keep the aspect ratio of its image when being resized."
+  },
+  "DImage:GetMaterial": {
+    "prefix": "GetMaterial",
+    "body": "GetMaterial()$0",
+    "description": "(Client) Method: DImage:GetMaterial() Returns the current {{GlobalFunction|Material}} of the <a href=\"http://wiki.garrysmod.com/page/Category:DImage\">DImage</a>."
+  },
+  "DImage:GetMatName": {
+    "prefix": "GetMatName",
+    "body": "GetMatName()$0",
+    "description": "(Client) Method: DImage:GetMatName() {{Internal}}"
+  },
+  "DImage:LoadMaterial": {
+    "prefix": "LoadMaterial",
+    "body": "LoadMaterial()$0",
+    "description": "(Client) Method: DImage:LoadMaterial() {{Internal}}"
+  },
+  "DImage:PaintAt": {
+    "prefix": "PaintAt",
+    "body": "PaintAt(${1:number posX}, ${2:number posY}, ${3:number width}, ${4:number height})$0",
+    "description": "(Client) Method: DImage:PaintAt() Paints a ghost copy of the DImage panel at the given position and dimensions. This function overrides {{ClassFunction|Panel|PaintAt}}."
+  },
+  "DImage:SetFailsafeMatName": {
+    "prefix": "SetFailsafeMatName",
+    "body": "SetFailsafeMatName(${1:string backupMat})$0",
+    "description": "(Client) Method: DImage:SetFailsafeMatName() {{Internal}}"
+  },
+  "DImage:SetImage": {
+    "prefix": "SetImage",
+    "body": "SetImage(${1:string strImage}, ${2:string strBackup})$0",
+    "description": "(Client) Method: DImage:SetImage() Sets the image to load into the frame. If the first image can't be loaded and ''strBackup'' is set, that image will be loaded instead."
+  },
+  "DImage:SetImageColor": {
+    "prefix": "SetImageColor",
+    "body": "SetImageColor(${1:table col})$0",
+    "description": "(Client) Method: DImage:SetImageColor() Sets the image's color override."
+  },
+  "DImage:SetKeepAspect": {
+    "prefix": "SetKeepAspect",
+    "body": "SetKeepAspect(${1:boolean keep})$0",
+    "description": "(Client) Method: DImage:SetKeepAspect() Sets whether the <a href=\"http://wiki.garrysmod.com/page/Category:DImage\">DImage</a> should keep the aspect ratio of its image when being resized."
+  },
+  "DImage:SetMaterial": {
+    "prefix": "SetMaterial",
+    "body": "SetMaterial(${1:IMaterial mat})$0",
+    "description": "(Client) Method: DImage:SetMaterial() Sets a {{GlobalFunction|Material}} directly as an image."
+  },
+  "DImage:SetMatName": {
+    "prefix": "SetMatName",
+    "body": "SetMatName(${1:string mat})$0",
+    "description": "(Client) Method: DImage:SetMatName() {{Internal}}"
+  },
+  "DImage:SetOnViewMaterial": {
+    "prefix": "SetOnViewMaterial",
+    "body": "SetOnViewMaterial(${1:string mat}, ${2:string backupMat})$0",
+    "description": "(Client) Method: DImage:SetOnViewMaterial() Similar to {{ClassFunction|DImage|SetImage}}, but will only do the expensive part of actually loading the textures/material if the material is about to be rendered/viewed."
+  },
+  "DImage:Unloaded": {
+    "prefix": "Unloaded",
+    "body": "Unloaded()$0",
+    "description": "(Client) Method: DImage:Unloaded() Returns true if the image is '''not''' yet loaded."
+  },
+  "DImageButton:GetImage": {
+    "prefix": "GetImage",
+    "body": "GetImage()$0",
+    "description": "(Client) Method: DImageButton:GetImage() Returns the \"image\" of the <a href=\"http://wiki.garrysmod.com/page/Category:DImageButton}}. Equivalent of {{ClassFunction|DImage|GetImage\">DImageButton}}. Equivalent of {{ClassFunction|DImage|GetImage</a>."
+  },
+  "DImageButton:GetStretchToFit": {
+    "prefix": "GetStretchToFit",
+    "body": "GetStretchToFit()$0",
+    "description": "(Client) Method: DImageButton:GetStretchToFit() Returns whether the image inside the button should be stretched to fit it or not"
+  },
+  "DImageButton:SetColor": {
+    "prefix": "SetColor",
+    "body": "SetColor(${1:table color})$0",
+    "description": "(Client) Method: DImageButton:SetColor() Sets the color of the image. Equivalent of {{ClassFunction|DImage|SetImageColor}}"
+  },
+  "DImageButton:SetIcon": {
+    "prefix": "SetIcon",
+    "body": "SetIcon()$0",
+    "description": "(Client) Method: DImageButton:SetIcon() {{Deprecated}}"
+  },
+  "DImageButton:SetImage": {
+    "prefix": "SetImage",
+    "body": "SetImage(${1:string strImage}, ${2:string strBackup})$0",
+    "description": "(Client) Method: DImageButton:SetImage() Sets the \"image\" of the <a href=\"http://wiki.garrysmod.com/page/Category:DImageButton}}. Equivalent of {{ClassFunction|DImage|SetImage\">DImageButton}}. Equivalent of {{ClassFunction|DImage|SetImage</a>."
+  },
+  "DImageButton:SetImageVisible": {
+    "prefix": "SetImageVisible",
+    "body": "SetImageVisible(${1:boolean visible})$0",
+    "description": "(Client) Method: DImageButton:SetImageVisible() Hides or shows the image of the image button. Internally this calls {{ClassFunction|Panel|SetVisible}} on the internal <a href=\"http://wiki.garrysmod.com/page/Category:DImage\">DImage</a>."
+  },
+  "DImageButton:SetKeepAspect": {
+    "prefix": "SetKeepAspect",
+    "body": "SetKeepAspect(${1:boolean keep})$0",
+    "description": "(Client) Method: DImageButton:SetKeepAspect() Sets whether the <a href=\"http://wiki.garrysmod.com/page/Category:DImageButton}} should keep the aspect ratio of its image. Equivalent of {{ClassFunction|DImage|SetKeepAspect\">DImageButton}} should keep the aspect ratio of its image. Equivalent of {{ClassFunction|DImage|SetKeepAspect</a>."
+  },
+  "DImageButton:SetMaterial": {
+    "prefix": "SetMaterial",
+    "body": "SetMaterial(${1:IMaterial mat})$0",
+    "description": "(Client) Method: DImageButton:SetMaterial() Sets a {{GlobalFunction|Material}} directly as an image. Equivalent of {{ClassFunction|DImage|SetMaterial}}."
+  },
+  "DImageButton:SetOnViewMaterial": {
+    "prefix": "SetOnViewMaterial",
+    "body": "SetOnViewMaterial(${1:string mat}, ${2:string backup})$0",
+    "description": "(Client) Method: DImageButton:SetOnViewMaterial() See {{ClassFunction|DImage|SetOnViewMaterial}}"
+  },
+  "DImageButton:SetStretchToFit": {
+    "prefix": "SetStretchToFit",
+    "body": "SetStretchToFit(${1:boolean stretch})$0",
+    "description": "(Client) Method: DImageButton:SetStretchToFit() Sets whether the image inside the <a href=\"http://wiki.garrysmod.com/page/Category:DImageButton\">DImageButton</a> should be stretched to fill the entire size of the button, without preserving aspect ratio."
+  },
+  "DKillIcon:GetName": {
+    "prefix": "GetName",
+    "body": "GetName()$0",
+    "description": "(Client) Method: DKillIcon:GetName() Gets the killicon being shown."
+  },
+  "DKillIcon:SetName": {
+    "prefix": "SetName",
+    "body": "SetName(${1:string iconName})$0",
+    "description": "(Client) Method: DKillIcon:SetName() Sets the killicon to be displayed. You should call {{ClassFunction|DKillIcon|SizeToContents}} following this."
+  },
+  "DKillIcon:SizeToContents": {
+    "prefix": "SizeToContents",
+    "body": "SizeToContents()$0",
+    "description": "(Client) Method: DKillIcon:SizeToContents() Resizes the DKillIcon to fit the icon currently being shown. You should call this after {{ClassFunction|DKillIcon|SetName}}."
+  },
+  "DLabel:DoClick": {
+    "prefix": "DoClick",
+    "body": "DoClick()$0",
+    "description": "(Client) Method: DLabel:DoClick() [[Category:DButton]] Called when the label is clicked by a user."
+  },
+  "DLabel:GetDisabled": {
+    "prefix": "GetDisabled",
+    "body": "GetDisabled()$0",
+    "description": "(Client) Method: DLabel:GetDisabled() [[Category:DButton]] Gets the disabled state of the DLabel. This is set with {{ClassFunction|DLabel|SetDisabled}}."
+  },
+  "DLabel:GetFont": {
+    "prefix": "GetFont",
+    "body": "GetFont()$0",
+    "description": "(Client) Method: DLabel:GetFont() [[Category:DButton]] Returns the current font of the DLabel. This is set with {{ClassFunction|DLabel|SetFont}}."
+  },
+  "DLabel:GetIsToggle": {
+    "prefix": "GetIsToggle",
+    "body": "GetIsToggle()$0",
+    "description": "(Client) Method: DLabel:GetIsToggle() Returns whether the toggle functionality is enabled for a label. Set with {{ClassFunction|DLabel|SetIsToggle}}."
+  },
+  "DLabel:GetToggle": {
+    "prefix": "GetToggle",
+    "body": "GetToggle()$0",
+    "description": "(Client) Method: DLabel:GetToggle() Returns the current toggle state of the label. This can be set with {{ClassFunction|DLabel|SetToggle}} and toggled with {{ClassFunction|DLabel|Toggle}}."
+  },
+  "DLabel:OnToggled": {
+    "prefix": "OnToggled",
+    "body": "OnToggled(${1:boolean toggleState})$0",
+    "description": "(Client) Method: DLabel:OnToggled() Called when the toggle state of the label is changed by {{ClassFunction|DLabel|Toggle}}."
+  },
+  "DLabel:SetAutoStretchVertical": {
+    "prefix": "SetAutoStretchVertical",
+    "body": "SetAutoStretchVertical(${1:boolean stretch})$0",
+    "description": "(Client) Method: DLabel:SetAutoStretchVertical() Automatically adjusts the height of the label dependent of the height of the text inside of it."
+  },
+  "DLabel:SetBright": {
+    "prefix": "SetBright",
+    "body": "SetBright(${1:boolean bright})$0",
+    "description": "(Client) Method: DLabel:SetBright() Sets the color of the text to the bright text color defined in the skin."
+  },
+  "DLabel:SetDark": {
+    "prefix": "SetDark",
+    "body": "SetDark(${1:boolean dark})$0",
+    "description": "(Client) Method: DLabel:SetDark() Sets the color of the text to the dark text color defined in the skin."
+  },
+  "DLabel:SetDisabled": {
+    "prefix": "SetDisabled",
+    "body": "SetDisabled(${1:boolean disable})$0",
+    "description": "(Client) Method: DLabel:SetDisabled() Sets the disabled state of the DLabel."
+  },
+  "DLabel:SetFont": {
+    "prefix": "SetFont",
+    "body": "SetFont(${1:string fontName})$0",
+    "description": "(Client) Method: DLabel:SetFont() [[Category:DButton]] Sets the font of the label."
+  },
+  "DLabel:SetIsToggle": {
+    "prefix": "SetIsToggle",
+    "body": "SetIsToggle(${1:boolean allowToggle})$0",
+    "description": "(Client) Method: DLabel:SetIsToggle() Enables or disables toggle functionality for a label. Retrieved with {{ClassFunction|DLabel|GetIsToggle}}."
+  },
+  "DLabel:SetText": {
+    "prefix": "SetText",
+    "body": "SetText(${1:string text})$0",
+    "description": "(Client) Method: DLabel:SetText() Set the Text of the DLabel VGUI element."
+  },
+  "DLabel:SetTextColor": {
+    "prefix": "SetTextColor",
+    "body": "SetTextColor(${1:table color})$0",
+    "description": "(Client) Method: DLabel:SetTextColor() Sets the text color for the DLabel."
+  },
+  "DLabel:SetToggle": {
+    "prefix": "SetToggle",
+    "body": "SetToggle(${1:boolean toggleState})$0",
+    "description": "(Client) Method: DLabel:SetToggle() Sets the toggle state of the label. This can be retrieved with {{ClassFunction|DLabel|GetToggle}} and toggled with {{ClassFunction|DLabel|Toggle}}."
+  },
+  "DLabel:Toggle": {
+    "prefix": "Toggle",
+    "body": "Toggle()$0",
+    "description": "(Client) Method: DLabel:Toggle() Toggles the label's state. This can be set and retrieved with {{ClassFunction|DLabel|SetToggle}} and {{ClassFunction|DLabel|GetToggle}}."
+  },
+  "DLabel:UpdateColors": {
+    "prefix": "UpdateColors",
+    "body": "UpdateColors(${1:table skin})$0",
+    "description": "(Client) Method: DLabel:UpdateColors() A hook called from within {{ClassFunction|DLabel|ApplySchemeSettings}} to determine the color of the text on display.}}"
+  },
+  "DLabelURL:GetColor": {
+    "prefix": "GetColor",
+    "body": "GetColor()$0",
+    "description": "(Client) Method: DLabelURL:GetColor() Gets the current text color of the DLabelURL. Same as {{ClassFunction|DLabelURL|GetTextColor}}."
+  },
+  "DLabelURL:GetTextColor": {
+    "prefix": "GetTextColor",
+    "body": "GetTextColor()$0",
+    "description": "(Client) Method: DLabelURL:GetTextColor() Gets the current text color of the DLabelURL. Same as {{ClassFunction|DLabelURL|GetColor}}."
+  },
+  "DLabelURL:SetColor": {
+    "prefix": "SetColor",
+    "body": "SetColor(${1:table col})$0",
+    "description": "(Client) Method: DLabelURL:SetColor() Alias of {{ClassFunction|DLabelURL|SetTextColor}}."
+  },
+  "DLabelURL:SetTextColor": {
+    "prefix": "SetTextColor",
+    "body": "SetTextColor(${1:table col})$0",
+    "description": "(Client) Method: DLabelURL:SetTextColor() Sets the text color of the DLabelURL. This should only be used immediately after it is created, and otherwise {{ClassFunction|Panel|SetFGColor}}."
+  },
+  "DListLayout:OnModified": {
+    "prefix": "OnModified",
+    "body": "OnModified()$0",
+    "description": "(Client) Method: DListLayout:OnModified() Called when anything is dropped on or rearranged within the DListLayout. You should override this."
+  },
+  "DListView_Line:GetColumnText": {
+    "prefix": "GetColumnText",
+    "body": "GetColumnText(${1:number column})$0",
+    "description": "(Client) Method: DListView_Line:GetColumnText() Gets the string held in the specified column of a <a href=\"http://wiki.garrysmod.com/page/Category:DListView_Line\">DListView_Line</a> panel."
+  },
+  "DListView:AddColumn": {
+    "prefix": "AddColumn",
+    "body": "AddColumn(${1:string column}, ${2:string material}, ${3:number position})$0",
+    "description": "(Client) Method: DListView:AddColumn() Adds a column to the listview."
+  },
+  "DListView:AddLine": {
+    "prefix": "AddLine",
+    "body": "AddLine(${1:vararg text})$0",
+    "description": "(Client) Method: DListView:AddLine() Adds a line to the list view."
+  },
+  "DListView:Clear": {
+    "prefix": "Clear",
+    "body": "Clear()$0",
+    "description": "(Client) Method: DListView:Clear() Removes all lines that have been added to the DListView."
+  },
+  "DListView:ClearSelection": {
+    "prefix": "ClearSelection",
+    "body": "ClearSelection()$0",
+    "description": "(Client) Method: DListView:ClearSelection() Clears the current selection in the DListView."
+  },
+  "DListView:ColumnWidth": {
+    "prefix": "ColumnWidth",
+    "body": "ColumnWidth(${1:number column})$0",
+    "description": "(Client) Method: DListView:ColumnWidth() Gets the width of a column."
+  },
+  "DListView:DataLayout": {
+    "prefix": "DataLayout",
+    "body": "DataLayout()$0",
+    "description": "(Client) Method: DListView:DataLayout() Creates the lines and gets the height of the contents, in a DListView."
+  },
+  "DListView:DisableScrollbar": {
+    "prefix": "DisableScrollbar",
+    "body": "DisableScrollbar()$0",
+    "description": "(Client) Method: DListView:DisableScrollbar() Removes the scrollbar."
+  },
+  "DListView:DoDoubleClick": {
+    "prefix": "DoDoubleClick",
+    "body": "DoDoubleClick(${1:number lineID}, ${2:Panel line})$0",
+    "description": "(Client) Method: DListView:DoDoubleClick() Called when a line in the DListView is double clicked."
+  },
+  "DListView:FixColumnsLayout": {
+    "prefix": "FixColumnsLayout",
+    "body": "FixColumnsLayout()$0",
+    "description": "(Client) Method: DListView:FixColumnsLayout() {{Internal}}"
+  },
+  "DListView:GetCanvas": {
+    "prefix": "GetCanvas",
+    "body": "GetCanvas()$0",
+    "description": "(Client) Method: DListView:GetCanvas() Gets the canvas."
+  },
+  "DListView:GetDataHeight": {
+    "prefix": "GetDataHeight",
+    "body": "GetDataHeight()$0",
+    "description": "(Client) Method: DListView:GetDataHeight() Returns the height of the data of the <a href=\"http://wiki.garrysmod.com/page/Category:DListView\">DListView</a>."
+  },
+  "DListView:GetDirty": {
+    "prefix": "GetDirty",
+    "body": "GetDirty()$0",
+    "description": "(Client) Method: DListView:GetDirty() {{Internal}}"
+  },
+  "DListView:GetHeaderHeight": {
+    "prefix": "GetHeaderHeight",
+    "body": "GetHeaderHeight()$0",
+    "description": "(Client) Method: DListView:GetHeaderHeight() Returns the height of the header of the <a href=\"http://wiki.garrysmod.com/page/Category:DListView\">DListView</a>."
+  },
+  "DListView:GetHideHeaders": {
+    "prefix": "GetHideHeaders",
+    "body": "GetHideHeaders()$0",
+    "description": "(Client) Method: DListView:GetHideHeaders() Returns whether the header line should be visible on not."
+  },
+  "DListView:GetInnerTall": {
+    "prefix": "GetInnerTall",
+    "body": "GetInnerTall()$0",
+    "description": "(Client) Method: DListView:GetInnerTall() Returns the height of {{ClassFunction|DListView|GetCanvas}}."
+  },
+  "DListView:GetLine": {
+    "prefix": "GetLine",
+    "body": "GetLine(${1:number id})$0",
+    "description": "(Client) Method: DListView:GetLine() Gets the DListView_Line at the given index."
+  },
+  "DListView:GetLines": {
+    "prefix": "GetLines",
+    "body": "GetLines()$0",
+    "description": "(Client) Method: DListView:GetLines() Gets all of the lines added to the DListView."
+  },
+  "DListView:GetMultiSelect": {
+    "prefix": "GetMultiSelect",
+    "body": "GetMultiSelect()$0",
+    "description": "(Client) Method: DListView:GetMultiSelect() Returns whether multiple lines can be selected or not."
+  },
+  "DListView:GetSelected": {
+    "prefix": "GetSelected",
+    "body": "GetSelected()$0",
+    "description": "(Client) Method: DListView:GetSelected() Gets all of the DListViewLines that are currently selected."
+  },
+  "DListView:GetSelectedLine": {
+    "prefix": "GetSelectedLine",
+    "body": "GetSelectedLine()$0",
+    "description": "(Client) Method: DListView:GetSelectedLine() Gets the currently selected DListViewLine."
+  },
+  "DListView:GetSortable": {
+    "prefix": "GetSortable",
+    "body": "GetSortable()$0",
+    "description": "(Client) Method: DListView:GetSortable() Returns whether sorting of columns by clicking their headers is allowed or not."
+  },
+  "DListView:GetSortedID": {
+    "prefix": "GetSortedID",
+    "body": "GetSortedID(${1:number lineId})$0",
+    "description": "(Client) Method: DListView:GetSortedID() {{Internal}}"
+  },
+  "DListView:OnClickLine": {
+    "prefix": "OnClickLine",
+    "body": "OnClickLine(${1:Panel line}, ${2:boolean isSelected})$0",
+    "description": "(Client) Method: DListView:OnClickLine() {{Internal|Use {{ClassFunction|DListView|OnRowSelected}} instead!}}"
+  },
+  "DListView:OnRequestResize": {
+    "prefix": "OnRequestResize",
+    "body": "OnRequestResize(${1:Panel column}, ${2:number size})$0",
+    "description": "(Client) Method: DListView:OnRequestResize() {{Internal}}"
+  },
+  "DListView:RemoveLine": {
+    "prefix": "RemoveLine",
+    "body": "RemoveLine(${1:number line})$0",
+    "description": "(Client) Method: DListView:RemoveLine() Removes a line from the list view."
+  },
+  "DListView:SelectFirstItem": {
+    "prefix": "SelectFirstItem",
+    "body": "SelectFirstItem()$0",
+    "description": "(Client) Method: DListView:SelectFirstItem() Selects the line at the first index of the DListView if one has been added."
+  },
+  "DListView:SelectItem": {
+    "prefix": "SelectItem",
+    "body": "SelectItem(${1:Panel Line})$0",
+    "description": "(Client) Method: DListView:SelectItem() Selects a line in the listview."
+  },
+  "DListView:SetDataHeight": {
+    "prefix": "SetDataHeight",
+    "body": "SetDataHeight(${1:number height})$0",
+    "description": "(Client) Method: DListView:SetDataHeight() Sets the height of all lines of the <a href=\"http://wiki.garrysmod.com/page/Category:DListView\">DListView</a> except for the header line."
+  },
+  "DListView:SetDirty": {
+    "prefix": "SetDirty",
+    "body": "SetDirty(${1:boolean isDirty})$0",
+    "description": "(Client) Method: DListView:SetDirty() {{Internal}}"
+  },
+  "DListView:SetHeaderHeight": {
+    "prefix": "SetHeaderHeight",
+    "body": "SetHeaderHeight(${1:number height})$0",
+    "description": "(Client) Method: DListView:SetHeaderHeight() Sets the height of the header line of the <a href=\"http://wiki.garrysmod.com/page/Category:DListView\">DListView</a>."
+  },
+  "DListView:SetHideHeaders": {
+    "prefix": "SetHideHeaders",
+    "body": "SetHideHeaders(${1:boolean hide})$0",
+    "description": "(Client) Method: DListView:SetHideHeaders() Sets whether the header line should be visible on not."
+  },
+  "DListView:SetMultiSelect": {
+    "prefix": "SetMultiSelect",
+    "body": "SetMultiSelect(${1:boolean allowMultiSelect})$0",
+    "description": "(Client) Method: DListView:SetMultiSelect() Sets whether multiple lines can be selected by the user by using the {{Key|Ctrl}} or {{Key|Shift}} keys. When set to false, only one line can be selected."
+  },
+  "DListView:SetSortable": {
+    "prefix": "SetSortable",
+    "body": "SetSortable(${1:boolean isSortable})$0",
+    "description": "(Client) Method: DListView:SetSortable() Enables/disables the sorting of columns by clicking."
+  },
+  "DListView:SortByColumn": {
+    "prefix": "SortByColumn",
+    "body": "SortByColumn(${1:number columnIndex}, ${2:boolean descending=false})$0",
+    "description": "(Client) Method: DListView:SortByColumn() Sorts the items in the specified column."
+  },
+  "DListView:SortByColumns": {
+    "prefix": "SortByColumns",
+    "body": "SortByColumns(${1:number column1=nil}, ${2:boolean descrending1=false}, ${3:number column2=nil}, ${4:boolean descrending2=false}, ${5:number column3=nil}, ${6:boolean descrending3=false}, ${7:number column4=nil}, ${8:boolean descrending4=false})$0",
+    "description": "(Client) Method: DListView:SortByColumns() Sorts the list based on given columns."
+  },
+  "DMenu:AddOption": {
+    "prefix": "AddOption",
+    "body": "AddOption(${1:string name}, ${2:function func=nil})$0",
+    "description": "(Client) Method: DMenu:AddOption() Add an option to the DMenu"
+  },
+  "DMenu:AddSpacer": {
+    "prefix": "AddSpacer",
+    "body": "AddSpacer()$0",
+    "description": "(Client) Method: DMenu:AddSpacer() Adds a horizontal line spacer."
+  },
+  "DMenu:AddSubMenu": {
+    "prefix": "AddSubMenu",
+    "body": "AddSubMenu(${1:string Name}, ${2:function func=nil})$0",
+    "description": "(Client) Method: DMenu:AddSubMenu() Add a sub menu to the DMenu"
+  },
+  "DMenu:GetChild": {
+    "prefix": "GetChild",
+    "body": "GetChild(${1:number childIndex})$0",
+    "description": "(Client) Method: DMenu:GetChild() Gets a child by its index."
+  },
+  "DMenu:Open": {
+    "prefix": "Open",
+    "body": "Open(${1:number x=gui.MouseX()}, ${2:number y=gui.MouseY()}, ${3:any skipanimation}, ${4:Panel ownerpanel})$0",
+    "description": "(Client) Method: DMenu:Open() Opens the DMenu at the current mouse position"
+  },
+  "DMenuBar:AddMenu": {
+    "prefix": "AddMenu",
+    "body": "AddMenu(${1:string label})$0",
+    "description": "(Client) Method: DMenuBar:AddMenu() Creates a new <a href=\"http://wiki.garrysmod.com/page/Category:DMenu}} object tied to a {{Type|DButton\">DMenu}} object tied to a {{Type|DButton</a> with the given label on the menu bar."
+  },
+  "DMenuBar:AddOrGetMenu": {
+    "prefix": "AddOrGetMenu",
+    "body": "AddOrGetMenu(${1:string label})$0",
+    "description": "(Client) Method: DMenuBar:AddOrGetMenu() Retrieves a <a href=\"http://wiki.garrysmod.com/page/Category:DMenu\">DMenu</a> object from the menu bar. If one with the given label doesn't exist, a new one is created."
+  },
+  "DMenuBar:GetBackgroundColor": {
+    "prefix": "GetBackgroundColor",
+    "body": "GetBackgroundColor()$0",
+    "description": "(Client) Method: DMenuBar:GetBackgroundColor() Returns the DMenuBar's background color"
+  },
+  "DMenuBar:GetDisabled": {
+    "prefix": "GetDisabled",
+    "body": "GetDisabled()$0",
+    "description": "(Client) Method: DMenuBar:GetDisabled() Returns whether or not the DMenuBar is disabled"
+  },
+  "DMenuBar:GetDrawBackground": {
+    "prefix": "GetDrawBackground",
+    "body": "GetDrawBackground()$0",
+    "description": "(Client) Method: DMenuBar:GetDrawBackground() Returns whether or not the background should be painted. Is the same as {{ClassFunction|DMenuBar|GetPaintBackground}}"
+  },
+  "DMenuBar:GetIsMenu": {
+    "prefix": "GetIsMenu",
+    "body": "GetIsMenu()$0",
+    "description": "(Client) Method: DMenuBar:GetIsMenu() Returns whether or not the panel is a menu. Used for closing menus when another panel is selected."
+  },
+  "DMenuBar:GetOpenMenu": {
+    "prefix": "GetOpenMenu",
+    "body": "GetOpenMenu()$0",
+    "description": "(Client) Method: DMenuBar:GetOpenMenu() If a menu is visible/opened, then the menu is returned."
+  },
+  "DMenuBar:GetPaintBackground": {
+    "prefix": "GetPaintBackground",
+    "body": "GetPaintBackground()$0",
+    "description": "(Client) Method: DMenuBar:GetPaintBackground() Returns whether or not the background should be painted. Is the same as {{ClassFunction|DMenuBar|GetDrawBackground}}"
+  },
+  "DMenuBar:SetBackgroundColor": {
+    "prefix": "SetBackgroundColor",
+    "body": "SetBackgroundColor(${1:table color})$0",
+    "description": "(Client) Method: DMenuBar:SetBackgroundColor() Sets the background color"
+  },
+  "DMenuBar:SetDisabled": {
+    "prefix": "SetDisabled",
+    "body": "SetDisabled(${1:boolean disable})$0",
+    "description": "(Client) Method: DMenuBar:SetDisabled() Sets whether or not the panel is disabled"
+  },
+  "DMenuBar:SetDrawBackground": {
+    "prefix": "SetDrawBackground",
+    "body": "SetDrawBackground(${1:boolean shouldPaint})$0",
+    "description": "(Client) Method: DMenuBar:SetDrawBackground() Sets whether or not the background should be painted. Is the same as {{ClassFunction|DMenuBar|SetPaintBackground}}"
+  },
+  "DMenuBar:SetIsMenu": {
+    "prefix": "SetIsMenu",
+    "body": "SetIsMenu(${1:boolean isMenu})$0",
+    "description": "(Client) Method: DMenuBar:SetIsMenu() Sets whether or not the panel is a menu. Used for closing menus when another panel is selected."
+  },
+  "DMenuBar:SetPaintBackground": {
+    "prefix": "SetPaintBackground",
+    "body": "SetPaintBackground(${1:boolean shouldPaint})$0",
+    "description": "(Client) Method: DMenuBar:SetPaintBackground() Sets whether or not the background should be painted. Is the same as {{ClassFunction|DMenuBar|SetDrawBackground}}"
+  },
+  "DModelPanel:DrawModel": {
+    "prefix": "DrawModel",
+    "body": "DrawModel()$0",
+    "description": "(Client) Method: DModelPanel:DrawModel() {{Internal}} Used by the DModelPanel's paint hook to draw the model and background."
+  },
+  "DModelPanel:GetAmbientLight": {
+    "prefix": "GetAmbientLight",
+    "body": "GetAmbientLight()$0",
+    "description": "(Client) Method: DModelPanel:GetAmbientLight() Returns the ambient lighting used on the rendered entity."
+  },
+  "DModelPanel:GetAnimated": {
+    "prefix": "GetAnimated",
+    "body": "GetAnimated()$0",
+    "description": "(Client) Method: DModelPanel:GetAnimated() Returns whether or not the panel entity should be animated when the default {{ClassFunction|DModelPanel|LayoutEntity}} function is called."
+  },
+  "DModelPanel:GetAnimSpeed": {
+    "prefix": "GetAnimSpeed",
+    "body": "GetAnimSpeed()$0",
+    "description": "(Client) Method: DModelPanel:GetAnimSpeed() Returns the animation speed of the panel entity, see {{ClassFunction|DModelPanel|SetAnimSpeed}}."
+  },
+  "DModelPanel:GetCamPos": {
+    "prefix": "GetCamPos",
+    "body": "GetCamPos()$0",
+    "description": "(Client) Method: DModelPanel:GetCamPos() Returns the position of the model viewing camera."
+  },
+  "DModelPanel:GetColor": {
+    "prefix": "GetColor",
+    "body": "GetColor()$0",
+    "description": "(Client) Method: DModelPanel:GetColor() Returns the color of the rendered entity."
+  },
+  "DModelPanel:GetEntity": {
+    "prefix": "GetEntity",
+    "body": "GetEntity()$0",
+    "description": "(Client) Method: DModelPanel:GetEntity() Returns the entity being rendered by the model panel."
+  },
+  "DModelPanel:GetFOV": {
+    "prefix": "GetFOV",
+    "body": "GetFOV()$0",
+    "description": "(Client) Method: DModelPanel:GetFOV() Returns the FOV (field of view) the camera is using."
+  },
+  "DModelPanel:GetLookAng": {
+    "prefix": "GetLookAng",
+    "body": "GetLookAng()$0",
+    "description": "(Client) Method: DModelPanel:GetLookAng() Returns the angles of the model viewing camera. Is '''nil''' until changed with {{ClassFunction|DModelPanel|SetLookAng}}."
+  },
+  "DModelPanel:GetLookAt": {
+    "prefix": "GetLookAt",
+    "body": "GetLookAt()$0",
+    "description": "(Client) Method: DModelPanel:GetLookAt() Returns the position the viewing camera is pointing toward."
+  },
+  "DModelPanel:GetModel": {
+    "prefix": "GetModel",
+    "body": "GetModel()$0",
+    "description": "(Client) Method: DModelPanel:GetModel() Gets the model of the rendered entity."
+  },
+  "DModelPanel:LayoutEntity": {
+    "prefix": "LayoutEntity",
+    "body": "LayoutEntity(${1:Entity entity})$0",
+    "description": "(Client) Method: DModelPanel:LayoutEntity() {{Internal}} By default, this function slowly rotates and animates the entity being rendered."
+  },
+  "DModelPanel:PostDrawModel": {
+    "prefix": "PostDrawModel",
+    "body": "PostDrawModel(${1:Entity ent})$0",
+    "description": "(Client) Method: DModelPanel:PostDrawModel() Called when the entity of the <a href=\"http://wiki.garrysmod.com/page/Category:DModelPanel\">DModelPanel</a> was drawn."
+  },
+  "DModelPanel:PreDrawModel": {
+    "prefix": "PreDrawModel",
+    "body": "PreDrawModel(${1:Entity ent})$0",
+    "description": "(Client) Method: DModelPanel:PreDrawModel() Called '''before''' the entity of the <a href=\"http://wiki.garrysmod.com/page/Category:DModelPanel\">DModelPanel</a> is drawn."
+  },
+  "DModelPanel:RunAnimation": {
+    "prefix": "RunAnimation",
+    "body": "RunAnimation()$0",
+    "description": "(Client) Method: DModelPanel:RunAnimation() This function is used in the '''DModelPanel:LayoutEntity'''. It will set the active model to the last set animation using {{ClassFunction|Entity|SetSequence}}. By default, it is the walking animation."
+  },
+  "DModelPanel:SetAmbientLight": {
+    "prefix": "SetAmbientLight",
+    "body": "SetAmbientLight(${1:table color})$0",
+    "description": "(Client) Method: DModelPanel:SetAmbientLight() Sets the ambient lighting used on the rendered entity."
+  },
+  "DModelPanel:SetAnimated": {
+    "prefix": "SetAnimated",
+    "body": "SetAnimated(${1:boolean animated})$0",
+    "description": "(Client) Method: DModelPanel:SetAnimated() Sets whether or not to animate the entity when the default {{ClassFunction|DModelPanel|LayoutEntity}} is called."
+  },
+  "DModelPanel:SetAnimSpeed": {
+    "prefix": "SetAnimSpeed",
+    "body": "SetAnimSpeed(${1:number animSpeed})$0",
+    "description": "(Client) Method: DModelPanel:SetAnimSpeed() Sets the speed used by {{ClassFunction|DModelPanel|RunAnimation}} to advance frame on an entity sequence."
+  },
+  "DModelPanel:SetCamPos": {
+    "prefix": "SetCamPos",
+    "body": "SetCamPos(${1:Vector pos})$0",
+    "description": "(Client) Method: DModelPanel:SetCamPos() Sets the position of the camera."
+  },
+  "DModelPanel:SetColor": {
+    "prefix": "SetColor",
+    "body": "SetColor(${1:table color})$0",
+    "description": "(Client) Method: DModelPanel:SetColor() Sets the color of the rendered entity."
+  },
+  "DModelPanel:SetDirectionalLight": {
+    "prefix": "SetDirectionalLight",
+    "body": "SetDirectionalLight(${1:number direction}, ${2:table color})$0",
+    "description": "(Client) Method: DModelPanel:SetDirectionalLight() Sets the directional lighting used on the rendered entity."
+  },
+  "DModelPanel:SetEntity": {
+    "prefix": "SetEntity",
+    "body": "SetEntity(${1:Entity ent})$0",
+    "description": "(Client) Method: DModelPanel:SetEntity() Sets the entity to be rendered by the model panel."
+  },
+  "DModelPanel:SetFOV": {
+    "prefix": "SetFOV",
+    "body": "SetFOV(${1:number fov})$0",
+    "description": "(Client) Method: DModelPanel:SetFOV() Sets the panel camera's FOV (field of view)."
+  },
+  "DModelPanel:SetLookAng": {
+    "prefix": "SetLookAng",
+    "body": "SetLookAng(${1:Angle ang})$0",
+    "description": "(Client) Method: DModelPanel:SetLookAng() Sets the angles of the camera."
+  },
+  "DModelPanel:SetLookAt": {
+    "prefix": "SetLookAt",
+    "body": "SetLookAt(${1:Vector pos})$0",
+    "description": "(Client) Method: DModelPanel:SetLookAt() Makes the panel's camera face the given position."
+  },
+  "DModelPanel:SetModel": {
+    "prefix": "SetModel",
+    "body": "SetModel(${1:string model})$0",
+    "description": "(Client) Method: DModelPanel:SetModel() "
+  },
+  "DModelSelect:SetModelList": {
+    "prefix": "SetModelList",
+    "body": "SetModelList(${1:table Models}, ${2:string ConVar}, ${3:boolean DontSort}, ${4:boolean DontCallListConVars})$0",
+    "description": "(Client) Method: DModelSelect:SetModelList() Called to set the list of models within the panel element."
+  },
+  "DNotify:GetLife": {
+    "prefix": "GetLife",
+    "body": "GetLife()$0",
+    "description": "(Client) Method: DNotify:GetLife() Returns the display time in seconds of the DNotify. This is set with "
+  },
+  "DNotify:SetLife": {
+    "prefix": "SetLife",
+    "body": "SetLife(${1:number time})$0",
+    "description": "(Client) Method: DNotify:SetLife() Sets the display time in seconds for the DNotify."
+  },
+  "DNumberWang:GetFraction": {
+    "prefix": "GetFraction",
+    "body": "GetFraction(${1:number val})$0",
+    "description": "(Client) Method: DNumberWang:GetFraction() Returns a fraction representing the current number selector value to number selector min/max range ratio. If argument ''val'' is supplied, that number will be computed instead."
+  },
+  "DNumberWang:GetValue": {
+    "prefix": "GetValue",
+    "body": "GetValue()$0",
+    "description": "(Client) Method: DNumberWang:GetValue() Returns the numeric value inside the number selector."
+  },
+  "DNumberWang:HideWang": {
+    "prefix": "HideWang",
+    "body": "HideWang()$0",
+    "description": "(Client) Method: DNumberWang:HideWang() Hides the number selector arrows."
+  },
+  "DNumberWang:OnValueChanged": {
+    "prefix": "OnValueChanged",
+    "body": "OnValueChanged(${1:number val})$0",
+    "description": "(Client) Method: DNumberWang:OnValueChanged() Internal function which is called when the number selector value is changed. This function is empty by default so it needs to be overridden in order to provide functionality. "
+  },
+  "DNumberWang:SetDecimals": {
+    "prefix": "SetDecimals",
+    "body": "SetDecimals(${1:number num})$0",
+    "description": "(Client) Method: DNumberWang:SetDecimals() Sets the amount of decimal places allowed in the number selector."
+  },
+  "DNumberWang:SetFraction": {
+    "prefix": "SetFraction",
+    "body": "SetFraction(${1:number val})$0",
+    "description": "(Client) Method: DNumberWang:SetFraction() Sets the value of the number selector based on the given fraction number."
+  },
+  "DNumberWang:SetMax": {
+    "prefix": "SetMax",
+    "body": "SetMax(${1:number max})$0",
+    "description": "(Client) Method: DNumberWang:SetMax() Sets the maximum numeric value allowed by the number selector."
+  },
+  "DNumberWang:SetMin": {
+    "prefix": "SetMin",
+    "body": "SetMin(${1:number min})$0",
+    "description": "(Client) Method: DNumberWang:SetMin() Sets the minimum numeric value allowed by the number selector."
+  },
+  "DNumberWang:SetMinMax": {
+    "prefix": "SetMinMax",
+    "body": "SetMinMax(${1:number min}, ${2:number max})$0",
+    "description": "(Client) Method: DNumberWang:SetMinMax() Sets the minimum and maximum value allowed by the number selector."
+  },
+  "DNumSlider:OnValueChanged": {
+    "prefix": "OnValueChanged",
+    "body": "OnValueChanged(${1:number value})$0",
+    "description": "(Client) Method: DNumSlider:OnValueChanged() Called when the value of the slider is changed, through code or changing the slider."
+  },
+  "DNumSlider:SetMin": {
+    "prefix": "SetMin",
+    "body": "SetMin(${1:number min})$0",
+    "description": "(Client) Method: DNumSlider:SetMin() Sets the minimum value for the slider"
+  },
+  "DSlider:ValueChanged": {
+    "prefix": "ValueChanged",
+    "body": "ValueChanged(${1:number value})$0",
+    "description": "(Client) Method: DSlider:ValueChanged() {{Internal}} Called when the value has been changed. This will also be called when the user manually changes the value through the text panel."
+  },
+  "DPanel:GetBackgroundColor": {
+    "prefix": "GetBackgroundColor",
+    "body": "GetBackgroundColor()$0",
+    "description": "(Client) Method: DPanel:GetBackgroundColor() Returns the panel's background color."
+  },
+  "DPanel:GetDisabled": {
+    "prefix": "GetDisabled",
+    "body": "GetDisabled()$0",
+    "description": "(Client) Method: DPanel:GetDisabled() Returns whether or not the panel is disabled."
+  },
+  "DPanel:GetDrawBackground": {
+    "prefix": "GetDrawBackground",
+    "body": "GetDrawBackground()$0",
+    "description": "(Client) Method: DPanel:GetDrawBackground() {{Deprecated|You should use {{ClassFunction|DPanel|GetPaintBackground}} instead.}}Returns whether or not the panel background is being drawn. Alias of {{ClassFunction|DPanel|GetPaintBackground}}."
+  },
+  "DPanel:GetPaintBackground": {
+    "prefix": "GetPaintBackground",
+    "body": "GetPaintBackground()$0",
+    "description": "(Client) Method: DPanel:GetPaintBackground() Returns whether or not the panel background is being drawn."
+  },
+  "DPanel:SetBackgroundColor": {
+    "prefix": "SetBackgroundColor",
+    "body": "SetBackgroundColor(${1:table color})$0",
+    "description": "(Client) Method: DPanel:SetBackgroundColor() Sets the background color of the panel."
+  },
+  "DPanel:SetDisabled": {
+    "prefix": "SetDisabled",
+    "body": "SetDisabled(${1:boolean disabled})$0",
+    "description": "(Client) Method: DPanel:SetDisabled() Sets whether or not to disable the panel."
+  },
+  "DPanel:SetDrawBackground": {
+    "prefix": "SetDrawBackground",
+    "body": "SetDrawBackground(${1:boolean draw})$0",
+    "description": "(Client) Method: DPanel:SetDrawBackground() {{Deprecated|You should use {{ClassFunction|DPanel|SetPaintBackground}} instead.}}Sets whether or not to draw the panel background. Alias of {{ClassFunction|DPanel|SetPaintBackground}}."
+  },
+  "DPanel:SetPaintBackground": {
+    "prefix": "SetPaintBackground",
+    "body": "SetPaintBackground(${1:boolean paint})$0",
+    "description": "(Client) Method: DPanel:SetPaintBackground() Sets whether or not to paint/draw the panel background."
+  },
+  "DProgress:GetFraction": {
+    "prefix": "GetFraction",
+    "body": "GetFraction()$0",
+    "description": "(Client) Method: DProgress:GetFraction() Returns the progress bar's fraction. 0 is 0% and 1 is 100%."
+  },
+  "DProgress:SetFraction": {
+    "prefix": "SetFraction",
+    "body": "SetFraction(${1:number fraction})$0",
+    "description": "(Client) Method: DProgress:SetFraction() Sets the fraction of the progress bar. 0 is 0% and 1 is 100%."
+  },
+  "DProperty_Combo:AddChoice": {
+    "prefix": "AddChoice",
+    "body": "AddChoice(${1:string Text}, ${2:any data}, ${3:boolean select=false})$0",
+    "description": "(Client) Method: DProperty_Combo:AddChoice() Add a choice to your combo control."
+  },
+  "DProperty_Combo:DataChanged": {
+    "prefix": "DataChanged",
+    "body": "DataChanged(${1:any data})$0",
+    "description": "(Client) Method: DProperty_Combo:DataChanged() Called after the user selects a new value."
+  },
+  "DProperty_Combo:SetSelected": {
+    "prefix": "SetSelected",
+    "body": "SetSelected(${1:number Id})$0",
+    "description": "(Client) Method: DProperty_Combo:SetSelected() Set the selected option."
+  },
+  "DProperty_Combo:Setup": {
+    "prefix": "Setup",
+    "body": "Setup(${1:string prop=\"Combo\"}, ${2:table data={ text = \"Select...\" }})$0",
+    "description": "(Client) Method: DProperty_Combo:Setup() Sets up a combo control."
+  },
+  "DProperty_VectorColor:Setup": {
+    "prefix": "Setup",
+    "body": "Setup(${1:string =\"VectorColor\"}, ${2:table settings})$0",
+    "description": "(Client) Method: DProperty_VectorColor:Setup() {{Internal}} Called by a property row to setup a color selection control."
+  },
+  "DProperty_VectorColor:SetValue": {
+    "prefix": "SetValue",
+    "body": "SetValue(${1:Vector color})$0",
+    "description": "(Client) Method: DProperty_VectorColor:SetValue() Sets the color value of the property."
+  },
+  "DPropertySheet:AddSheet": {
+    "prefix": "AddSheet",
+    "body": "AddSheet(${1:string name}, ${2:Panel pnl}, ${3:string icon=nil}, ${4:boolean noStretchX=false}, ${5:boolean noStretchY=false}, ${6:string tooltip=nil})$0",
+    "description": "(Client) Method: DPropertySheet:AddSheet() Adds a new tab."
+  },
+  "DPropertySheet:SetFadeTime": {
+    "prefix": "SetFadeTime",
+    "body": "SetFadeTime(${1:number time=0.1})$0",
+    "description": "(Client) Method: DPropertySheet:SetFadeTime() Sets the amount of time (in seconds) it takes to fade between tabs."
+  },
+  "DRGBPicker:GetRGB": {
+    "prefix": "GetRGB",
+    "body": "GetRGB()$0",
+    "description": "(Client) Method: DRGBPicker:GetRGB() Returns the color currently set on the color picker."
+  },
+  "DRGBPicker:OnChange": {
+    "prefix": "OnChange",
+    "body": "OnChange(${1:table col})$0",
+    "description": "(Client) Method: DRGBPicker:OnChange() Function which is called when the cursor is clicked and/or moved on the color picker. Meant to be overridden."
+  },
+  "DRGBPicker:SetRGB": {
+    "prefix": "SetRGB",
+    "body": "SetRGB(${1:table color})$0",
+    "description": "(Client) Method: DRGBPicker:SetRGB() Sets the color stored in the color picker."
+  },
+  "DScrollPanel:AddItem": {
+    "prefix": "AddItem",
+    "body": "AddItem(${1:Panel pnl})$0",
+    "description": "(Client) Method: DScrollPanel:AddItem() Parents the passed panel to the DScrollPanel's canvas."
+  },
+  "DScrollPanel:Clear": {
+    "prefix": "Clear",
+    "body": "Clear()$0",
+    "description": "(Client) Method: DScrollPanel:Clear() Clears all childs from the DScrollPanel"
+  },
+  "DScrollPanel:GetCanvas": {
+    "prefix": "GetCanvas",
+    "body": "GetCanvas()$0",
+    "description": "(Client) Method: DScrollPanel:GetCanvas() Returns the canvas ( The panel all child panels are parented to ) of the DScrollPanel."
+  },
+  "DScrollPanel:GetPadding": {
+    "prefix": "GetPadding",
+    "body": "GetPadding()$0",
+    "description": "(Client) Method: DScrollPanel:GetPadding() Gets the DScrollPanels padding"
+  },
+  "DScrollPanel:GetVBar": {
+    "prefix": "GetVBar",
+    "body": "GetVBar()$0",
+    "description": "(Client) Method: DScrollPanel:GetVBar() Returns the vertical scroll bar of the panel."
+  },
+  "DScrollPanel:InnerWidth": {
+    "prefix": "InnerWidth",
+    "body": "InnerWidth()$0",
+    "description": "(Client) Method: DScrollPanel:InnerWidth() Return the width of the DScrollPanel's canvas."
+  },
+  "DScrollPanel:Rebuild": {
+    "prefix": "Rebuild",
+    "body": "Rebuild()$0",
+    "description": "(Client) Method: DScrollPanel:Rebuild() "
+  },
+  "DScrollPanel:ScrollToChild": {
+    "prefix": "ScrollToChild",
+    "body": "ScrollToChild(${1:Panel panel})$0",
+    "description": "(Client) Method: DScrollPanel:ScrollToChild() Scrolls to the given child"
+  },
+  "DScrollPanel:SetCanvas": {
+    "prefix": "SetCanvas",
+    "body": "SetCanvas(${1:Panel canvas})$0",
+    "description": "(Client) Method: DScrollPanel:SetCanvas() {{Internal}}Sets the canvas of the DScrollPanel."
+  },
+  "DScrollPanel:SetPadding": {
+    "prefix": "SetPadding",
+    "body": "SetPadding(${1:number padding})$0",
+    "description": "(Client) Method: DScrollPanel:SetPadding() Sets the DScrollPanel's padding. This function appears to be unused."
+  },
+  "DScrollPanel:SizeToContents": {
+    "prefix": "SizeToContents",
+    "body": "SizeToContents()$0",
+    "description": "(Client) Method: DScrollPanel:SizeToContents() Sets the DScrollPanels size to the size of the contents"
+  },
+  "DShape:SetType": {
+    "prefix": "SetType",
+    "body": "SetType(${1:string type})$0",
+    "description": "(Client) Method: DShape:SetType() Sets the shape to be drawn."
+  },
+  "DSprite:GetColor": {
+    "prefix": "GetColor",
+    "body": "GetColor()$0",
+    "description": "(Client) Method: DSprite:GetColor() Gets the color the sprite is using as a modifier."
+  },
+  "DSprite:GetMaterial": {
+    "prefix": "GetMaterial",
+    "body": "GetMaterial()$0",
+    "description": "(Client) Method: DSprite:GetMaterial() Gets the material the sprite is using."
+  },
+  "DSprite:GetRotation": {
+    "prefix": "GetRotation",
+    "body": "GetRotation()$0",
+    "description": "(Client) Method: DSprite:GetRotation() Gets the 2D rotation angle of the sprite, in the plane of the screen."
+  },
+  "DSprite:SetColor": {
+    "prefix": "SetColor",
+    "body": "SetColor(${1:table color})$0",
+    "description": "(Client) Method: DSprite:SetColor() Sets the color modifier for the sprite."
+  },
+  "DSprite:SetMaterial": {
+    "prefix": "SetMaterial",
+    "body": "SetMaterial(${1:IMaterial material})$0",
+    "description": "(Client) Method: DSprite:SetMaterial() Sets the source material for the sprite."
+  },
+  "DSprite:SetRotation": {
+    "prefix": "SetRotation",
+    "body": "SetRotation(${1:number ang})$0",
+    "description": "(Client) Method: DSprite:SetRotation() Sets the 2D rotation angle of the sprite, in the plane of the screen."
+  },
+  "DTextEntry:AllowInput": {
+    "prefix": "AllowInput",
+    "body": "AllowInput(${1:string char})$0",
+    "description": "(Client) Method: DTextEntry:AllowInput() Called whenever the value of the panel has been updated (whether by user input or otherwise)."
+  },
+  "DTextEntry:CheckNumeric": {
+    "prefix": "CheckNumeric",
+    "body": "CheckNumeric(${1:string strValue})$0",
+    "description": "(Client) Method: DTextEntry:CheckNumeric() Returns whether a string is numeric or not."
+  },
+  "DTextEntry:GetCursorColor": {
+    "prefix": "GetCursorColor",
+    "body": "GetCursorColor()$0",
+    "description": "(Client) Method: DTextEntry:GetCursorColor() Returns the cursor color of a DTextEntry."
+  },
+  "DTextEntry:GetNumeric": {
+    "prefix": "GetNumeric",
+    "body": "GetNumeric()$0",
+    "description": "(Client) Method: DTextEntry:GetNumeric() Returns whether only numeric characters (123456789.-) can be entered into the DTextEntry."
+  },
+  "DTextEntry:GetTextColor": {
+    "prefix": "GetTextColor",
+    "body": "GetTextColor()$0",
+    "description": "(Client) Method: DTextEntry:GetTextColor() Returns the text color of a DTextEntry."
+  },
+  "DTextEntry:GetUpdateOnType": {
+    "prefix": "GetUpdateOnType",
+    "body": "GetUpdateOnType()$0",
+    "description": "(Client) Method: DTextEntry:GetUpdateOnType() Returns whether the <a href=\"http://wiki.garrysmod.com/page/Category:DTextEntry}} is set to run {{ClassFunction|DTextEntry|OnValueChange\">DTextEntry}} is set to run {{ClassFunction|DTextEntry|OnValueChange</a> every time a character is typed or deleted or only when Enter is pressed."
+  },
+  "DTextEntry:IsEditing": {
+    "prefix": "IsEditing",
+    "body": "IsEditing()$0",
+    "description": "(Client) Method: DTextEntry:IsEditing() Returns whether this DTextEntry is being edited or not. (i.e. has focus)"
+  },
+  "DTextEntry:OnChange": {
+    "prefix": "OnChange",
+    "body": "OnChange()$0",
+    "description": "(Client) Method: DTextEntry:OnChange() Called internally by {{ClassFunction|DTextEntry|OnTextChanged}} when the user modifies the text in the DTextEntry."
+  },
+  "DTextEntry:OnEnter": {
+    "prefix": "OnEnter",
+    "body": "OnEnter()$0",
+    "description": "(Client) Method: DTextEntry:OnEnter() Called whenever enter is pressed on a DTextEntry."
+  },
+  "DTextEntry:OnKeyCodeTyped": {
+    "prefix": "OnKeyCodeTyped",
+    "body": "OnKeyCodeTyped(${1:number keyCode})$0",
+    "description": "(Client) Method: DTextEntry:OnKeyCodeTyped() Called whenever a valid character is typed while the text entry is focused."
+  },
+  "DTextEntry:OnTextChanged": {
+    "prefix": "OnTextChanged",
+    "body": "OnTextChanged(${1:boolean noMenuRemoval})$0",
+    "description": "(Client) Method: DTextEntry:OnTextChanged() {{Internal}}Called internally when the text inside the DTextEntry changes."
+  },
+  "DTextEntry:OnValueChange": {
+    "prefix": "OnValueChange",
+    "body": "OnValueChange(${1:string value})$0",
+    "description": "(Client) Method: DTextEntry:OnValueChange() Called internally when the text in the DTextEntry changes."
+  },
+  "DTextEntry:SetDisabled": {
+    "prefix": "SetDisabled",
+    "body": "SetDisabled(${1:boolean disabled})$0",
+    "description": "(Client) Method: DTextEntry:SetDisabled() {{Deprecated|Use {{ClassFunction|Panel|SetEnabled}} instead.}}"
+  },
+  "DTextEntry:SetEditable": {
+    "prefix": "SetEditable",
+    "body": "SetEditable(${1:boolean enabled})$0",
+    "description": "(Client) Method: DTextEntry:SetEditable() Disables Input on a DTextEntry. This differs from {{ClassFunction|DTextEntry|SetDisabled}} - SetEditable will not affect the appearance of the textbox."
+  },
+  "DTextEntry:SetFont": {
+    "prefix": "SetFont",
+    "body": "SetFont(${1:string font})$0",
+    "description": "(Client) Method: DTextEntry:SetFont() Changes the font of the DTextEntry."
+  },
+  "DTextEntry:SetNumeric": {
+    "prefix": "SetNumeric",
+    "body": "SetNumeric(${1:boolean numericOnly})$0",
+    "description": "(Client) Method: DTextEntry:SetNumeric() Sets whether or not to decline non-numeric characters as input."
+  },
+  "DTextEntry:SetUpdateOnType": {
+    "prefix": "SetUpdateOnType",
+    "body": "SetUpdateOnType(${1:boolean updateOnType})$0",
+    "description": "(Client) Method: DTextEntry:SetUpdateOnType() Sets whether we should fire {{ClassFunction|DTextEntry|OnValueChange}} every time we type or delete a character or only when Enter is pressed."
+  },
+  "DTileLayout:ClearTiles": {
+    "prefix": "ClearTiles",
+    "body": "ClearTiles()$0",
+    "description": "(Client) Method: DTileLayout:ClearTiles() {{Internal}} Clears the panel's tile table. Used by {{ClassFunction|DTileLayout|LayoutTiles}}."
+  },
+  "DTileLayout:ConsumeTiles": {
+    "prefix": "ConsumeTiles",
+    "body": "ConsumeTiles(${1:number x}, ${2:number y}, ${3:number w}, ${4:number h})$0",
+    "description": "(Client) Method: DTileLayout:ConsumeTiles() {{Internal}} Called to designate a range of tiles as occupied by a panel."
+  },
+  "DTileLayout:Copy": {
+    "prefix": "Copy",
+    "body": "Copy()$0",
+    "description": "(Client) Method: DTileLayout:Copy() Creates and returns an exact copy of the DTileLayout."
+  },
+  "DTileLayout:CopyContents": {
+    "prefix": "CopyContents",
+    "body": "CopyContents(${1:Panel source})$0",
+    "description": "(Client) Method: DTileLayout:CopyContents() Creates copies of all the children from the given panel object and parents them to this one."
+  },
+  "DTileLayout:FindFreeTile": {
+    "prefix": "FindFreeTile",
+    "body": "FindFreeTile(${1:number x}, ${2:number y}, ${3:number w}, ${4:number h})$0",
+    "description": "(Client) Method: DTileLayout:FindFreeTile() {{Internal}} Finds the coordinates of the first group of free tiles that fit the given size."
+  },
+  "DTileLayout:FitsInTile": {
+    "prefix": "FitsInTile",
+    "body": "FitsInTile(${1:number x}, ${2:number y}, ${3:number w}, ${4:number h})$0",
+    "description": "(Client) Method: DTileLayout:FitsInTile() {{Internal}} Determines if a group of tiles is vacant."
+  },
+  "DTileLayout:GetBaseSize": {
+    "prefix": "GetBaseSize",
+    "body": "GetBaseSize()$0",
+    "description": "(Client) Method: DTileLayout:GetBaseSize() Returns the size of each single tile, set with {{ClassFunction|DTileLayout|SetBaseSize}}."
+  },
+  "DTileLayout:GetMinHeight": {
+    "prefix": "GetMinHeight",
+    "body": "GetMinHeight()$0",
+    "description": "(Client) Method: DTileLayout:GetMinHeight() Returns the minimum height the DTileLayout can resize to."
+  },
+  "DTileLayout:GetTile": {
+    "prefix": "GetTile",
+    "body": "GetTile(${1:number x}, ${2:number y})$0",
+    "description": "(Client) Method: DTileLayout:GetTile() {{Internal}} Gets the occupied state of a tile."
+  },
+  "DTileLayout:Layout": {
+    "prefix": "Layout",
+    "body": "Layout()$0",
+    "description": "(Client) Method: DTileLayout:Layout() Resets the last width/height info, and invalidates the panel's layout, causing it to recalculate all child positions. It is called whenever a child is added or removed, and can be called to refresh the panel."
+  },
+  "DTileLayout:LayoutTiles": {
+    "prefix": "LayoutTiles",
+    "body": "LayoutTiles()$0",
+    "description": "(Client) Method: DTileLayout:LayoutTiles() {{Internal}} Called by {{HookFunction|PANEL|PerformLayout}} to arrange and lay out the child panels, if it has changed in size."
+  },
+  "DTileLayout:OnModified": {
+    "prefix": "OnModified",
+    "body": "OnModified()$0",
+    "description": "(Client) Method: DTileLayout:OnModified() Called when anything is dropped on or rearranged within the DTileLayout. You should override this."
+  },
+  "DTileLayout:SetBaseSize": {
+    "prefix": "SetBaseSize",
+    "body": "SetBaseSize(${1:number size})$0",
+    "description": "(Client) Method: DTileLayout:SetBaseSize() Sets the size of a single tile. If a child panel is larger than this size, it will occupy several tiles."
+  },
+  "DTileLayout:SetMinHeight": {
+    "prefix": "SetMinHeight",
+    "body": "SetMinHeight(${1:number minH})$0",
+    "description": "(Client) Method: DTileLayout:SetMinHeight() Determines the minimum height the DTileLayout will resize to. This is useful if child panels will be added/removed often."
+  },
+  "DTileLayout:SetTile": {
+    "prefix": "SetTile",
+    "body": "SetTile(${1:number x}, ${2:number y}, ${3:any state})$0",
+    "description": "(Client) Method: DTileLayout:SetTile() {{Internal}} Called to set the occupied state of a tile."
+  },
+  "DTree:GetIndentSize": {
+    "prefix": "GetIndentSize",
+    "body": "GetIndentSize()$0",
+    "description": "(Client) Method: DTree:GetIndentSize() Get the indent size of the DTree. Currently does nothing."
+  },
+  "DTree:GetSelectedItem": {
+    "prefix": "GetSelectedItem",
+    "body": "GetSelectedItem()$0",
+    "description": "(Client) Method: DTree:GetSelectedItem() Returns the currently selected node."
+  },
+  "DTree:GetShowIcons": {
+    "prefix": "GetShowIcons",
+    "body": "GetShowIcons()$0",
+    "description": "(Client) Method: DTree:GetShowIcons() Returns whether or not the [[Silkicons]] next to each node of the DTree will be displayed."
+  },
+  "DTree:OnNodeSelected": {
+    "prefix": "OnNodeSelected",
+    "body": "OnNodeSelected(${1:Panel node})$0",
+    "description": "(Client) Method: DTree:OnNodeSelected() This function is called when a node within a tree is selected."
+  },
+  "DTree:Root": {
+    "prefix": "Root",
+    "body": "Root()$0",
+    "description": "(Client) Method: DTree:Root() Returns the root <a href=\"http://wiki.garrysmod.com/page/Category:DTree_Node\">DTree_Node</a>, the node that is the parent to all other nodes of the DTree."
+  },
+  "DTree:SetIndentSize": {
+    "prefix": "SetIndentSize",
+    "body": "SetIndentSize(${1:number size})$0",
+    "description": "(Client) Method: DTree:SetIndentSize() Set the indent size of the DTree. Currently does nothing."
+  },
+  "DTree:SetSelectedItem": {
+    "prefix": "SetSelectedItem",
+    "body": "SetSelectedItem(${1:Panel node})$0",
+    "description": "(Client) Method: DTree:SetSelectedItem() Set the currently selected top-level node."
+  },
+  "DTree:SetShowIcons": {
+    "prefix": "SetShowIcons",
+    "body": "SetShowIcons(${1:boolean show})$0",
+    "description": "(Client) Method: DTree:SetShowIcons() Sets whether or not the [[Silkicons]] next to each node of the DTree will be displayed."
+  },
+  "DTree:ShowIcons": {
+    "prefix": "ShowIcons",
+    "body": "ShowIcons()$0",
+    "description": "(Client) Method: DTree:ShowIcons() Returns whether or not the [[Silkicons]] next to each node of the DTree will be displayed."
+  },
+  "IconEditor:AboveLayout": {
+    "prefix": "AboveLayout",
+    "body": "AboveLayout()$0",
+    "description": "(Client) Method: IconEditor:AboveLayout() Applies the top-down view camera settings for the model in the <a href=\"http://wiki.garrysmod.com/page/Category:DAdjustableModelPanel\">DAdjustableModelPanel</a>."
+  },
+  "IconEditor:BestGuessLayout": {
+    "prefix": "BestGuessLayout",
+    "body": "BestGuessLayout()$0",
+    "description": "(Client) Method: IconEditor:BestGuessLayout() Applies the best camera settings for the model in the <a href=\"http://wiki.garrysmod.com/page/Category:DAdjustableModelPanel}}, using the values returned by {{GlobalFunction|PositionSpawnIcon\">DAdjustableModelPanel}}, using the values returned by {{GlobalFunction|PositionSpawnIcon</a>."
+  },
+  "IconEditor:FillAnimations": {
+    "prefix": "FillAnimations",
+    "body": "FillAnimations(${1:Entity ent})$0",
+    "description": "(Client) Method: IconEditor:FillAnimations() {{Internal}} Fills the <a href=\"http://wiki.garrysmod.com/page/Category:DListView}} on the left of the editor with the model entity's animation list. Called by {{ClassFunction|IconEditor|Refresh\">DListView}} on the left of the editor with the model entity's animation list. Called by {{ClassFunction|IconEditor|Refresh</a>."
+  },
+  "IconEditor:FullFrontalLayout": {
+    "prefix": "FullFrontalLayout",
+    "body": "FullFrontalLayout()$0",
+    "description": "(Client) Method: IconEditor:FullFrontalLayout() Applies the front view camera settings for the model in the <a href=\"http://wiki.garrysmod.com/page/Category:DAdjustableModelPanel\">DAdjustableModelPanel</a>."
+  },
+  "IconEditor:OriginLayout": {
+    "prefix": "OriginLayout",
+    "body": "OriginLayout()$0",
+    "description": "(Client) Method: IconEditor:OriginLayout() Places the camera at the origin (0,0,0), relative to the entity, in the <a href=\"http://wiki.garrysmod.com/page/Category:DAdjustableModelPanel\">DAdjustableModelPanel</a>."
+  },
+  "IconEditor:Refresh": {
+    "prefix": "Refresh",
+    "body": "Refresh()$0",
+    "description": "(Client) Method: IconEditor:Refresh() Updates the internal <a href=\"http://wiki.garrysmod.com/page/Category:DAdjustableModelPanel}} and {{Type|SpawnIcon\">DAdjustableModelPanel}} and {{Type|SpawnIcon</a>. "
+  },
+  "IconEditor:RenderIcon": {
+    "prefix": "RenderIcon",
+    "body": "RenderIcon()$0",
+    "description": "(Client) Method: IconEditor:RenderIcon() Re-renders the <a href=\"http://wiki.garrysmod.com/page/Category:SpawnIcon\">SpawnIcon</a>."
+  },
+  "IconEditor:RightLayout": {
+    "prefix": "RightLayout",
+    "body": "RightLayout()$0",
+    "description": "(Client) Method: IconEditor:RightLayout() Applies the right side view camera settings for the model in the <a href=\"http://wiki.garrysmod.com/page/Category:DAdjustableModelPanel\">DAdjustableModelPanel</a>."
+  },
+  "IconEditor:SetDefaultLighting": {
+    "prefix": "SetDefaultLighting",
+    "body": "SetDefaultLighting()$0",
+    "description": "(Client) Method: IconEditor:SetDefaultLighting() {{Internal}} Sets up the default ambient and directional lighting for the <a href=\"http://wiki.garrysmod.com/page/Category:DAdjustableModelPanel}}. Called by {{ClassFunction|IconEditor|Refresh\">DAdjustableModelPanel}}. Called by {{ClassFunction|IconEditor|Refresh</a>."
+  },
+  "IconEditor:SetFromEntity": {
+    "prefix": "SetFromEntity",
+    "body": "SetFromEntity(${1:Entity ent})$0",
+    "description": "(Client) Method: IconEditor:SetFromEntity() Sets the editor's model and icon from an entity. Alternative to {{ClassFunction|IconEditor|SetIcon}}, with uses a <a href=\"http://wiki.garrysmod.com/page/Category:SpawnIcon\">SpawnIcon</a>."
+  },
+  "IconEditor:SetIcon": {
+    "prefix": "SetIcon",
+    "body": "SetIcon(${1:Panel icon})$0",
+    "description": "(Client) Method: IconEditor:SetIcon() Sets the <a href=\"http://wiki.garrysmod.com/page/Category:SpawnIcon}} to modify. You should call {{ClassFunction|Panel|Refresh\">SpawnIcon}} to modify. You should call {{ClassFunction|Panel|Refresh</a> immediately after this, as the user will not be able to make changes to the icon beforehand."
+  },
+  "IconEditor:UpdateEntity": {
+    "prefix": "UpdateEntity",
+    "body": "UpdateEntity(${1:Entity ent})$0",
+    "description": "(Client) Method: IconEditor:UpdateEntity() {{Internal}} Updates the entity being rendered in the internal <a href=\"http://wiki.garrysmod.com/page/Category:DAdjustableModelPanel}}. Called by the model panel's {{ClassFunction|DModelPanel|LayoutEntity\">DAdjustableModelPanel}}. Called by the model panel's {{ClassFunction|DModelPanel|LayoutEntity</a> method."
+  },
+  "Material:SetAlpha": {
+    "prefix": "SetAlpha",
+    "body": "SetAlpha(${1:number alpha})$0",
+    "description": "(Client) Method: Material:SetAlpha() Sets the alpha value of the Material panel."
+  }
+}
