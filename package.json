@@ -1,7 +1,7 @@
 {
     "name": "glua",
     "description": "GLua language support for Visual Studio Code",
-    "version": "0.1.1",
+    "version": "1.0.0",
     "engines": {
         "vscode": "^0.10.1"
     },
@@ -50,7 +50,8 @@
                 ],
                 "extensions": [
                     ".lua"
-                ]
+                ],
+                "configuration": "./language-configuration.json"
             }
         ],
         "grammars": [
