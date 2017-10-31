@@ -2,1661 +2,1551 @@
   "EFFECT:EndTouch": {
     "prefix": "EndTouch",
     "body": "EndTouch()$0\r\n",
-    "description": "(Client) Method: EFFECT:EndTouch() "
+    "description": "(Client) Method: EFFECT:EndTouch\n\n"
   },
   "EFFECT:Init": {
     "prefix": "Init",
     "body": "Init(${1:CEffectData effectData})$0\r\n",
-    "description": "(Client) Method: EFFECT:Init() Called when the effect is created."
+    "description": "(Client) Method: EFFECT:Init\n\nCalled when the effect is created."
   },
   "EFFECT:PhysicsCollide": {
     "prefix": "PhysicsCollide",
     "body": "PhysicsCollide(${1:table colData}, ${2:PhysObj collider})$0\r\n",
-    "description": "(Client) Method: EFFECT:PhysicsCollide() Called when the effect collides with anything."
+    "description": "(Client) Method: EFFECT:PhysicsCollide\n\nCalled when the effect collides with anything."
   },
   "EFFECT:Render": {
     "prefix": "Render",
     "body": "Render()$0\r\n",
-    "description": "(Client) Method: EFFECT:Render() Called when the effect should be rendered."
+    "description": "(Client) Method: EFFECT:Render\n\nCalled when the effect should be rendered."
   },
   "EFFECT:StartTouch": {
     "prefix": "StartTouch",
     "body": "StartTouch()$0\r\n",
-    "description": "(Client) Method: EFFECT:StartTouch() "
+    "description": "(Client) Method: EFFECT:StartTouch\n\n"
   },
   "EFFECT:Think": {
     "prefix": "Think",
     "body": "Think()$0\r\n",
-    "description": "(Client) Method: EFFECT:Think() Called when the effect should think, return false to kill the effect."
+    "description": "(Client) Method: EFFECT:Think\n\nCalled when the effect should think, return false to kill the effect."
   },
   "EFFECT:Touch": {
     "prefix": "Touch",
     "body": "Touch()$0\r\n",
-    "description": "(Client) Method: EFFECT:Touch() "
+    "description": "(Client) Method: EFFECT:Touch\n\n"
   },
   "ENT:AcceptInput": {
     "prefix": "AcceptInput",
     "body": "AcceptInput(${1:string inputName}, ${2:Entity activator}, ${3:Entity called}, ${4:string data})$0\r\n",
-    "description": "(Server) Method: ENT:AcceptInput() Called when another entity fires an event to this entity."
+    "description": "(Server) Method: ENT:AcceptInput\n\nCalled when another entity fires an event to this entity."
   },
   "ENT:": {
     "prefix": "",
     "body": "(${1:Entity other})$0\r\n",
-    "description": "(Server) Method: ENT:() Called when the entity is blocked."
+    "description": "(Server) Method: ENT:\n\nCalled when the entity is blocked."
   },
   "ENT:CanProperty": {
     "prefix": "CanProperty",
     "body": "CanProperty(${1:Player ply}, ${2:string property})$0\r\n",
-    "description": "(Shared) Method: ENT:CanProperty() Controls if a property can be used on this entity or not."
+    "description": "(Shared) Method: ENT:CanProperty\n\nControls if a property can be used on this entity or not."
   },
   "ENT:DoingEngineSchedule": {
     "prefix": "DoingEngineSchedule",
     "body": "DoingEngineSchedule()$0\r\n",
-    "description": "(Server) Method: ENT:DoingEngineSchedule() Called whenever an engine schedule is being ran."
-  },
-  "ENT:DoSchedule": {
-    "prefix": "DoSchedule",
-    "body": "DoSchedule(${1:table sched})$0\r\n",
-    "description": "(Server) Method: ENT:DoSchedule() Runs a Lua schedule. Runs tasks inside the schedule."
+    "description": "(Server) Method: ENT:DoingEngineSchedule\n\nCalled whenever an engine schedule is being ran."
   },
   "ENT:Draw": {
     "prefix": "Draw",
     "body": "Draw(${1:number flags})$0\r\n",
-    "description": "(Client) Method: ENT:Draw() Called if and when the entity should be drawn opaquely, based on the {{ClassFunction|Entity|GetRenderGroup}} of the entity."
-  },
-  "ENT:DrawTranslucent": {
-    "prefix": "DrawTranslucent",
-    "body": "DrawTranslucent()$0\r\n",
-    "description": "(Client) Method: ENT:DrawTranslucent() Called when the entity should be drawn translucently."
+    "description": "(Client) Method: ENT:Draw\n\nCalled if and when the entity should be drawn opaquely, based on the Entity.GetRenderGroup of the entity."
   },
   "ENT:EndTouch": {
     "prefix": "EndTouch",
     "body": "EndTouch(${1:Entity entity})$0\r\n",
-    "description": "(Server) Method: ENT:EndTouch() Called when the entity stops touching another entity."
+    "description": "(Server) Method: ENT:EndTouch\n\nCalled when the entity stops touching another entity."
   },
   "ENT:ExpressionFinished": {
     "prefix": "ExpressionFinished",
     "body": "ExpressionFinished(${1:string strExp})$0\r\n",
-    "description": "(Server) Method: ENT:ExpressionFinished() {{Validate}}Called when an NPC's expression has finished."
+    "description": "(Server) Method: ENT:ExpressionFinished\n\nCalled when an NPC's expression has finished."
   },
   "ENT:GetAttackSpread": {
     "prefix": "GetAttackSpread",
     "body": "GetAttackSpread(${1:Entity wep}, ${2:Entity target})$0\r\n",
-    "description": "(Server) Method: ENT:GetAttackSpread() {{Validate}} Called to determine how good an NPC is at using a particular weapon."
+    "description": "(Server) Method: ENT:GetAttackSpread\n\n Called to determine how good an NPC is at using a particular weapon."
   },
   "ENT:GetRelationship": {
     "prefix": "GetRelationship",
     "body": "GetRelationship(${1:Entity ent})$0\r\n",
-    "description": "(Server) Method: ENT:GetRelationship() Called when scripted NPC needs to check how he \"feels\" against another entity."
+    "description": "(Server) Method: ENT:GetRelationship\n\nCalled when scripted NPC needs to check how he \"feels\" against another entity."
   },
   "ENT:ImpactTrace": {
     "prefix": "ImpactTrace",
     "body": "ImpactTrace(${1:table traceResult}, ${2:number damageType}, ${3:string customImpactName=nil})$0\r\n",
-    "description": "(Client) Method: ENT:ImpactTrace() Called when a bullet trace hits this entity and allows you to override the default behavior by returning true."
+    "description": "(Client) Method: ENT:ImpactTrace\n\nCalled when a bullet trace hits this entity and allows you to override the default behavior by returning true."
   },
   "ENT:Initialize": {
     "prefix": "Initialize",
     "body": "Initialize()$0\r\n",
-    "description": "(Shared) Method: ENT:Initialize() Called when the entity is created. This is called when you {{ClassFunction|Entity|Spawn}} the custom entity."
-  },
-  "ENT:KeyValue": {
-    "prefix": "KeyValue",
-    "body": "KeyValue(${1:string key}, ${2:string value})$0\r\n",
-    "description": "(Server) Method: ENT:KeyValue() Called when the engine sets a value for this entity."
+    "description": "(Shared) Method: ENT:Initialize\n\nCalled when the entity is created. This is called when you Entity.Spawn the custom entity."
   },
   "ENT:NextTask": {
     "prefix": "NextTask",
     "body": "NextTask(${1:table sched})$0\r\n",
-    "description": "(Server) Method: ENT:NextTask() Start the next task in specific schedule."
+    "description": "(Server) Method: ENT:NextTask\n\nStart the next task in specific schedule."
   },
   "ENT:OnCondition": {
     "prefix": "OnCondition",
     "body": "OnCondition(${1:number conditionID})$0\r\n",
-    "description": "(Server) Method: ENT:OnCondition() Called each time the NPC updates its condition."
-  },
-  "ENT:OnRemove": {
-    "prefix": "OnRemove",
-    "body": "OnRemove()$0\r\n",
-    "description": "(Shared) Method: ENT:OnRemove() Called when the entity is about to be removed."
+    "description": "(Server) Method: ENT:OnCondition\n\nCalled each time the NPC updates its condition."
   },
   "ENT:OnTakeDamage": {
     "prefix": "OnTakeDamage",
     "body": "OnTakeDamage(${1:CTakeDamageInfo damage})$0\r\n",
-    "description": "(Server) Method: ENT:OnTakeDamage() Called when the entity is taking damage."
+    "description": "(Server) Method: ENT:OnTakeDamage\n\nCalled when the entity is taking damage."
   },
   "ENT:OnTaskComplete": {
     "prefix": "OnTaskComplete",
     "body": "OnTaskComplete()$0\r\n",
-    "description": "(Server) Method: ENT:OnTaskComplete() Called from the engine when TaskComplete is called."
+    "description": "(Server) Method: ENT:OnTaskComplete\n\nCalled from the engine when TaskComplete is called."
   },
   "ENT:PassesTriggerFilters": {
     "prefix": "PassesTriggerFilters",
     "body": "PassesTriggerFilters(${1:Entity ent})$0\r\n",
-    "description": "(Server) Method: ENT:PassesTriggerFilters() Polls whenever the entity should trigger the brush."
+    "description": "(Server) Method: ENT:PassesTriggerFilters\n\nPolls whenever the entity should trigger the brush."
   },
   "ENT:PhysicsUpdate": {
     "prefix": "PhysicsUpdate",
     "body": "PhysicsUpdate(${1:PhysObj phys})$0\r\n",
-    "description": "(Shared) Method: ENT:PhysicsUpdate() Called whenever the physics of the entity are updated."
+    "description": "(Shared) Method: ENT:PhysicsUpdate\n\nCalled whenever the physics of the entity are updated."
   },
   "ENT:PostEntityCopy": {
     "prefix": "PostEntityCopy",
     "body": "PostEntityCopy()$0\r\n",
-    "description": "(Server) Method: ENT:PostEntityCopy() Called after the duplicator finished copying the entity"
+    "description": "(Server) Method: ENT:PostEntityCopy\n\nCalled after the duplicator finished copying the entity"
   },
   "ENT:PreEntityCopy": {
     "prefix": "PreEntityCopy",
     "body": "PreEntityCopy()$0\r\n",
-    "description": "(Server) Method: ENT:PreEntityCopy() Called before the duplicator copies the entity."
-  },
-  "ENT:RenderOverride": {
-    "prefix": "RenderOverride",
-    "body": "RenderOverride()$0\r\n",
-    "description": "(Client) Method: ENT:RenderOverride() Called instead of the engine drawing function of the entity."
+    "description": "(Server) Method: ENT:PreEntityCopy\n\nCalled before the duplicator copies the entity."
   },
   "ENT:RunAI": {
     "prefix": "RunAI",
     "body": "RunAI()$0\r\n",
-    "description": "(Server) Method: ENT:RunAI() Called from the engine every 0.1 seconds."
+    "description": "(Server) Method: ENT:RunAI\n\nCalled from the engine every 0.1 seconds."
   },
   "ENT:RunTask": {
     "prefix": "RunTask",
     "body": "RunTask(${1:table task})$0\r\n",
-    "description": "(Server) Method: ENT:RunTask() Called every think on running task."
+    "description": "(Server) Method: ENT:RunTask\n\nCalled every think on running task."
   },
   "ENT:ScheduleFinished": {
     "prefix": "ScheduleFinished",
     "body": "ScheduleFinished()$0\r\n",
-    "description": "(Server) Method: ENT:ScheduleFinished() Called whenever a schedule is finished."
+    "description": "(Server) Method: ENT:ScheduleFinished\n\nCalled whenever a schedule is finished."
   },
   "ENT:SelectSchedule": {
     "prefix": "SelectSchedule",
     "body": "SelectSchedule(${1:number iNPCState})$0\r\n",
-    "description": "(Server) Method: ENT:SelectSchedule() Set the schedule we should be playing right now. "
+    "description": "(Server) Method: ENT:SelectSchedule\n\nSet the schedule we should be playing right now. "
   },
   "ENT:SetTask": {
     "prefix": "SetTask",
     "body": "SetTask(${1:table task})$0\r\n",
-    "description": "(Server) Method: ENT:SetTask() Sets the current task."
+    "description": "(Server) Method: ENT:SetTask\n\nSets the current task."
   },
   "ENT:SetupDataTables": {
     "prefix": "SetupDataTables",
     "body": "SetupDataTables()$0\r\n",
-    "description": "(Shared) Method: ENT:SetupDataTables() Called when the entity should set up its [[Networking Entities| Data Tables]]."
+    "description": "(Shared) Method: ENT:SetupDataTables\n\nCalled when the entity should set up its [[Networking Entities. Data Tables]]."
   },
   "ENT:SpawnFunction": {
     "prefix": "SpawnFunction",
     "body": "SpawnFunction(${1:Player ply}, ${2:table tr}, ${3:string ClassName})$0\r\n",
-    "description": "(Server) Method: ENT:SpawnFunction() This is the spawn function. It's called when a client calls the entity to be spawned."
+    "description": "(Server) Method: ENT:SpawnFunction\n\nThis is the spawn function. It's called when a client calls the entity to be spawned."
   },
   "ENT:StartEngineSchedule": {
     "prefix": "StartEngineSchedule",
     "body": "StartEngineSchedule(${1:number scheduleID})$0\r\n",
-    "description": "(Server) Method: ENT:StartEngineSchedule() Starts an engine schedule."
+    "description": "(Server) Method: ENT:StartEngineSchedule\n\nStarts an engine schedule."
   },
   "ENT:StartEngineTask": {
     "prefix": "StartEngineTask",
     "body": "StartEngineTask(${1:number taskID}, ${2:number TaskData})$0\r\n",
-    "description": "(Server) Method: ENT:StartEngineTask() Called when an engine task has been started on the entity."
+    "description": "(Server) Method: ENT:StartEngineTask\n\nCalled when an engine task has been started on the entity."
   },
   "ENT:StartSchedule": {
     "prefix": "StartSchedule",
     "body": "StartSchedule(${1:Schedule sched})$0\r\n",
-    "description": "(Server) Method: ENT:StartSchedule() Starts a schedule previously created by {{LibraryFunction|ai_schedule|New}}."
+    "description": "(Server) Method: ENT:StartSchedule\n\nStarts a schedule previously created by ai_schedule.New."
   },
   "ENT:StartTask": {
     "prefix": "StartTask",
     "body": "StartTask(${1:Task task})$0\r\n",
-    "description": "(Server) Method: ENT:StartTask() Called once on starting task."
+    "description": "(Server) Method: ENT:StartTask\n\nCalled once on starting task."
   },
   "ENT:StartTouch": {
     "prefix": "StartTouch",
     "body": "StartTouch(${1:Entity entity})$0\r\n",
-    "description": "(Server) Method: ENT:StartTouch() Called when the entity starts touching another entity."
+    "description": "(Server) Method: ENT:StartTouch\n\nCalled when the entity starts touching another entity."
   },
   "ENT:StoreOutput": {
     "prefix": "StoreOutput",
     "body": "StoreOutput(${1:string name}, ${2:string info})$0\r\n",
-    "description": "(Server) Method: ENT:StoreOutput() Used to store an output so it can be triggered with {{HookFunction|ENTITY|TriggerOutput}}."
+    "description": "(Server) Method: ENT:StoreOutput\n\nUsed to store an output so it can be triggered with ENTITY.TriggerOutput."
   },
   "ENT:TaskFinished": {
     "prefix": "TaskFinished",
     "body": "TaskFinished()$0\r\n",
-    "description": "(Server) Method: ENT:TaskFinished() Returns true if the current running Task is finished."
+    "description": "(Server) Method: ENT:TaskFinished\n\nReturns true if the current running Task is finished."
   },
   "ENT:TaskTime": {
     "prefix": "TaskTime",
     "body": "TaskTime()$0\r\n",
-    "description": "(Server) Method: ENT:TaskTime() Returns how many seconds we've been doing this current task"
+    "description": "(Server) Method: ENT:TaskTime\n\nReturns how many seconds we've been doing this current task"
   },
   "ENT:TestCollision": {
     "prefix": "TestCollision",
     "body": "TestCollision(${1:Vector startpos}, ${2:Vector delta}, ${3:boolean isbox}, ${4:Vector extents})$0\r\n",
-    "description": "(Shared) Method: ENT:TestCollision() Allows you to override trace result when a trace hits the entitys Bounding Box.<br/><br/>"
+    "description": "(Shared) Method: ENT:TestCollision\n\nAllows you to override trace result when a trace hits the entitys Bounding Box."
   },
   "ENT:Think": {
     "prefix": "Think",
     "body": "Think()$0\r\n",
-    "description": "(Shared) Method: ENT:Think() Called every frame on the client."
+    "description": "(Shared) Method: ENT:Think\n\nCalled every frame on the client."
   },
   "ENT:TriggerOutput": {
     "prefix": "TriggerOutput",
     "body": "TriggerOutput(${1:string output}, ${2:Entity activator}, ${3:string data=nil})$0\r\n",
-    "description": "(Server) Method: ENT:TriggerOutput() Triggers all outputs stored using {{HookFunction|ENTITY|StoreOutput}}."
+    "description": "(Server) Method: ENT:TriggerOutput\n\nTriggers all outputs stored using ENTITY.StoreOutput."
   },
   "ENT:UpdateTransmitState": {
     "prefix": "UpdateTransmitState",
     "body": "UpdateTransmitState()$0\r\n",
-    "description": "(Server) Method: ENT:UpdateTransmitState() Called whenever the transmit state should be updated."
+    "description": "(Server) Method: ENT:UpdateTransmitState\n\nCalled whenever the transmit state should be updated."
   },
   "GM:": {
     "prefix": "",
     "body": "(${1:Entity ent}, ${2:string input}, ${3:Entity activator}, ${4:Entity caller}, ${5:any value})$0\r\n",
-    "description": "(Server) Method: GM:() Called when a map I/O event occurs."
+    "description": "(Server) Method: GM:\n\nCalled when a map I/O event occurs."
   },
   "GM:AdjustMouseSensitivity": {
     "prefix": "AdjustMouseSensitivity",
     "body": "AdjustMouseSensitivity(${1:number defaultSensitivity})$0\r\n",
-    "description": "(Client) Method: GM:AdjustMouseSensitivity() Allows you to adjust the mouse sensitivity."
+    "description": "(Client) Method: GM:AdjustMouseSensitivity\n\nAllows you to adjust the mouse sensitivity."
   },
   "GM:AllowPlayerPickup": {
     "prefix": "AllowPlayerPickup",
     "body": "AllowPlayerPickup(${1:Player ply}, ${2:Entity ent})$0\r\n",
-    "description": "(Server) Method: GM:AllowPlayerPickup() Called when a player tries to pick up something using the \"use\" key, return to override."
+    "description": "(Server) Method: GM:AllowPlayerPickup\n\nCalled when a player tries to pick up something using the \"use\" key, return to override."
   },
   "GM:CalcMainActivity": {
     "prefix": "CalcMainActivity",
     "body": "CalcMainActivity(${1:Player ply}, ${2:Vector vel})$0\r\n",
-    "description": "(Shared) Method: GM:CalcMainActivity() This hook is used to calculate animations for a player."
+    "description": "(Shared) Method: GM:CalcMainActivity\n\nThis hook is used to calculate animations for a player."
   },
   "GM:CalcVehicleView": {
     "prefix": "CalcVehicleView",
     "body": "CalcVehicleView(${1:Vehicle veh}, ${2:Player ply}, ${3:table view})$0\r\n",
-    "description": "(Client) Method: GM:CalcVehicleView() Called from {{HookFunction|GM|CalcView}} when player is in driving a vehicle."
+    "description": "(Client) Method: GM:CalcVehicleView\n\nCalled from GM.CalcView when player is in driving a vehicle."
   },
   "GM:CalcViewModelView": {
     "prefix": "CalcViewModelView",
     "body": "CalcViewModelView(${1:Weapon wep}, ${2:Entity vm}, ${3:Vector oldPos}, ${4:Angle oldAng}, ${5:Vector pos}, ${6:Angle ang})$0\r\n",
-    "description": "(Client) Method: GM:CalcViewModelView() Allows overriding the position and angle of the viewmodel."
+    "description": "(Client) Method: GM:CalcViewModelView\n\nAllows overriding the position and angle of the viewmodel."
   },
   "GM:CanEditVariable": {
     "prefix": "CanEditVariable",
     "body": "CanEditVariable(${1:Entity ent}, ${2:Player ply}, ${3:string key}, ${4:string val}, ${5:table editor})$0\r\n",
-    "description": "(Server) Method: GM:CanEditVariable() Called when a variable is edited on an Entity (called by Edit Properties... menu), to determine if the edit should be permitted."
+    "description": "(Server) Method: GM:CanEditVariable\n\nCalled when a variable is edited on an Entity (called by Edit Properties... menu), to determine if the edit should be permitted."
   },
   "GM:CanExitVehicle": {
     "prefix": "CanExitVehicle",
     "body": "CanExitVehicle(${1:Vehicle veh}, ${2:Player ply})$0\r\n",
-    "description": "(Server) Method: GM:CanExitVehicle() Determines if the player can exit the vehicle."
+    "description": "(Server) Method: GM:CanExitVehicle\n\nDetermines if the player can exit the vehicle."
   },
   "GM:CanPlayerUnfreeze": {
     "prefix": "CanPlayerUnfreeze",
     "body": "CanPlayerUnfreeze(${1:Player player}, ${2:Entity entity}, ${3:PhysObj phys})$0\r\n",
-    "description": "(Server) Method: GM:CanPlayerUnfreeze() Determines if the player can unfreeze the entity."
+    "description": "(Server) Method: GM:CanPlayerUnfreeze\n\nDetermines if the player can unfreeze the entity."
   },
   "GM:CaptureVideo": {
     "prefix": "CaptureVideo",
     "body": "CaptureVideo()$0\r\n",
-    "description": "(Menu) Method: GM:CaptureVideo() Called each frame to record demos to video using <a href=\"http://wiki.garrysmod.com/page/Category:IVideoWriter\">IVideoWriter</a>. "
+    "description": "(Menu) Method: GM:CaptureVideo\n\nCalled each frame to record demos to video using IVideoWriter. "
   },
   "GM:ChatTextChanged": {
     "prefix": "ChatTextChanged",
     "body": "ChatTextChanged(${1:string text})$0\r\n",
-    "description": "(Client) Method: GM:ChatTextChanged() Called whenever the content of the user's chat input box is changed."
+    "description": "(Client) Method: GM:ChatTextChanged\n\nCalled whenever the content of the user's chat input box is changed."
   },
   "GM:ContextMenuOpen": {
     "prefix": "ContextMenuOpen",
     "body": "ContextMenuOpen()$0\r\n",
-    "description": "(Client) Method: GM:ContextMenuOpen() Called when the context menu is trying to be opened. Return false to disallow it."
+    "description": "(Client) Method: GM:ContextMenuOpen\n\nCalled when the context menu is trying to be opened. Return false to disallow it."
   },
   "GM:CreateEntityRagdoll": {
     "prefix": "CreateEntityRagdoll",
     "body": "CreateEntityRagdoll(${1:Entity owner}, ${2:Entity ragdoll})$0\r\n",
-    "description": "(Server) Method: GM:CreateEntityRagdoll() Called when a ragdoll of an entity has been created."
-  },
-  "GM:DoAnimationEvent": {
-    "prefix": "DoAnimationEvent",
-    "body": "DoAnimationEvent(${1:Player ply}, ${2:number event}, ${3:number data=0})$0\r\n",
-    "description": "(Shared) Method: GM:DoAnimationEvent() Called upon an animation event, this is the ideal place to call player animation functions such as {{ClassFunction|Player|AddVCDSequenceToGestureSlot}}, {{ClassFunction|Player|AnimRestartGesture}} and so on."
+    "description": "(Server) Method: GM:CreateEntityRagdoll\n\nCalled when a ragdoll of an entity has been created."
   },
   "GM:DoPlayerDeath": {
     "prefix": "DoPlayerDeath",
     "body": "DoPlayerDeath(${1:Player ply}, ${2:Entity attacker}, ${3:CTakeDamageInfo dmg})$0\r\n",
-    "description": "(Server) Method: GM:DoPlayerDeath() Handles the player's death."
+    "description": "(Server) Method: GM:DoPlayerDeath\n\nHandles the player's death."
   },
   "GM:DrawDeathNotice": {
     "prefix": "DrawDeathNotice",
     "body": "DrawDeathNotice(${1:number x}, ${2:number y})$0\r\n",
-    "description": "(Client) Method: GM:DrawDeathNotice() This hook is called every frame to draw all of the current death notices."
+    "description": "(Client) Method: GM:DrawDeathNotice\n\nThis hook is called every frame to draw all of the current death notices."
   },
   "GM:DrawMonitors": {
     "prefix": "DrawMonitors",
     "body": "DrawMonitors()$0\r\n",
-    "description": "(Client) Method: GM:DrawMonitors() Called every frame before drawing the in-game monitors ( Breencast, in-game TVs, etc ), but doesn't seem to be doing anything, trying to render 2D or 3D elements fail."
-  },
-  "GM:DrawPhysgunBeam": {
-    "prefix": "DrawPhysgunBeam",
-    "body": "DrawPhysgunBeam(${1:Player ply}, ${2:Weapon physgun}, ${3:boolean enabled}, ${4:Entity target}, ${5:number bone}, ${6:Vector hitPos})$0\r\n",
-    "description": "(Client) Method: GM:DrawPhysgunBeam() Allows you to override physgun beam drawing."
+    "description": "(Client) Method: GM:DrawMonitors\n\nCalled every frame before drawing the in-game monitors ( Breencast, in-game TVs, etc ), but doesn't seem to be doing anything, trying to render 2D or 3D elements fail."
   },
   "GM:EndEntityDriving": {
     "prefix": "EndEntityDriving",
     "body": "EndEntityDriving(${1:Entity ent}, ${2:Player ply})$0\r\n",
-    "description": "(Shared) Method: GM:EndEntityDriving() Called right before an entity stops driving. Overriding this hook will cause it to not call {{LibraryFunction|drive|End}} and the player will not stop driving."
+    "description": "(Shared) Method: GM:EndEntityDriving\n\nCalled right before an entity stops driving. Overriding this hook will cause it to not call drive.End and the player will not stop driving."
   },
   "GM:EntityFireBullets": {
     "prefix": "EntityFireBullets",
     "body": "EntityFireBullets(${1:Entity ent}, ${2:table data})$0\r\n",
-    "description": "(Shared) Method: GM:EntityFireBullets() Called every time a bullet is fired from an entity."
+    "description": "(Shared) Method: GM:EntityFireBullets\n\nCalled every time a bullet is fired from an entity."
   },
   "GM:EntityRemoved": {
     "prefix": "EntityRemoved",
     "body": "EntityRemoved(${1:Entity ent})$0\r\n",
-    "description": "(Shared) Method: GM:EntityRemoved() Called right before the removal of an entity."
+    "description": "(Shared) Method: GM:EntityRemoved\n\nCalled right before the removal of an entity."
   },
   "GM:GameContentChanged": {
     "prefix": "GameContentChanged",
     "body": "GameContentChanged()$0\r\n",
-    "description": "(Menu) Method: GM:GameContentChanged() Called to refresh menu content once it has initialized or something has been mounted."
-  },
-  "GM:GetGameDescription": {
-    "prefix": "GetGameDescription",
-    "body": "GetGameDescription()$0\r\n",
-    "description": "(Shared) Method: GM:GetGameDescription() Returns the text to be shown in the server browser as the game."
+    "description": "(Menu) Method: GM:GameContentChanged\n\nCalled to refresh menu content once it has initialized or something has been mounted."
   },
   "GM:GetMotionBlurValues": {
     "prefix": "GetMotionBlurValues",
     "body": "GetMotionBlurValues(${1:number horizontal}, ${2:number vertical}, ${3:number forward}, ${4:number rotational})$0\r\n",
-    "description": "(Client) Method: GM:GetMotionBlurValues() Allows you to modify the Source Engine's motion blur shaders."
+    "description": "(Client) Method: GM:GetMotionBlurValues\n\nAllows you to modify the Source Engine's motion blur shaders."
   },
   "GM:GetPreferredCarryAngles": {
     "prefix": "GetPreferredCarryAngles",
     "body": "GetPreferredCarryAngles(${1:Entity ent})$0\r\n",
-    "description": "(Server) Method: GM:GetPreferredCarryAngles() Called to determine preferred carry angles for the entity. It works for both, +use pickup and gravity gun pickup."
+    "description": "(Server) Method: GM:GetPreferredCarryAngles\n\nCalled to determine preferred carry angles for the entity. It works for both,  use pickup and gravity gun pickup."
   },
   "GM:GetTeamColor": {
     "prefix": "GetTeamColor",
     "body": "GetTeamColor(${1:Entity ent})$0\r\n",
-    "description": "(Client) Method: GM:GetTeamColor() Returns the color for the given entity's team. This is used in chat and deathnotice text."
+    "description": "(Client) Method: GM:GetTeamColor\n\nReturns the color for the given entity's team. This is used in chat and deathnotice text."
   },
   "GM:GetTeamNumColor": {
     "prefix": "GetTeamNumColor",
     "body": "GetTeamNumColor(${1:number team})$0\r\n",
-    "description": "(Client) Method: GM:GetTeamNumColor() Returns the team color for the given team index."
+    "description": "(Client) Method: GM:GetTeamNumColor\n\nReturns the team color for the given team index."
   },
   "GM:GrabEarAnimation": {
     "prefix": "GrabEarAnimation",
     "body": "GrabEarAnimation(${1:Player ply})$0\r\n",
-    "description": "(Shared) Method: GM:GrabEarAnimation() Override this hook to disable/change ear-grabbing in your gamemode."
+    "description": "(Shared) Method: GM:GrabEarAnimation\n\nOverride this hook to disable/change ear-grabbing in your gamemode."
   },
   "GM:GravGunOnDropped": {
     "prefix": "GravGunOnDropped",
     "body": "GravGunOnDropped(${1:Player ply}, ${2:Entity ent})$0\r\n",
-    "description": "(Server) Method: GM:GravGunOnDropped() Called when an entity is released by a gravity gun."
+    "description": "(Server) Method: GM:GravGunOnDropped\n\nCalled when an entity is released by a gravity gun."
   },
   "GM:GravGunOnPickedUp": {
     "prefix": "GravGunOnPickedUp",
     "body": "GravGunOnPickedUp(${1:Player ply}, ${2:Entity ent})$0\r\n",
-    "description": "(Server) Method: GM:GravGunOnPickedUp() Called when an entity is picked up by a gravity gun."
+    "description": "(Server) Method: GM:GravGunOnPickedUp\n\nCalled when an entity is picked up by a gravity gun."
   },
   "GM:GravGunPickupAllowed": {
     "prefix": "GravGunPickupAllowed",
     "body": "GravGunPickupAllowed(${1:Player ply}, ${2:Entity ent})$0\r\n",
-    "description": "(Shared) Method: GM:GravGunPickupAllowed() Returns whether or not a player is allowed to pick up an entity with the gravity gun. Return true to allow."
+    "description": "(Shared) Method: GM:GravGunPickupAllowed\n\nReturns whether or not a player is allowed to pick up an entity with the gravity gun. Return true to allow."
   },
   "GM:GravGunPunt": {
     "prefix": "GravGunPunt",
     "body": "GravGunPunt(${1:Player ply}, ${2:Entity ent})$0\r\n",
-    "description": "(Shared) Method: GM:GravGunPunt() Called when an entity is about to be punted with the gravity gun (primary fire). Return true to allow and false to disallow."
+    "description": "(Shared) Method: GM:GravGunPunt\n\nCalled when an entity is about to be punted with the gravity gun (primary fire). Return true to allow and false to disallow."
   },
   "GM:GUIMouseDoublePressed": {
     "prefix": "GUIMouseDoublePressed",
     "body": "GUIMouseDoublePressed(${1:number mouseCode}, ${2:Vector aimVector})$0\r\n",
-    "description": "(Client) Method: GM:GUIMouseDoublePressed() Called when the mouse has been double clicked on any panel derived from CGModBase, such as the panel used by {{LibraryFunction|gui|EnableScreenClicker}} and the panel used by {{ClassFunction|Panel|ParentToHUD}}."
+    "description": "(Client) Method: GM:GUIMouseDoublePressed\n\nCalled when the mouse has been double clicked on any panel derived from CGModBase, such as the panel used by gui.EnableScreenClicker and the panel used by Panel.ParentToHUD."
   },
   "GM:GUIMousePressed": {
     "prefix": "GUIMousePressed",
     "body": "GUIMousePressed(${1:number mouseCode}, ${2:Vector aimVector})$0\r\n",
-    "description": "(Client) Method: GM:GUIMousePressed() Called whenever a players presses a mouse key on the context menu in Sandbox or on any panel derived from CGModBase, such as the panel used by {{LibraryFunction|gui|EnableScreenClicker}} and the panel used by {{ClassFunction|Panel|ParentToHUD}}."
+    "description": "(Client) Method: GM:GUIMousePressed\n\nCalled whenever a players presses a mouse key on the context menu in Sandbox or on any panel derived from CGModBase, such as the panel used by gui.EnableScreenClicker and the panel used by Panel.ParentToHUD."
   },
   "GM:GUIMouseReleased": {
     "prefix": "GUIMouseReleased",
     "body": "GUIMouseReleased(${1:number mouseCode}, ${2:Vector aimVector})$0\r\n",
-    "description": "(Client) Method: GM:GUIMouseReleased() Called whenever a players releases a mouse key on the context menu in Sandbox or on any panel derived from CGModBase, such as the panel used by {{LibraryFunction|gui|EnableScreenClicker}} and the panel used by {{ClassFunction|Panel|ParentToHUD}}."
+    "description": "(Client) Method: GM:GUIMouseReleased\n\nCalled whenever a players releases a mouse key on the context menu in Sandbox or on any panel derived from CGModBase, such as the panel used by gui.EnableScreenClicker and the panel used by Panel.ParentToHUD."
   },
   "GM:HandlePlayerDriving": {
     "prefix": "HandlePlayerDriving",
     "body": "HandlePlayerDriving(${1:Player ply})$0\r\n",
-    "description": "(Shared) Method: GM:HandlePlayerDriving() Allows to override player driving animations."
+    "description": "(Shared) Method: GM:HandlePlayerDriving\n\nAllows to override player driving animations."
   },
   "GM:HandlePlayerDucking": {
     "prefix": "HandlePlayerDucking",
     "body": "HandlePlayerDucking(${1:Player ply}, ${2:number velocity})$0\r\n",
-    "description": "(Shared) Method: GM:HandlePlayerDucking() Allows to override player crouch animations."
+    "description": "(Shared) Method: GM:HandlePlayerDucking\n\nAllows to override player crouch animations."
   },
   "GM:HandlePlayerJumping": {
     "prefix": "HandlePlayerJumping",
     "body": "HandlePlayerJumping(${1:Player ply}, ${2:number velocity})$0\r\n",
-    "description": "(Shared) Method: GM:HandlePlayerJumping() Allows to override player jumping animations."
+    "description": "(Shared) Method: GM:HandlePlayerJumping\n\nAllows to override player jumping animations."
   },
   "GM:HandlePlayerLanding": {
     "prefix": "HandlePlayerLanding",
     "body": "HandlePlayerLanding(${1:Player ply}, ${2:number velocity}, ${3:boolean onGround})$0\r\n",
-    "description": "(Shared) Method: GM:HandlePlayerLanding() Allows to override player landing animations."
+    "description": "(Shared) Method: GM:HandlePlayerLanding\n\nAllows to override player landing animations."
   },
   "GM:HandlePlayerNoClipping": {
     "prefix": "HandlePlayerNoClipping",
     "body": "HandlePlayerNoClipping(${1:Player ply}, ${2:number velocity})$0\r\n",
-    "description": "(Shared) Method: GM:HandlePlayerNoClipping() Allows to override player noclip animations."
+    "description": "(Shared) Method: GM:HandlePlayerNoClipping\n\nAllows to override player noclip animations."
   },
   "GM:HandlePlayerSwimming": {
     "prefix": "HandlePlayerSwimming",
     "body": "HandlePlayerSwimming(${1:Player ply}, ${2:number velocity})$0\r\n",
-    "description": "(Shared) Method: GM:HandlePlayerSwimming() Allows to override player swimming animations."
+    "description": "(Shared) Method: GM:HandlePlayerSwimming\n\nAllows to override player swimming animations."
   },
   "GM:HandlePlayerVaulting": {
     "prefix": "HandlePlayerVaulting",
     "body": "HandlePlayerVaulting(${1:Player ply}, ${2:number velocity})$0\r\n",
-    "description": "(Shared) Method: GM:HandlePlayerVaulting() Allows to override player flying ( in mid-air, not noclipping ) animations."
+    "description": "(Shared) Method: GM:HandlePlayerVaulting\n\nAllows to override player flying ( in mid-air, not noclipping ) animations."
   },
   "GM:HideTeam": {
     "prefix": "HideTeam",
     "body": "HideTeam()$0\r\n",
-    "description": "(Client) Method: GM:HideTeam() Hides the team selection panel."
+    "description": "(Client) Method: GM:HideTeam\n\nHides the team selection panel."
   },
   "GM:HUDAmmoPickedUp": {
     "prefix": "HUDAmmoPickedUp",
     "body": "HUDAmmoPickedUp(${1:string itemName}, ${2:number amount})$0\r\n",
-    "description": "(Client) Method: GM:HUDAmmoPickedUp() Called when the client has picked up ammo. Override to disable default HUD notification."
+    "description": "(Client) Method: GM:HUDAmmoPickedUp\n\nCalled when the client has picked up ammo. Override to disable default HUD notification."
   },
   "GM:HUDDrawPickupHistory": {
     "prefix": "HUDDrawPickupHistory",
     "body": "HUDDrawPickupHistory()$0\r\n",
-    "description": "(Client) Method: GM:HUDDrawPickupHistory() Renders the HUD pick-up history. Override to hide default or draw your own HUD."
+    "description": "(Client) Method: GM:HUDDrawPickupHistory\n\nRenders the HUD pick-up history. Override to hide default or draw your own HUD."
   },
   "GM:HUDDrawScoreBoard": {
     "prefix": "HUDDrawScoreBoard",
     "body": "HUDDrawScoreBoard()$0\r\n",
-    "description": "(Client) Method: GM:HUDDrawScoreBoard() Called every frame to render the scoreboard.<br/>"
+    "description": "(Client) Method: GM:HUDDrawScoreBoard\n\nCalled every frame to render the scoreboard."
   },
   "GM:HUDDrawTargetID": {
     "prefix": "HUDDrawTargetID",
     "body": "HUDDrawTargetID()$0\r\n",
-    "description": "(Client) Method: GM:HUDDrawTargetID() Called from {{HookFunction|GM|HUDPaint}} to draw player info when you hover over a player with your crosshair or mouse."
+    "description": "(Client) Method: GM:HUDDrawTargetID\n\nCalled from GM.HUDPaint to draw player info when you hover over a player with your crosshair or mouse."
   },
   "GM:HUDItemPickedUp": {
     "prefix": "HUDItemPickedUp",
     "body": "HUDItemPickedUp(${1:string itemName})$0\r\n",
-    "description": "(Client) Method: GM:HUDItemPickedUp() Called when an item has been picked up. Override to disable the default HUD notification."
-  },
-  "GM:HUDPaint": {
-    "prefix": "HUDPaint",
-    "body": "HUDPaint()$0\r\n",
-    "description": "(Client) Method: GM:HUDPaint() Called whenever the HUD should be drawn. Called right before {{HookFunction|GM|HUDDrawScoreBoard}} and after {{HookFunction|GM|HUDPaintBackground}}."
+    "description": "(Client) Method: GM:HUDItemPickedUp\n\nCalled when an item has been picked up. Override to disable the default HUD notification."
   },
   "GM:HUDPaintBackground": {
     "prefix": "HUDPaintBackground",
     "body": "HUDPaintBackground()$0\r\n",
-    "description": "(Client) Method: GM:HUDPaintBackground() Called after {{HookFunction|GM|HUDPaint}} when the HUD background is being drawn.<br/>"
+    "description": "(Client) Method: GM:HUDPaintBackground\n\nCalled after GM.HUDPaint when the HUD background is being drawn."
   },
   "GM:HUDWeaponPickedUp": {
     "prefix": "HUDWeaponPickedUp",
     "body": "HUDWeaponPickedUp(${1:Weapon weapon})$0\r\n",
-    "description": "(Client) Method: GM:HUDWeaponPickedUp() Called when a weapon has been picked up. Override to disable the default HUD notification."
+    "description": "(Client) Method: GM:HUDWeaponPickedUp\n\nCalled when a weapon has been picked up. Override to disable the default HUD notification."
   },
   "GM:Initialize": {
     "prefix": "Initialize",
     "body": "Initialize()$0\r\n",
-    "description": "(Shared) Method: GM:Initialize() Called after the gamemode loads and starts."
+    "description": "(Shared) Method: GM:Initialize\n\nCalled after the gamemode loads and starts."
   },
   "GM:InputMouseApply": {
     "prefix": "InputMouseApply",
     "body": "InputMouseApply(${1:CUserCmd cmd}, ${2:number x}, ${3:number y}, ${4:Angle ang})$0\r\n",
-    "description": "(Client) Method: GM:InputMouseApply() Allows you to modify the supplied User Command with mouse input. This could be used to make moving the mouse do funky things to view angles."
-  },
-  "GM:IsSpawnpointSuitable": {
-    "prefix": "IsSpawnpointSuitable",
-    "body": "IsSpawnpointSuitable(${1:Player ply}, ${2:Entity spawnpoint}, ${3:boolean makeSuitable})$0\r\n",
-    "description": "(Server) Method: GM:IsSpawnpointSuitable() Check if a player can spawn at a certain spawnpoint."
+    "description": "(Client) Method: GM:InputMouseApply\n\nAllows you to modify the supplied User Command with mouse input. This could be used to make moving the mouse do funky things to view angles."
   },
   "GM:MenuStart": {
     "prefix": "MenuStart",
     "body": "MenuStart()$0\r\n",
-    "description": "(Menu) Method: GM:MenuStart() Called when ''menu.lua'' has finished loading."
+    "description": "(Menu) Method: GM:MenuStart\n\nCalled when ''menu.lua'' has finished loading."
   },
   "GM:MouthMoveAnimation": {
     "prefix": "MouthMoveAnimation",
     "body": "MouthMoveAnimation(${1:Player ply})$0\r\n",
-    "description": "(Shared) Method: GM:MouthMoveAnimation() Override this gamemode function to disable mouth movement when talking on voice chat."
+    "description": "(Shared) Method: GM:MouthMoveAnimation\n\nOverride this gamemode function to disable mouth movement when talking on voice chat."
   },
   "GM:Move": {
     "prefix": "Move",
     "body": "Move(${1:Player ply}, ${2:CMoveData mv})$0\r\n",
-    "description": "(Shared) Method: GM:Move() The Move hook is called for you to manipulate the player's MoveData. "
+    "description": "(Shared) Method: GM:Move\n\nThe Move hook is called for you to manipulate the player's MoveData. "
   },
   "GM:NeedsDepthPass": {
     "prefix": "NeedsDepthPass",
     "body": "NeedsDepthPass()$0\r\n",
-    "description": "(Client) Method: GM:NeedsDepthPass() Returning true in this hook will cause it to render depth buffers defined with {{LibraryFunction|render|GetResolvedFullFrameDepth}}."
+    "description": "(Client) Method: GM:NeedsDepthPass\n\nReturning true in this hook will cause it to render depth buffers defined with render.GetResolvedFullFrameDepth."
   },
   "GM:NetworkEntityCreated": {
     "prefix": "NetworkEntityCreated",
     "body": "NetworkEntityCreated(${1:Entity ent})$0\r\n",
-    "description": "(Client) Method: GM:NetworkEntityCreated() Called when an entity has been created over the network."
+    "description": "(Client) Method: GM:NetworkEntityCreated\n\nCalled when an entity has been created over the network."
   },
   "GM:NetworkIDValidated": {
     "prefix": "NetworkIDValidated",
     "body": "NetworkIDValidated(${1:string name}, ${2:string steamID})$0\r\n",
-    "description": "(Server) Method: GM:NetworkIDValidated() Called when a player has been validated by Steam."
+    "description": "(Server) Method: GM:NetworkIDValidated\n\nCalled when a player has been validated by Steam."
   },
   "GM:OnAchievementAchieved": {
     "prefix": "OnAchievementAchieved",
     "body": "OnAchievementAchieved(${1:Player ply}, ${2:number achievement})$0\r\n",
-    "description": "(Client) Method: GM:OnAchievementAchieved() Called when a player has achieved an achievement. You can get the name and other information from an achievement ID with the <a href=\"http://wiki.garrysmod.com/page/Category:achievements\">achievements</a> library."
+    "description": "(Client) Method: GM:OnAchievementAchieved\n\nCalled when a player has achieved an achievement. You can get the name and other information from an achievement ID with the achievements library."
   },
   "GM:OnChatTab": {
     "prefix": "OnChatTab",
     "body": "OnChatTab(${1:string text})$0\r\n",
-    "description": "(Client) Method: GM:OnChatTab() Called when the local player presses TAB while having their chatbox opened."
+    "description": "(Client) Method: GM:OnChatTab\n\nCalled when the local player presses TAB while having their chatbox opened."
   },
   "GM:OnContextMenuClose": {
     "prefix": "OnContextMenuClose",
     "body": "OnContextMenuClose()$0\r\n",
-    "description": "(Client) Method: GM:OnContextMenuClose() Called when the context menu was closed."
+    "description": "(Client) Method: GM:OnContextMenuClose\n\nCalled when the context menu was closed."
   },
   "GM:OnContextMenuOpen": {
     "prefix": "OnContextMenuOpen",
     "body": "OnContextMenuOpen()$0\r\n",
-    "description": "(Client) Method: GM:OnContextMenuOpen() Called when the context menu was opened."
-  },
-  "GM:OnDamagedByExplosion": {
-    "prefix": "OnDamagedByExplosion",
-    "body": "OnDamagedByExplosion(${1:Player ply}, ${2:CTakeDamageInfo dmginfo})$0\r\n",
-    "description": "(Server) Method: GM:OnDamagedByExplosion() Called when a player has been hurt by an explosion. Override to disable default sound effect."
+    "description": "(Client) Method: GM:OnContextMenuOpen\n\nCalled when the context menu is opened."
   },
   "GM:OnGamemodeLoaded": {
     "prefix": "OnGamemodeLoaded",
     "body": "OnGamemodeLoaded()$0\r\n",
-    "description": "(Shared) Method: GM:OnGamemodeLoaded() Called when the gamemode is loaded."
+    "description": "(Shared) Method: GM:OnGamemodeLoaded\n\nCalled when the gamemode is loaded."
   },
   "GM:OnLuaError": {
     "prefix": "OnLuaError",
     "body": "OnLuaError(${1:string error}, ${2:number realm}, ${3:string name}, ${4:number id})$0\r\n",
-    "description": "(Menu) Method: GM:OnLuaError() Called when a Lua error occurs, only works in the Menu realm."
+    "description": "(Menu) Method: GM:OnLuaError\n\nCalled when a Lua error occurs, only works in the Menu realm."
   },
   "GM:OnNPCKilled": {
     "prefix": "OnNPCKilled",
     "body": "OnNPCKilled(${1:NPC npc}, ${2:Entity attacker}, ${3:Entity inflictor})$0\r\n",
-    "description": "(Server) Method: GM:OnNPCKilled() Called whenever an NPC is killed."
+    "description": "(Server) Method: GM:OnNPCKilled\n\nCalled whenever an NPC is killed."
   },
   "GM:OnPhysgunFreeze": {
     "prefix": "OnPhysgunFreeze",
     "body": "OnPhysgunFreeze(${1:Entity weapon}, ${2:PhysObj physobj}, ${3:Entity ent}, ${4:Player ply})$0\r\n",
-    "description": "(Server) Method: GM:OnPhysgunFreeze() Called when a player freezes an entity with the Physgun."
+    "description": "(Server) Method: GM:OnPhysgunFreeze\n\nCalled when a player freezes an entity with the Physgun."
   },
   "GM:OnPhysgunReload": {
     "prefix": "OnPhysgunReload",
     "body": "OnPhysgunReload(${1:Weapon physgun}, ${2:Player ply})$0\r\n",
-    "description": "(Server) Method: GM:OnPhysgunReload() Called when a player reloads with the physgun. Override this to disable default unfreezing behavior."
+    "description": "(Server) Method: GM:OnPhysgunReload\n\nCalled when a player reloads with the physgun. Override this to disable default unfreezing behavior."
   },
   "GM:OnPlayerHitGround": {
     "prefix": "OnPlayerHitGround",
     "body": "OnPlayerHitGround(${1:Entity player}, ${2:boolean inWater}, ${3:boolean onFloater}, ${4:number speed})$0\r\n",
-    "description": "(Shared) Method: GM:OnPlayerHitGround() Called when a player makes contact with the ground."
+    "description": "(Shared) Method: GM:OnPlayerHitGround\n\nCalled when a player makes contact with the ground."
   },
   "GM:OnReloaded": {
     "prefix": "OnReloaded",
     "body": "OnReloaded()$0\r\n",
-    "description": "(Shared) Method: GM:OnReloaded() Called when gamemode has been reloaded by auto refresh."
+    "description": "(Shared) Method: GM:OnReloaded\n\nCalled when gamemode has been reloaded by auto refresh."
   },
   "GM:OnTextEntryGetFocus": {
     "prefix": "OnTextEntryGetFocus",
     "body": "OnTextEntryGetFocus(${1:Panel panel})$0\r\n",
-    "description": "(Client) Method: GM:OnTextEntryGetFocus() Called when a <a href=\"http://wiki.garrysmod.com/page/Category:DTextEntry\">DTextEntry</a> gets focus."
+    "description": "(Client) Method: GM:OnTextEntryGetFocus\n\nCalled when a DTextEntry gets focus."
   },
   "GM:OnTextEntryLoseFocus": {
     "prefix": "OnTextEntryLoseFocus",
     "body": "OnTextEntryLoseFocus(${1:Panel panel})$0\r\n",
-    "description": "(Client) Method: GM:OnTextEntryLoseFocus() Called when DTextEntry loses focus."
+    "description": "(Client) Method: GM:OnTextEntryLoseFocus\n\nCalled when DTextEntry loses focus."
   },
   "GM:OnUndo": {
     "prefix": "OnUndo",
     "body": "OnUndo(${1:string name}, ${2:string customText})$0\r\n",
-    "description": "(Client) Method: GM:OnUndo() Called when the player undoes something."
+    "description": "(Client) Method: GM:OnUndo\n\nCalled when the player undoes something."
   },
   "GM:OnViewModelChanged": {
     "prefix": "OnViewModelChanged",
     "body": "OnViewModelChanged(${1:Entity viewmodel}, ${2:string oldModel}, ${3:string newModel})$0\r\n",
-    "description": "(Shared) Method: GM:OnViewModelChanged() Called when the player changes their weapon to another one - and their viewmodel model changes."
+    "description": "(Shared) Method: GM:OnViewModelChanged\n\nCalled when the player changes their weapon to another one - and their viewmodel model changes."
   },
   "GM:PhysgunDrop": {
     "prefix": "PhysgunDrop",
     "body": "PhysgunDrop(${1:Player ply}, ${2:Entity ent})$0\r\n",
-    "description": "(Shared) Method: GM:PhysgunDrop() Called when a player drops an entity with the Physgun."
+    "description": "(Shared) Method: GM:PhysgunDrop\n\nCalled when a player drops an entity with the Physgun."
   },
   "GM:PhysgunPickup": {
     "prefix": "PhysgunPickup",
     "body": "PhysgunPickup(${1:Player player}, ${2:Entity entity})$0\r\n",
-    "description": "(Shared) Method: GM:PhysgunPickup() Called whenever a player picks up an entity with the Physgun."
+    "description": "(Shared) Method: GM:PhysgunPickup\n\nCalled whenever a player picks up an entity with the Physgun."
   },
   "GM:PlayerAuthed": {
     "prefix": "PlayerAuthed",
     "body": "PlayerAuthed(${1:Player ply}, ${2:string steamid}, ${3:string uniqueid})$0\r\n",
-    "description": "(Server) Method: GM:PlayerAuthed() Called once when the player is authenticated."
+    "description": "(Server) Method: GM:PlayerAuthed\n\nCalled once when the player is authenticated."
   },
   "GM:PlayerBindPress": {
     "prefix": "PlayerBindPress",
     "body": "PlayerBindPress(${1:Player ply}, ${2:string bind}, ${3:boolean pressed})$0\r\n",
-    "description": "(Client) Method: GM:PlayerBindPress() Runs when a bind has been pressed. Allows to block commands."
+    "description": "(Client) Method: GM:PlayerBindPress\n\nRuns when a bind has been pressed. Allows to block commands."
   },
   "GM:PlayerCanHearPlayersVoice": {
     "prefix": "PlayerCanHearPlayersVoice",
     "body": "PlayerCanHearPlayersVoice(${1:Player listener}, ${2:Player talker})$0\r\n",
-    "description": "(Server) Method: GM:PlayerCanHearPlayersVoice() Decides whether a player can hear another player using voice chat."
+    "description": "(Server) Method: GM:PlayerCanHearPlayersVoice\n\nDecides whether a player can hear another player using voice chat."
   },
   "GM:PlayerCanJoinTeam": {
     "prefix": "PlayerCanJoinTeam",
     "body": "PlayerCanJoinTeam(${1:Player ply}, ${2:number team})$0\r\n",
-    "description": "(Server) Method: GM:PlayerCanJoinTeam() Returns whether or not a player is allowed to join a team"
+    "description": "(Server) Method: GM:PlayerCanJoinTeam\n\nReturns whether or not a player is allowed to join a team"
   },
   "GM:PlayerCanPickupItem": {
     "prefix": "PlayerCanPickupItem",
     "body": "PlayerCanPickupItem(${1:Player ply}, ${2:Entity item})$0\r\n",
-    "description": "(Server) Method: GM:PlayerCanPickupItem() Returns whether or not a player is allowed to pick an item up."
+    "description": "(Server) Method: GM:PlayerCanPickupItem\n\nReturns whether or not a player is allowed to pick an item up."
   },
   "GM:PlayerCanPickupWeapon": {
     "prefix": "PlayerCanPickupWeapon",
     "body": "PlayerCanPickupWeapon(${1:Player ply}, ${2:Weapon wep})$0\r\n",
-    "description": "(Server) Method: GM:PlayerCanPickupWeapon() Returns whether or not a player is allowed to pick up a weapon."
+    "description": "(Server) Method: GM:PlayerCanPickupWeapon\n\nReturns whether or not a player is allowed to pick up a weapon."
   },
   "GM:PlayerCanSeePlayersChat": {
     "prefix": "PlayerCanSeePlayersChat",
     "body": "PlayerCanSeePlayersChat(${1:string text}, ${2:boolean teamOnly}, ${3:Player listener}, ${4:Player speaker})$0\r\n",
-    "description": "(Server) Method: GM:PlayerCanSeePlayersChat() Returns whether or not the player can see the other player's chat."
+    "description": "(Server) Method: GM:PlayerCanSeePlayersChat\n\nReturns whether or not the player can see the other player's chat."
   },
   "GM:PlayerConnect": {
     "prefix": "PlayerConnect",
     "body": "PlayerConnect(${1:string name}, ${2:string ip})$0\r\n",
-    "description": "(Shared) Method: GM:PlayerConnect() Executes when a player connects to the server."
+    "description": "(Shared) Method: GM:PlayerConnect\n\nExecutes when a player connects to the server."
   },
   "GM:PlayerDeath": {
     "prefix": "PlayerDeath",
     "body": "PlayerDeath(${1:Player victim}, ${2:Entity inflictor}, ${3:Entity attacker})$0\r\n",
-    "description": "(Server) Method: GM:PlayerDeath() Called when a player is killed by {{ClassFunction|Player|Kill}} or any other normal means, except for when the player is killed with {{ClassFunction|Player|KillSilent}}."
+    "description": "(Server) Method: GM:PlayerDeath\n\nCalled when a player is killed by Player.Kill or any other normal means, except for when the player is killed with Player.KillSilent."
   },
   "GM:PlayerDeathSound": {
     "prefix": "PlayerDeathSound",
     "body": "PlayerDeathSound()$0\r\n",
-    "description": "(Server) Method: GM:PlayerDeathSound() Returns whether or not the default death sound should be muted."
+    "description": "(Server) Method: GM:PlayerDeathSound\n\nReturns whether or not the default death sound should be muted."
   },
   "GM:PlayerDeathThink": {
     "prefix": "PlayerDeathThink",
     "body": "PlayerDeathThink(${1:Player ply})$0\r\n",
-    "description": "(Server) Method: GM:PlayerDeathThink() Called every think while the player is dead. The return value will determine if the player respawns."
+    "description": "(Server) Method: GM:PlayerDeathThink\n\nCalled every think while the player is dead. The return value will determine if the player respawns."
   },
   "GM:PlayerDisconnected": {
     "prefix": "PlayerDisconnected",
     "body": "PlayerDisconnected(${1:Player ply})$0\r\n",
-    "description": "(Server) Method: GM:PlayerDisconnected() Called when a player leaves the server."
+    "description": "(Server) Method: GM:PlayerDisconnected\n\nCalled when a player leaves the server."
   },
   "GM:PlayerDriveAnimate": {
     "prefix": "PlayerDriveAnimate",
     "body": "PlayerDriveAnimate(${1:Player ply})$0\r\n",
-    "description": "(Shared) Method: GM:PlayerDriveAnimate() Called to update the player's animation during a drive."
+    "description": "(Shared) Method: GM:PlayerDriveAnimate\n\nCalled to update the player's animation during a drive."
   },
   "GM:PlayerEndVoice": {
     "prefix": "PlayerEndVoice",
     "body": "PlayerEndVoice(${1:Player ply})$0\r\n",
-    "description": "(Client) Method: GM:PlayerEndVoice() Called when player stops using voice chat."
+    "description": "(Client) Method: GM:PlayerEndVoice\n\nCalled when player stops using voice chat."
   },
   "GM:PlayerFootstep": {
     "prefix": "PlayerFootstep",
     "body": "PlayerFootstep(${1:Player ply}, ${2:Vector pos}, ${3:number foot}, ${4:string sound}, ${5:number volume}, ${6:CRecipientFilter filter})$0\r\n",
-    "description": "(Shared) Method: GM:PlayerFootstep() Called whenever a player steps. Return true to mute the normal sound."
+    "description": "(Shared) Method: GM:PlayerFootstep\n\nCalled whenever a player steps. Return true to mute the normal sound."
   },
   "GM:PlayerFrozeObject": {
     "prefix": "PlayerFrozeObject",
     "body": "PlayerFrozeObject(${1:Player ply}, ${2:Entity ent}, ${3:PhysObj physobj})$0\r\n",
-    "description": "(Server) Method: GM:PlayerFrozeObject() Called when a player freezes an object."
-  },
-  "GM:PlayerInitialSpawn": {
-    "prefix": "PlayerInitialSpawn",
-    "body": "PlayerInitialSpawn(${1:Player player})$0\r\n",
-    "description": "(Server) Method: GM:PlayerInitialSpawn() Called when the player spawns for the first time."
+    "description": "(Server) Method: GM:PlayerFrozeObject\n\nCalled when a player freezes an object."
   },
   "GM:PlayerLeaveVehicle": {
     "prefix": "PlayerLeaveVehicle",
     "body": "PlayerLeaveVehicle(${1:Player ply}, ${2:Vehicle veh})$0\r\n",
-    "description": "(Server) Method: GM:PlayerLeaveVehicle() Called when a player leaves a vehicle."
+    "description": "(Server) Method: GM:PlayerLeaveVehicle\n\nCalled when a player leaves a vehicle."
   },
   "GM:PlayerPostThink": {
     "prefix": "PlayerPostThink",
     "body": "PlayerPostThink(${1:Player ply})$0\r\n",
-    "description": "(Shared) Method: GM:PlayerPostThink() Called after the player's think."
-  },
-  "GM:PlayerSay": {
-    "prefix": "PlayerSay",
-    "body": "PlayerSay(${1:Player sender}, ${2:string text}, ${3:boolean teamChat})$0\r\n",
-    "description": "(Server) Method: GM:PlayerSay() Called when a player dispatched a chat message. For the clientside equivalent, see {{HookFunction|GM|OnPlayerChat}}."
+    "description": "(Shared) Method: GM:PlayerPostThink\n\nCalled after the player's think."
   },
   "GM:PlayerSelectSpawn": {
     "prefix": "PlayerSelectSpawn",
     "body": "PlayerSelectSpawn(${1:Player ply})$0\r\n",
-    "description": "(Server) Method: GM:PlayerSelectSpawn() Called to determine a spawn point for a player to spawn at."
+    "description": "(Server) Method: GM:PlayerSelectSpawn\n\nCalled to determine a spawn point for a player to spawn at."
   },
   "GM:PlayerSelectTeamSpawn": {
     "prefix": "PlayerSelectTeamSpawn",
     "body": "PlayerSelectTeamSpawn(${1:number team}, ${2:Player ply})$0\r\n",
-    "description": "(Server) Method: GM:PlayerSelectTeamSpawn() Find a team spawn point entity for this player."
+    "description": "(Server) Method: GM:PlayerSelectTeamSpawn\n\nFind a team spawn point entity for this player."
   },
   "GM:PlayerShouldTakeDamage": {
     "prefix": "PlayerShouldTakeDamage",
     "body": "PlayerShouldTakeDamage(${1:Player ply}, ${2:Entity attacker})$0\r\n",
-    "description": "(Server) Method: GM:PlayerShouldTakeDamage() Returns true if the player should take damage from the given attacker."
+    "description": "(Server) Method: GM:PlayerShouldTakeDamage\n\nReturns true if the player should take damage from the given attacker."
   },
   "GM:PlayerShouldTaunt": {
     "prefix": "PlayerShouldTaunt",
     "body": "PlayerShouldTaunt(${1:Player ply}, ${2:number act})$0\r\n",
-    "description": "(Server) Method: GM:PlayerShouldTaunt() Allows to suppress player taunts."
+    "description": "(Server) Method: GM:PlayerShouldTaunt\n\nAllows to suppress player taunts."
   },
   "GM:PlayerSilentDeath": {
     "prefix": "PlayerSilentDeath",
     "body": "PlayerSilentDeath(${1:Player ply})$0\r\n",
-    "description": "(Server) Method: GM:PlayerSilentDeath() Called when the player is killed by {{ClassFunction|Player|KillSilent}}.<br>"
+    "description": "(Server) Method: GM:PlayerSilentDeath\n\nCalled when the player is killed by Player.KillSilent."
   },
   "GM:PlayerSpawnAsSpectator": {
     "prefix": "PlayerSpawnAsSpectator",
     "body": "PlayerSpawnAsSpectator(${1:Player ply})$0\r\n",
-    "description": "(Server) Method: GM:PlayerSpawnAsSpectator() Called to spawn the player as a spectator."
+    "description": "(Server) Method: GM:PlayerSpawnAsSpectator\n\nCalled to spawn the player as a spectator."
   },
   "GM:PlayerSpray": {
     "prefix": "PlayerSpray",
     "body": "PlayerSpray(${1:Player sprayer})$0\r\n",
-    "description": "(Server) Method: GM:PlayerSpray() Determines if the player can spray using the \"impulse 201\" console command."
+    "description": "(Server) Method: GM:PlayerSpray\n\nDetermines if the player can spray using the \"impulse 201\" console command."
   },
   "GM:PlayerStartTaunt": {
     "prefix": "PlayerStartTaunt",
     "body": "PlayerStartTaunt(${1:Player ply}, ${2:number act}, ${3:number length})$0\r\n",
-    "description": "(Server) Method: GM:PlayerStartTaunt() Called when player starts taunting."
+    "description": "(Server) Method: GM:PlayerStartTaunt\n\nCalled when player starts taunting."
   },
   "GM:PlayerStartVoice": {
     "prefix": "PlayerStartVoice",
     "body": "PlayerStartVoice(${1:Player ply})$0\r\n",
-    "description": "(Client) Method: GM:PlayerStartVoice() Called when a player starts using voice chat."
+    "description": "(Client) Method: GM:PlayerStartVoice\n\nCalled when a player starts using voice chat."
   },
   "GM:PlayerStepSoundTime": {
     "prefix": "PlayerStepSoundTime",
     "body": "PlayerStepSoundTime(${1:Player ply}, ${2:number type}, ${3:boolean walking})$0\r\n",
-    "description": "(Shared) Method: GM:PlayerStepSoundTime() Allows you to override the time between footsteps."
+    "description": "(Shared) Method: GM:PlayerStepSoundTime\n\nAllows you to override the time between footsteps."
   },
   "GM:PlayerSwitchFlashlight": {
     "prefix": "PlayerSwitchFlashlight",
     "body": "PlayerSwitchFlashlight(${1:Player ply}, ${2:boolean enabled})$0\r\n",
-    "description": "(Server) Method: GM:PlayerSwitchFlashlight() Called whenever a player attempts to either turn on or off their flashlight, returning false will deny the change."
-  },
-  "GM:PlayerTick": {
-    "prefix": "PlayerTick",
-    "body": "PlayerTick(${1:Entity player}, ${2:CMoveData mv})$0\r\n",
-    "description": "(Shared) Method: GM:PlayerTick() The Move hook is called for you to manipulate the player's <a href=\"http://wiki.garrysmod.com/page/Category:CMoveData}}. This hook is called moments before {{HookFunction|GM|Move}} and {{HookFunction|GM|PlayerNoClip\">CMoveData}}. This hook is called moments before {{HookFunction|GM|Move}} and {{HookFunction|GM|PlayerNoClip</a>."
+    "description": "(Server) Method: GM:PlayerSwitchFlashlight\n\nCalled whenever a player attempts to either turn on or off their flashlight, returning false will deny the change."
   },
   "GM:PlayerTraceAttack": {
     "prefix": "PlayerTraceAttack",
     "body": "PlayerTraceAttack(${1:Player ply}, ${2:CTakeDamageInfo dmginfo}, ${3:Vector dir}, ${4:table trace})$0\r\n",
-    "description": "(Shared) Method: GM:PlayerTraceAttack() Called when a player has been hit by a trace and damaged (such as from a bullet). Returning true overrides the damage handling and prevents {{HookFunction|GM|ScalePlayerDamage}} from being called."
+    "description": "(Shared) Method: GM:PlayerTraceAttack\n\nCalled when a player has been hit by a trace and damaged (such as from a bullet). Returning true overrides the damage handling and prevents GM.ScalePlayerDamage from being called."
   },
   "GM:PlayerUnfrozeObject": {
     "prefix": "PlayerUnfrozeObject",
     "body": "PlayerUnfrozeObject(${1:Player ply}, ${2:Entity ent}, ${3:PhysObj physobj})$0\r\n",
-    "description": "(Server) Method: GM:PlayerUnfrozeObject() Called when a player unfreezes an object."
+    "description": "(Server) Method: GM:PlayerUnfrozeObject\n\nCalled when a player unfreezes an object."
   },
   "GM:PopulateMenuBar": {
     "prefix": "PopulateMenuBar",
     "body": "PopulateMenuBar(${1:Panel menubar})$0\r\n",
-    "description": "(Client) Method: GM:PopulateMenuBar() Called when it's time to populate the context menu menu bar at the top."
+    "description": "(Client) Method: GM:PopulateMenuBar\n\nCalled when it's time to populate the context menu menu bar at the top."
   },
   "GM:PopulateSTOOLMenu": {
     "prefix": "PopulateSTOOLMenu",
     "body": "PopulateSTOOLMenu()$0\r\n",
-    "description": "(Client) Method: GM:PopulateSTOOLMenu() Called to populate the Scripted Tool menu."
+    "description": "(Client) Method: GM:PopulateSTOOLMenu\n\nCalled to populate the Scripted Tool menu."
   },
   "GM:PopulateToolMenu": {
     "prefix": "PopulateToolMenu",
     "body": "PopulateToolMenu()$0\r\n",
-    "description": "(Client) Method: GM:PopulateToolMenu() Add the STOOLS to the tool menu. You want to call {{LibraryFunction|spawnmenu|AddToolMenuOption}} in this hook."
+    "description": "(Client) Method: GM:PopulateToolMenu\n\nAdd the STOOLS to the tool menu. You want to call spawnmenu.AddToolMenuOption in this hook."
   },
   "GM:PostDrawHUD": {
     "prefix": "PostDrawHUD",
     "body": "PostDrawHUD()$0\r\n",
-    "description": "(Client) Method: GM:PostDrawHUD() Called after {{HookFunction|GM|PreDrawHUD}},  {{HookFunction|GM|HUDPaintBackground}} and {{HookFunction|GM|HUDPaint}} but before  {{HookFunction|GM|DrawOverlay}}."
+    "description": "(Client) Method: GM:PostDrawHUD\n\nCalled after GM.PreDrawHUD,  GM.HUDPaintBackground and GM.HUDPaint but before  GM.DrawOverlay."
   },
   "GM:PostDrawPlayerHands": {
     "prefix": "PostDrawPlayerHands",
     "body": "PostDrawPlayerHands(${1:Entity hands}, ${2:Entity vm}, ${3:Player ply}, ${4:Weapon weapon})$0\r\n",
-    "description": "(Client) Method: GM:PostDrawPlayerHands() Called after the player hands are drawn."
+    "description": "(Client) Method: GM:PostDrawPlayerHands\n\nCalled after the player hands are drawn."
   },
   "GM:PostDrawTranslucentRenderables": {
     "prefix": "PostDrawTranslucentRenderables",
     "body": "PostDrawTranslucentRenderables(${1:boolean bDrawingDepth}, ${2:boolean bDrawingSkybox})$0\r\n",
-    "description": "(Client) Method: GM:PostDrawTranslucentRenderables() Called after all translucent entities are drawn."
+    "description": "(Client) Method: GM:PostDrawTranslucentRenderables\n\nCalled after all translucent entities are drawn."
   },
   "GM:PostGamemodeLoaded": {
     "prefix": "PostGamemodeLoaded",
     "body": "PostGamemodeLoaded()$0\r\n",
-    "description": "(Shared) Method: GM:PostGamemodeLoaded() Called after the gamemode has loaded."
+    "description": "(Shared) Method: GM:PostGamemodeLoaded\n\nCalled after the gamemode has loaded."
   },
   "GM:PostPlayerDeath": {
     "prefix": "PostPlayerDeath",
     "body": "PostPlayerDeath(${1:Player ply})$0\r\n",
-    "description": "(Server) Method: GM:PostPlayerDeath() Called right after {{HookFunction|GM|DoPlayerDeath}} and {{HookFunction|GM|PlayerSilentDeath}}.<br>"
+    "description": "(Server) Method: GM:PostPlayerDeath\n\nCalled right after GM.DoPlayerDeath and GM.PlayerSilentDeath."
   },
   "GM:PostProcessPermitted": {
     "prefix": "PostProcessPermitted",
     "body": "PostProcessPermitted(${1:string ppeffect})$0\r\n",
-    "description": "(Client) Method: GM:PostProcessPermitted() Allows you to suppress post processing effect drawing."
+    "description": "(Client) Method: GM:PostProcessPermitted\n\nAllows you to suppress post processing effect drawing."
   },
   "GM:PostReloadToolsMenu": {
     "prefix": "PostReloadToolsMenu",
     "body": "PostReloadToolsMenu()$0\r\n",
-    "description": "(Client) Method: GM:PostReloadToolsMenu() Called right after the Lua Loaded tool menus are reloaded. This is a good place to set up any ControlPanels."
+    "description": "(Client) Method: GM:PostReloadToolsMenu\n\nCalled right after the Lua Loaded tool menus are reloaded. This is a good place to set up any ControlPanels."
   },
   "GM:PreDrawPlayerHands": {
     "prefix": "PreDrawPlayerHands",
     "body": "PreDrawPlayerHands(${1:Entity hands}, ${2:Entity vm}, ${3:Player ply}, ${4:Weapon weapon})$0\r\n",
-    "description": "(Client) Method: GM:PreDrawPlayerHands() Called before the player hands are drawn."
+    "description": "(Client) Method: GM:PreDrawPlayerHands\n\nCalled before the player hands are drawn."
   },
   "GM:PreDrawSkyBox": {
     "prefix": "PreDrawSkyBox",
     "body": "PreDrawSkyBox()$0\r\n",
-    "description": "(Client) Method: GM:PreDrawSkyBox() Called before the sky box is drawn."
+    "description": "(Client) Method: GM:PreDrawSkyBox\n\nCalled before the sky box is drawn."
   },
   "GM:PreDrawViewModel": {
     "prefix": "PreDrawViewModel",
     "body": "PreDrawViewModel(${1:Entity vm}, ${2:Player ply}, ${3:Weapon weapon})$0\r\n",
-    "description": "(Client) Method: GM:PreDrawViewModel() Called before the view model has been drawn. This hook by default also calls this on weapons, so you can use {{HookFunction|WEAPON|PreDrawViewModel}}."
+    "description": "(Client) Method: GM:PreDrawViewModel\n\nCalled before the view model has been drawn. This hook by default also calls this on weapons, so you can use WEAPON.PreDrawViewModel."
   },
   "GM:PreGamemodeLoaded": {
     "prefix": "PreGamemodeLoaded",
     "body": "PreGamemodeLoaded()$0\r\n",
-    "description": "(Shared) Method: GM:PreGamemodeLoaded() Called before the gamemode is loaded."
+    "description": "(Shared) Method: GM:PreGamemodeLoaded\n\nCalled before the gamemode is loaded."
   },
   "GM:PrePlayerDraw": {
     "prefix": "PrePlayerDraw",
     "body": "PrePlayerDraw(${1:Player player})$0\r\n",
-    "description": "(Client) Method: GM:PrePlayerDraw() Called before the player is drawn."
+    "description": "(Client) Method: GM:PrePlayerDraw\n\nCalled before the player is drawn."
   },
   "GM:PreReloadToolsMenu": {
     "prefix": "PreReloadToolsMenu",
     "body": "PreReloadToolsMenu()$0\r\n",
-    "description": "(Client) Method: GM:PreReloadToolsMenu() Called right before the Lua Loaded tool menus are reloaded."
-  },
-  "GM:PreRender": {
-    "prefix": "PreRender",
-    "body": "PreRender()$0\r\n",
-    "description": "(Client) Method: GM:PreRender() Called before the renderer is about to start rendering the next frame."
+    "description": "(Client) Method: GM:PreReloadToolsMenu\n\nCalled right before the Lua Loaded tool menus are reloaded."
   },
   "GM:PreventScreenClicks": {
     "prefix": "PreventScreenClicks",
     "body": "PreventScreenClicks()$0\r\n",
-    "description": "(Client) Method: GM:PreventScreenClicks() This will prevent IN_ATTACK from sending to server when player tries to shoot from C menu."
+    "description": "(Client) Method: GM:PreventScreenClicks\n\nThis will prevent IN_ATTACK from sending to server when player tries to shoot from C menu."
   },
   "GM:PropBreak": {
     "prefix": "PropBreak",
     "body": "PropBreak(${1:Player attacker}, ${2:Entity prop})$0\r\n",
-    "description": "(Shared) Method: GM:PropBreak() Called when a prop has been destroyed."
+    "description": "(Shared) Method: GM:PropBreak\n\nCalled when a prop has been destroyed."
   },
   "GM:RenderScene": {
     "prefix": "RenderScene",
     "body": "RenderScene(${1:Vector origin}, ${2:Angle angles}, ${3:number fov})$0\r\n",
-    "description": "(Client) Method: GM:RenderScene() Render the scene. Used by the \"Stereoscopy\" Post-processing effect."
+    "description": "(Client) Method: GM:RenderScene\n\nRender the scene. Used by the \"Stereoscopy\" Post-processing effect."
   },
   "GM:ScoreboardHide": {
     "prefix": "ScoreboardHide",
     "body": "ScoreboardHide()$0\r\n",
-    "description": "(Client) Method: GM:ScoreboardHide() Called when player released the scoreboard button. ( TAB by default )"
+    "description": "(Client) Method: GM:ScoreboardHide\n\nCalled when player released the scoreboard button. ( TAB by default )"
   },
   "GM:ScoreboardShow": {
     "prefix": "ScoreboardShow",
     "body": "ScoreboardShow()$0\r\n",
-    "description": "(Client) Method: GM:ScoreboardShow() Called when player presses the scoreboard button. ( TAB by default )"
+    "description": "(Client) Method: GM:ScoreboardShow\n\nCalled when player presses the scoreboard button. ( TAB by default )"
   },
   "GM:SetPlayerSpeed": {
     "prefix": "SetPlayerSpeed",
     "body": "SetPlayerSpeed(${1:Player ply}, ${2:number walkSpeed}, ${3:number runSpeed})$0\r\n",
-    "description": "(Shared) Method: GM:SetPlayerSpeed() Sets player run and sprint speeds."
+    "description": "(Shared) Method: GM:SetPlayerSpeed\n\nSets player run and sprint speeds."
   },
   "GM:SetupPlayerVisibility": {
     "prefix": "SetupPlayerVisibility",
     "body": "SetupPlayerVisibility(${1:Player ply}, ${2:Entity viewEntity})$0\r\n",
-    "description": "(Server) Method: GM:SetupPlayerVisibility() Allows you to add extra positions to the player's PVS. This is the place to call {{GlobalFunction|AddOriginToPVS}}."
+    "description": "(Server) Method: GM:SetupPlayerVisibility\n\nAllows you to add extra positions to the player's PVS. This is the place to call _G.AddOriginToPVS."
   },
   "GM:ShowHelp": {
     "prefix": "ShowHelp",
     "body": "ShowHelp(${1:Player ply})$0\r\n",
-    "description": "(Server) Method: GM:ShowHelp() Called when a player executes gm_showhelp console command. ( Default bind is F1 )"
+    "description": "(Server) Method: GM:ShowHelp\n\nCalled when a player executes gm_showhelp console command. ( Default bind is F1 )"
   },
   "GM:ShowSpare1": {
     "prefix": "ShowSpare1",
     "body": "ShowSpare1(${1:Player ply})$0\r\n",
-    "description": "(Server) Method: GM:ShowSpare1() Called when a player executes gm_showspare1 console command. ( Default bind is F3 )"
+    "description": "(Server) Method: GM:ShowSpare1\n\nCalled when a player executes gm_showspare1 console command. ( Default bind is F3 )"
   },
   "GM:ShowSpare2": {
     "prefix": "ShowSpare2",
     "body": "ShowSpare2(${1:Player ply})$0\r\n",
-    "description": "(Server) Method: GM:ShowSpare2() Called when a player executes gm_showspare2 console command. ( Default bind is F4 )"
+    "description": "(Server) Method: GM:ShowSpare2\n\nCalled when a player executes gm_showspare2 console command. ( Default bind is F4 )"
   },
   "GM:ShowTeam": {
     "prefix": "ShowTeam",
     "body": "ShowTeam(${1:Player ply})$0\r\n",
-    "description": "(Server) Method: GM:ShowTeam() Called when a player executes gm_showteam console command. ( Default bind is F2 )"
+    "description": "(Server) Method: GM:ShowTeam\n\nCalled when a player executes gm_showteam console command. ( Default bind is F2 )"
   },
   "GM:SpawniconGenerated": {
     "prefix": "SpawniconGenerated",
     "body": "SpawniconGenerated(${1:string lastmodel}, ${2:string imagename}, ${3:number modelsleft})$0\r\n",
-    "description": "(Client) Method: GM:SpawniconGenerated() Called when spawn icon is generated."
+    "description": "(Client) Method: GM:SpawniconGenerated\n\nCalled when spawn icon is generated."
   },
   "GM:StartGame": {
     "prefix": "StartGame",
     "body": "StartGame()$0\r\n",
-    "description": "(Menu) Method: GM:StartGame() Called when you start a new game via the menu."
+    "description": "(Menu) Method: GM:StartGame\n\nCalled when you start a new game via the menu."
   },
   "GM:Tick": {
     "prefix": "Tick",
     "body": "Tick()$0\r\n",
-    "description": "(Shared) Method: GM:Tick() Called every server tick. Serverside, this is similar to {{HookFunction|GM|Think}}."
+    "description": "(Shared) Method: GM:Tick\n\nCalled every server tick. Serverside, this is similar to GM.Think."
   },
   "GM:TranslateActivity": {
     "prefix": "TranslateActivity",
     "body": "TranslateActivity(${1:Player ply}, ${2:number act})$0\r\n",
-    "description": "(Shared) Method: GM:TranslateActivity() Allows you to translate player activities."
+    "description": "(Shared) Method: GM:TranslateActivity\n\nAllows you to translate player activities."
   },
   "GM:UpdateAnimation": {
     "prefix": "UpdateAnimation",
     "body": "UpdateAnimation(${1:Player ply}, ${2:number velocity}, ${3:number maxSeqGroundSpeed})$0\r\n",
-    "description": "(Shared) Method: GM:UpdateAnimation() Animation updates (pose params etc) should be done here."
+    "description": "(Shared) Method: GM:UpdateAnimation\n\nAnimation updates (pose params etc) should be done here."
   },
   "GM:VehicleMove": {
     "prefix": "VehicleMove",
     "body": "VehicleMove(${1:Player ply}, ${2:Vehicle veh}, ${3:CMoveData mv})$0\r\n",
-    "description": "(Shared) Method: GM:VehicleMove() Called when you are driving a vehicle. This hook works just like {{HookFunction|GM|Move}}."
+    "description": "(Shared) Method: GM:VehicleMove\n\nCalled when you are driving a vehicle. This hook works just like GM.Move."
   },
   "GM:VGUIMousePressAllowed": {
     "prefix": "VGUIMousePressAllowed",
     "body": "VGUIMousePressAllowed(${1:number button})$0\r\n",
-    "description": "(Client) Method: GM:VGUIMousePressAllowed() [[Category:Menu_Hooks]] Called when user clicks on a VGUI panel."
+    "description": "(Client) Method: GM:VGUIMousePressAllowed\n\n[[Category:Menu_Hooks]] Called when user clicks on a VGUI panel."
   },
   "GM:VGUIMousePressed": {
     "prefix": "VGUIMousePressed",
     "body": "VGUIMousePressed(${1:Panel pnl}, ${2:number mouseCode})$0\r\n",
-    "description": "(Client) Method: GM:VGUIMousePressed() [[Category:Menu_Hooks]] Called when a mouse button is pressed on a VGUI element or menu."
+    "description": "(Client) Method: GM:VGUIMousePressed\n\n[[Category:Menu_Hooks]] Called when a mouse button is pressed on a VGUI element or menu."
   },
   "GM:WorkshopDownloadFile": {
     "prefix": "WorkshopDownloadFile",
     "body": "WorkshopDownloadFile(${1:number id}, ${2:number imageID}, ${3:string title}, ${4:number size})$0\r\n",
-    "description": "(Menu) Method: GM:WorkshopDownloadFile() Called when an addon from the Steam workshop begins downloading. Used by default to place details on the workshop downloading panel."
+    "description": "(Menu) Method: GM:WorkshopDownloadFile\n\nCalled when an addon from the Steam workshop begins downloading. Used by default to place details on the workshop downloading panel."
   },
   "GM:WorkshopDownloadProgress": {
     "prefix": "WorkshopDownloadProgress",
     "body": "WorkshopDownloadProgress(${1:number id}, ${2:number imageID}, ${3:string title}, ${4:number downloaded}, ${5:number expected})$0\r\n",
-    "description": "(Menu) Method: GM:WorkshopDownloadProgress() Called while an addon from the Steam workshop is downloading. Used by default to update details on the fancy workshop download panel."
+    "description": "(Menu) Method: GM:WorkshopDownloadProgress\n\nCalled while an addon from the Steam workshop is downloading. Used by default to update details on the fancy workshop download panel."
   },
   "GM:WorkshopDownloadTotals": {
     "prefix": "WorkshopDownloadTotals",
     "body": "WorkshopDownloadTotals(${1:number remain}, ${2:number total})$0\r\n",
-    "description": "(Menu) Method: GM:WorkshopDownloadTotals() Called after {{HookFunction|GM|WorkshopStart}}."
+    "description": "(Menu) Method: GM:WorkshopDownloadTotals\n\nCalled after GM.WorkshopStart."
   },
   "GM:WorkshopEnd": {
     "prefix": "WorkshopEnd",
     "body": "WorkshopEnd()$0\r\n",
-    "description": "(Menu) Method: GM:WorkshopEnd() Called when downloading content from Steam workshop ends. Used by default to hide fancy workshop downloading panel."
+    "description": "(Menu) Method: GM:WorkshopEnd\n\nCalled when downloading content from Steam workshop ends. Used by default to hide fancy workshop downloading panel."
   },
   "GM:WorkshopStart": {
     "prefix": "WorkshopStart",
     "body": "WorkshopStart()$0\r\n",
-    "description": "(Menu) Method: GM:WorkshopStart() Called when downloading content from Steam workshop begins. Used by default to show fancy workshop downloading panel."
-  },
-  "GM:WorkshopSubscriptionsProgress": {
-    "prefix": "WorkshopSubscriptionsProgress",
-    "body": "WorkshopSubscriptionsProgress(${1:number }, ${2:number })$0\r\n",
-    "description": "(Menu) Method: GM:WorkshopSubscriptionsProgress() {{Stub}}"
+    "description": "(Menu) Method: GM:WorkshopStart\n\nCalled when downloading content from Steam workshop begins. Used by default to show fancy workshop downloading panel."
   },
   "NEXTBOT:BehaveStart": {
     "prefix": "BehaveStart",
     "body": "BehaveStart()$0\r\n",
-    "description": "(Server) Method: NEXTBOT:BehaveStart() Called to initialize the behaviour."
+    "description": "(Server) Method: NEXTBOT:BehaveStart\n\nCalled to initialize the behaviour."
   },
   "NEXTBOT:BehaveUpdate": {
     "prefix": "BehaveUpdate",
     "body": "BehaveUpdate(${1:number interval})$0\r\n",
-    "description": "(Server) Method: NEXTBOT:BehaveUpdate() Called to update the bot's behaviour."
+    "description": "(Server) Method: NEXTBOT:BehaveUpdate\n\nCalled to update the bot's behaviour."
   },
   "NEXTBOT:BodyUpdate": {
     "prefix": "BodyUpdate",
     "body": "BodyUpdate()$0\r\n",
-    "description": "(Server) Method: NEXTBOT:BodyUpdate() Called to update the bot's animation."
+    "description": "(Server) Method: NEXTBOT:BodyUpdate\n\nCalled to update the bot's animation."
   },
   "NEXTBOT:OnContact": {
     "prefix": "OnContact",
     "body": "OnContact(${1:Entity ent})$0\r\n",
-    "description": "(Server) Method: NEXTBOT:OnContact() Called when the nextbot touches another entity."
+    "description": "(Server) Method: NEXTBOT:OnContact\n\nCalled when the nextbot touches another entity."
   },
   "NEXTBOT:OnIgnite": {
     "prefix": "OnIgnite",
     "body": "OnIgnite()$0\r\n",
-    "description": "(Server) Method: NEXTBOT:OnIgnite() Called when the bot is ignited."
+    "description": "(Server) Method: NEXTBOT:OnIgnite\n\nCalled when the bot is ignited."
   },
   "NEXTBOT:OnInjured": {
     "prefix": "OnInjured",
     "body": "OnInjured(${1:CTakeDamageInfo info})$0\r\n",
-    "description": "(Server) Method: NEXTBOT:OnInjured() Called when the bot gets hurt."
+    "description": "(Server) Method: NEXTBOT:OnInjured\n\nCalled when the bot gets hurt."
   },
   "NEXTBOT:": {
     "prefix": "",
     "body": "(${1:CTakeDamageInfo info})$0\r\n",
-    "description": "(Server) Method: NEXTBOT:() Called when the bot gets killed."
+    "description": "(Server) Method: NEXTBOT:\n\nCalled when the bot gets killed."
   },
   "NEXTBOT:OnLandOnGround": {
     "prefix": "OnLandOnGround",
     "body": "OnLandOnGround(${1:Entity ent})$0\r\n",
-    "description": "(Server) Method: NEXTBOT:OnLandOnGround() Called when the bot's feet return to the ground."
+    "description": "(Server) Method: NEXTBOT:OnLandOnGround\n\nCalled when the bot's feet return to the ground."
   },
   "NEXTBOT:OnLeaveGround": {
     "prefix": "OnLeaveGround",
     "body": "OnLeaveGround(${1:Entity ent})$0\r\n",
-    "description": "(Server) Method: NEXTBOT:OnLeaveGround() Called when the bot's feet leave the ground - for whatever reason."
+    "description": "(Server) Method: NEXTBOT:OnLeaveGround\n\nCalled when the bot's feet leave the ground - for whatever reason."
   },
   "NEXTBOT:OnNavAreaChanged": {
     "prefix": "OnNavAreaChanged",
     "body": "OnNavAreaChanged(${1:CNavArea old}, ${2:CNavArea new})$0\r\n",
-    "description": "(Server) Method: NEXTBOT:OnNavAreaChanged() Called when the nextbot enters a new navigation area."
+    "description": "(Server) Method: NEXTBOT:OnNavAreaChanged\n\nCalled when the nextbot enters a new navigation area."
   },
   "NEXTBOT:OnOtherKilled": {
     "prefix": "OnOtherKilled",
     "body": "OnOtherKilled(${1:Entity victim}, ${2:CTakeDamageInfo info})$0\r\n",
-    "description": "(Server) Method: NEXTBOT:OnOtherKilled() Called when someone else or something else has been killed."
+    "description": "(Server) Method: NEXTBOT:OnOtherKilled\n\nCalled when someone else or something else has been killed."
   },
   "NEXTBOT:OnUnStuck": {
     "prefix": "OnUnStuck",
     "body": "OnUnStuck()$0\r\n",
-    "description": "(Server) Method: NEXTBOT:OnUnStuck() Called when the bot thinks it is un-stuck."
+    "description": "(Server) Method: NEXTBOT:OnUnStuck\n\nCalled when the bot thinks it is un-stuck."
   },
   "NEXTBOT:Think": {
     "prefix": "Think",
     "body": "Think()$0\r\n",
-    "description": "(Server) Method: NEXTBOT:Think() Called every tick."
+    "description": "(Server) Method: NEXTBOT:Think\n\nCalled every tick."
   },
   "NEXTBOT:Use": {
     "prefix": "Use",
     "body": "Use(${1:Entity activator}, ${2:Entity caller}, ${3:number type}, ${4:number value})$0\r\n",
-    "description": "(Server) Method: NEXTBOT:Use() Called when a player 'uses' the entity."
+    "description": "(Server) Method: NEXTBOT:Use\n\nCalled when a player 'uses' the entity."
   },
   "PANEL:ActionSignal": {
     "prefix": "ActionSignal",
     "body": "ActionSignal(${1:string signalName}, ${2:string signalValue})$0\r\n",
-    "description": "(Client) Method: PANEL:ActionSignal() Called whenever a panel receives a command signal from one of its children."
+    "description": "(Client) Method: PANEL:ActionSignal\n\nCalled whenever a panel receives a command signal from one of its children."
   },
   "PANEL:": {
     "prefix": "",
     "body": "()$0\r\n",
-    "description": "(Client) Method: PANEL:() Called every frame unless {{ClassFunction|Panel|IsVisible}} is set to false."
+    "description": "(Client) Method: PANEL:\n\nCalled every frame unless Panel.IsVisible is set to false."
   },
   "PANEL:ApplySchemeSettings": {
     "prefix": "ApplySchemeSettings",
     "body": "ApplySchemeSettings()$0\r\n",
-    "description": "(Client) Method: PANEL:ApplySchemeSettings() Called whenever the panel should apply its scheme(style)."
+    "description": "(Client) Method: PANEL:ApplySchemeSettings\n\nCalled whenever the panel should apply its scheme(style)."
   },
   "PANEL:Init": {
     "prefix": "Init",
     "body": "Init()$0\r\n",
-    "description": "(Client) Method: PANEL:Init() Called when the panel is created. This is called for each base type that the panel has."
+    "description": "(Client) Method: PANEL:Init\n\nCalled when the panel is created. This is called for each base type that the panel has."
   },
   "PANEL:OnChangeTitle": {
     "prefix": "OnChangeTitle",
     "body": "OnChangeTitle(${1:string targetURL})$0\r\n",
-    "description": "(Client) Method: PANEL:OnChangeTitle() Called by HTML panels when the target URL of the frame has changed, this happens when you hover over a link."
+    "description": "(Client) Method: PANEL:OnChangeTitle\n\nCalled by HTML panels when the target URL of the frame has changed, this happens when you hover over a link."
   },
   "PANEL:OnChildAdded": {
     "prefix": "OnChildAdded",
     "body": "OnChildAdded(${1:Panel child})$0\r\n",
-    "description": "(Client) Method: PANEL:OnChildAdded() Called whenever a child was parented to the panel."
+    "description": "(Client) Method: PANEL:OnChildAdded\n\nCalled whenever a child was parented to the panel."
   },
   "PANEL:OnChildRemoved": {
     "prefix": "OnChildRemoved",
     "body": "OnChildRemoved(${1:Panel child})$0\r\n",
-    "description": "(Client) Method: PANEL:OnChildRemoved() Called whenever a child of the panel is about to removed."
+    "description": "(Client) Method: PANEL:OnChildRemoved\n\nCalled whenever a child of the panel is about to removed."
   },
   "PANEL:OnChildViewCreated": {
     "prefix": "OnChildViewCreated",
     "body": "OnChildViewCreated(${1:string sourceURL}, ${2:string targetURL}, ${3:boolean isPopup})$0\r\n",
-    "description": "(Client) Method: PANEL:OnChildViewCreated() Called by HTML panels when the page attempts to open a new child view (such as a popup or new tab)."
+    "description": "(Client) Method: PANEL:OnChildViewCreated\n\nCalled by HTML panels when the page attempts to open a new child view (such as a popup or new tab)."
   },
   "PANEL:OnCursorEntered": {
     "prefix": "OnCursorEntered",
     "body": "OnCursorEntered()$0\r\n",
-    "description": "(Client) Method: PANEL:OnCursorEntered() Called whenever the cursor entered the panels bounds."
+    "description": "(Client) Method: PANEL:OnCursorEntered\n\nCalled whenever the cursor entered the panels bounds."
   },
   "PANEL:OnCursorExited": {
     "prefix": "OnCursorExited",
     "body": "OnCursorExited()$0\r\n",
-    "description": "(Client) Method: PANEL:OnCursorExited() Called whenever the cursor left the panels bounds."
+    "description": "(Client) Method: PANEL:OnCursorExited\n\nCalled whenever the cursor left the panels bounds."
   },
   "PANEL:OnCursorMoved": {
     "prefix": "OnCursorMoved",
     "body": "OnCursorMoved(${1:number cursorX}, ${2:number cursorY})$0\r\n",
-    "description": "(Client) Method: PANEL:OnCursorMoved() Called whenever the cursor was moved with the panels bounds."
+    "description": "(Client) Method: PANEL:OnCursorMoved\n\nCalled whenever the cursor was moved with the panels bounds."
   },
   "PANEL:OnDocumentReady": {
     "prefix": "OnDocumentReady",
     "body": "OnDocumentReady(${1:string url})$0\r\n",
-    "description": "(Client) Method: PANEL:OnDocumentReady() Called by HTML panels when the panel's DOM has been set up. You can run JavaScript in here."
+    "description": "(Client) Method: PANEL:OnDocumentReady\n\nCalled by HTML panels when the panel's DOM has been set up. You can run JavaScript in here."
   },
   "PANEL:OnKeyCodePressed": {
     "prefix": "OnKeyCodePressed",
     "body": "OnKeyCodePressed(${1:number keyCode})$0\r\n",
-    "description": "(Client) Method: PANEL:OnKeyCodePressed() Called whenever a keyboard key was pressed while the panel is focused."
+    "description": "(Client) Method: PANEL:OnKeyCodePressed\n\nCalled whenever a keyboard key was pressed while the panel is focused."
   },
   "PANEL:OnMousePressed": {
     "prefix": "OnMousePressed",
     "body": "OnMousePressed(${1:number keyCode})$0\r\n",
-    "description": "(Client) Method: PANEL:OnMousePressed() Called whenever a mouse key was pressed while the panel is focused."
+    "description": "(Client) Method: PANEL:OnMousePressed\n\nCalled whenever a mouse key was pressed while the panel is focused."
   },
   "PANEL:OnMouseReleased": {
     "prefix": "OnMouseReleased",
     "body": "OnMouseReleased(${1:number keyCode})$0\r\n",
-    "description": "(Client) Method: PANEL:OnMouseReleased() Called whenever a mouse key was released while the panel is focused."
+    "description": "(Client) Method: PANEL:OnMouseReleased\n\nCalled whenever a mouse key was released while the panel is focused."
   },
   "PANEL:OnMouseWheeled": {
     "prefix": "OnMouseWheeled",
     "body": "OnMouseWheeled(${1:number scrollDelta})$0\r\n",
-    "description": "(Client) Method: PANEL:OnMouseWheeled() Called whenever the mouse wheel was used."
+    "description": "(Client) Method: PANEL:OnMouseWheeled\n\nCalled whenever the mouse wheel was used."
   },
   "PANEL:OnRemove": {
     "prefix": "OnRemove",
     "body": "OnRemove()$0\r\n",
-    "description": "(Client) Method: PANEL:OnRemove() Called when the panel is about to be removed."
+    "description": "(Client) Method: PANEL:OnRemove\n\nCalled when the panel is about to be removed."
   },
   "PANEL:OnStartDragging": {
     "prefix": "OnStartDragging",
     "body": "OnStartDragging()$0\r\n",
-    "description": "(Client) Method: PANEL:OnStartDragging() {{Internal}} Called by {{LibraryFunction|dragndrop|StartDragging}} when the panel starts being dragged."
+    "description": "(Client) Method: PANEL:OnStartDragging\n\n[Internal]  Called by dragndrop.StartDragging when the panel starts being dragged."
   },
   "PANEL:PaintOver": {
     "prefix": "PaintOver",
     "body": "PaintOver(${1:number width}, ${2:number height})$0\r\n",
-    "description": "(Client) Method: PANEL:PaintOver() Called whenever the panel and all its children were drawn, return true to override the default drawing."
+    "description": "(Client) Method: PANEL:PaintOver\n\nCalled whenever the panel and all its children were drawn, return true to override the default drawing."
   },
   "PANEL:PerformLayout": {
     "prefix": "PerformLayout",
     "body": "PerformLayout(${1:number width}, ${2:number height})$0\r\n",
-    "description": "(Client) Method: PANEL:PerformLayout() Called whenever the panels layout was invalidated. This means all child panels must be re-positioned to fit the possibly new size of this panel."
+    "description": "(Client) Method: PANEL:PerformLayout\n\nCalled whenever the panels layout was invalidated. This means all child panels must be re-positioned to fit the possibly new size of this panel."
   },
   "PANEL:Think": {
     "prefix": "Think",
     "body": "Think()$0\r\n",
-    "description": "(Client) Method: PANEL:Think() Called every frame while {{ClassFunction|Panel|IsVisible}} is true."
+    "description": "(Client) Method: PANEL:Think\n\nCalled every frame while Panel.IsVisible is true."
   },
   "PLAYER:FinishMove": {
     "prefix": "FinishMove",
     "body": "FinishMove(${1:CMoveData mv})$0\r\n",
-    "description": "(Client) Method: PLAYER:FinishMove() Called from {{HookFunction|GM|FinishMove}}."
+    "description": "(Client) Method: PLAYER:FinishMove\n\nCalled from GM.FinishMove."
   },
   "PLAYER:GetHandsModel": {
     "prefix": "GetHandsModel",
     "body": "GetHandsModel()$0\r\n",
-    "description": "(Client) Method: PLAYER:GetHandsModel() Called on player spawn to determine which hand model to use"
+    "description": "(Client) Method: PLAYER:GetHandsModel\n\nCalled on player spawn to determine which hand model to use"
   },
   "PLAYER:Init": {
     "prefix": "Init",
     "body": "Init()$0\r\n",
-    "description": "(Shared) Method: PLAYER:Init() Called when the class object is created"
+    "description": "(Shared) Method: PLAYER:Init\n\nCalled when the class object is created"
   },
   "PLAYER:Loadout": {
     "prefix": "Loadout",
     "body": "Loadout()$0\r\n",
-    "description": "(Server) Method: PLAYER:Loadout() Called on spawn to give the player their default loadout"
+    "description": "(Server) Method: PLAYER:Loadout\n\nCalled on spawn to give the player their default loadout"
   },
   "PLAYER:Move": {
     "prefix": "Move",
     "body": "Move(${1:CMoveData mv})$0\r\n",
-    "description": "(Client) Method: PLAYER:Move() Called from {{HookFunction|GM|Move}}."
+    "description": "(Client) Method: PLAYER:Move\n\nCalled from GM.Move."
   },
   "PLAYER:PostDrawViewModel": {
     "prefix": "PostDrawViewModel",
     "body": "PostDrawViewModel(${1:Entity viewmodel}, ${2:Entity weapon})$0\r\n",
-    "description": "(Client) Method: PLAYER:PostDrawViewModel() Called after the viewmodel has been drawn"
+    "description": "(Client) Method: PLAYER:PostDrawViewModel\n\nCalled after the viewmodel has been drawn"
   },
   "PLAYER:PreDrawViewModel": {
     "prefix": "PreDrawViewModel",
     "body": "PreDrawViewModel(${1:Entity viewmodel}, ${2:Entity weapon})$0\r\n",
-    "description": "(Client) Method: PLAYER:PreDrawViewModel() Called before the viewmodel is drawn"
+    "description": "(Client) Method: PLAYER:PreDrawViewModel\n\nCalled before the viewmodel is drawn"
   },
   "PLAYER:SetModel": {
     "prefix": "SetModel",
     "body": "SetModel()$0\r\n",
-    "description": "(Server) Method: PLAYER:SetModel() Called when we need to set player model from the class."
+    "description": "(Server) Method: PLAYER:SetModel\n\nCalled when we need to set player model from the class."
   },
   "PLAYER:SetupDataTables": {
     "prefix": "SetupDataTables",
     "body": "SetupDataTables()$0\r\n",
-    "description": "(Shared) Method: PLAYER:SetupDataTables() Set up the network table accessors"
+    "description": "(Shared) Method: PLAYER:SetupDataTables\n\nSet up the network table accessors"
   },
   "PLAYER:Spawn": {
     "prefix": "Spawn",
     "body": "Spawn()$0\r\n",
-    "description": "(Server) Method: PLAYER:Spawn() Called when the player spawns"
+    "description": "(Server) Method: PLAYER:Spawn\n\nCalled when the player spawns"
   },
   "PLAYER:StartMove": {
     "prefix": "StartMove",
     "body": "StartMove(${1:CUserCmd cmd}, ${2:CMoveData mv})$0\r\n",
-    "description": "(Client) Method: PLAYER:StartMove() Called from {{HookFunction|GM|CreateMove}}."
+    "description": "(Client) Method: PLAYER:StartMove\n\nCalled from GM.CreateMove."
   },
   "PLAYER:ViewModelChanged": {
     "prefix": "ViewModelChanged",
     "body": "ViewModelChanged(${1:Entity viewmodel}, ${2:string old}, ${3:string new})$0\r\n",
-    "description": "(Client) Method: PLAYER:ViewModelChanged() Called when the player changes their weapon to another one causing their viewmodel model to change"
+    "description": "(Client) Method: PLAYER:ViewModelChanged\n\nCalled when the player changes their weapon to another one causing their viewmodel model to change"
   },
   "SANDBOX:AddGamemodeToolMenuCategories": {
     "prefix": "AddGamemodeToolMenuCategories",
     "body": "AddGamemodeToolMenuCategories()$0\r\n",
-    "description": "(Client) Method: SANDBOX:AddGamemodeToolMenuCategories() {{Internal}}"
+    "description": "(Client) Method: SANDBOX:AddGamemodeToolMenuCategories\n\n[Internal] "
   },
   "SANDBOX:AddGamemodeToolMenuTabs": {
     "prefix": "AddGamemodeToolMenuTabs",
     "body": "AddGamemodeToolMenuTabs()$0\r\n",
-    "description": "(Client) Method: SANDBOX:AddGamemodeToolMenuTabs() {{Internal}}"
+    "description": "(Client) Method: SANDBOX:AddGamemodeToolMenuTabs\n\n[Internal] "
   },
   "SANDBOX:AddToolMenuCategories": {
     "prefix": "AddToolMenuCategories",
     "body": "AddToolMenuCategories()$0\r\n",
-    "description": "(Client) Method: SANDBOX:AddToolMenuCategories() This hook is used to add new categories to spawnmenu tool tabs."
+    "description": "(Client) Method: SANDBOX:AddToolMenuCategories\n\nThis hook is used to add new categories to spawnmenu tool tabs."
   },
   "SANDBOX:AddToolMenuTabs": {
     "prefix": "AddToolMenuTabs",
     "body": "AddToolMenuTabs()$0\r\n",
-    "description": "(Client) Method: SANDBOX:AddToolMenuTabs() This hook is used to add new tool tabs to spawnmenu."
+    "description": "(Client) Method: SANDBOX:AddToolMenuTabs\n\nThis hook is used to add new tool tabs to spawnmenu."
   },
   "SANDBOX:CanDrive": {
     "prefix": "CanDrive",
     "body": "CanDrive(${1:Player ply}, ${2:Entity ent})$0\r\n",
-    "description": "(Shared) Method: SANDBOX:CanDrive() Called when a player attempts to drive a prop via Prop Drive"
+    "description": "(Shared) Method: SANDBOX:CanDrive\n\nCalled when a player attempts to drive a prop via Prop Drive"
   },
   "SANDBOX:CanProperty": {
     "prefix": "CanProperty",
     "body": "CanProperty(${1:Player ply}, ${2:string property}, ${3:Entity ent})$0\r\n",
-    "description": "(Shared) Method: SANDBOX:CanProperty() Controls if a property can be used or not."
+    "description": "(Shared) Method: SANDBOX:CanProperty\n\nControls if a property can be used or not."
   },
   "SANDBOX:CanTool": {
     "prefix": "CanTool",
     "body": "CanTool(${1:Player ply}, ${2:table tr}, ${3:string tool})$0\r\n",
-    "description": "(Shared) Method: SANDBOX:CanTool() Called when a player attempts to fire their tool gun. Return true to specifically allow the attempt, false to block it."
+    "description": "(Shared) Method: SANDBOX:CanTool\n\nCalled when a player attempts to fire their tool gun. Return true to specifically allow the attempt, false to block it."
   },
   "SANDBOX:ContentSidebarSelection": {
     "prefix": "ContentSidebarSelection",
     "body": "ContentSidebarSelection(${1:Panel parent}, ${2:Panel node})$0\r\n",
-    "description": "(Client) Method: SANDBOX:ContentSidebarSelection() Called when player selects an item on the spawnmenu sidebar at the left."
+    "description": "(Client) Method: SANDBOX:ContentSidebarSelection\n\nCalled when player selects an item on the spawnmenu sidebar at the left."
   },
   "SANDBOX:ContextMenuCreated": {
     "prefix": "ContextMenuCreated",
     "body": "ContextMenuCreated(${1:Panel g_ContextMenu})$0\r\n",
-    "description": "(Client) Method: SANDBOX:ContextMenuCreated() Called when the context menu is created."
+    "description": "(Client) Method: SANDBOX:ContextMenuCreated\n\nCalled when the context menu is created."
   },
   "SANDBOX:PersistenceLoad": {
     "prefix": "PersistenceLoad",
     "body": "PersistenceLoad()$0\r\n",
-    "description": "(Server) Method: SANDBOX:PersistenceLoad() Called when persistent props are loaded."
+    "description": "(Server) Method: SANDBOX:PersistenceLoad\n\nCalled when persistent props are loaded."
   },
   "SANDBOX:PersistenceSave": {
     "prefix": "PersistenceSave",
     "body": "PersistenceSave()$0\r\n",
-    "description": "(Server) Method: SANDBOX:PersistenceSave() Called when persistent props are saved."
+    "description": "(Server) Method: SANDBOX:PersistenceSave\n\nCalled when persistent props are saved."
   },
   "SANDBOX:PlayerGiveSWEP": {
     "prefix": "PlayerGiveSWEP",
     "body": "PlayerGiveSWEP(${1:Player ply}, ${2:string weapon}, ${3:table swep})$0\r\n",
-    "description": "(Server) Method: SANDBOX:PlayerGiveSWEP() Called when a player attempts to give themselves a weapon from the Q menu. ( Left mouse clicks on an icon )"
+    "description": "(Server) Method: SANDBOX:PlayerGiveSWEP\n\nCalled when a player attempts to give themselves a weapon from the Q menu. ( Left mouse clicks on an icon )"
   },
   "SANDBOX:PlayerSpawnedEffect": {
     "prefix": "PlayerSpawnedEffect",
     "body": "PlayerSpawnedEffect(${1:Player ply}, ${2:string model}, ${3:Entity ent})$0\r\n",
-    "description": "(Server) Method: SANDBOX:PlayerSpawnedEffect() Called after the player spawned an effect."
+    "description": "(Server) Method: SANDBOX:PlayerSpawnedEffect\n\nCalled after the player spawned an effect."
   },
   "SANDBOX:PlayerSpawnedNPC": {
     "prefix": "PlayerSpawnedNPC",
     "body": "PlayerSpawnedNPC(${1:Player ply}, ${2:Entity ent})$0\r\n",
-    "description": "(Server) Method: SANDBOX:PlayerSpawnedNPC() Called after the player spawned an NPC."
+    "description": "(Server) Method: SANDBOX:PlayerSpawnedNPC\n\nCalled after the player spawned an NPC."
   },
   "SANDBOX:PlayerSpawnedProp": {
     "prefix": "PlayerSpawnedProp",
     "body": "PlayerSpawnedProp(${1:Player ply}, ${2:string model}, ${3:Entity entity})$0\r\n",
-    "description": "(Server) Method: SANDBOX:PlayerSpawnedProp() Called when a player has successfully spawned a prop from the Q menu."
+    "description": "(Server) Method: SANDBOX:PlayerSpawnedProp\n\nCalled when a player has successfully spawned a prop from the Q menu."
   },
   "SANDBOX:PlayerSpawnedRagdoll": {
     "prefix": "PlayerSpawnedRagdoll",
     "body": "PlayerSpawnedRagdoll(${1:Player ply}, ${2:string model}, ${3:Entity ent})$0\r\n",
-    "description": "(Server) Method: SANDBOX:PlayerSpawnedRagdoll() Called after the player spawned a ragdoll."
+    "description": "(Server) Method: SANDBOX:PlayerSpawnedRagdoll\n\nCalled after the player spawned a ragdoll."
   },
   "SANDBOX:PlayerSpawnedSENT": {
     "prefix": "PlayerSpawnedSENT",
     "body": "PlayerSpawnedSENT(${1:Player ply}, ${2:Entity ent})$0\r\n",
-    "description": "(Server) Method: SANDBOX:PlayerSpawnedSENT() Called after the player has spawned a scripted entity."
+    "description": "(Server) Method: SANDBOX:PlayerSpawnedSENT\n\nCalled after the player has spawned a scripted entity."
   },
   "SANDBOX:": {
     "prefix": "",
     "body": "(${1:Player ply}, ${2:Entity ent})$0\r\n",
-    "description": "(Server) Method: SANDBOX:() Called after the player has spawned a scripted weapon from the spawnmenu with a middle mouse click."
+    "description": "(Server) Method: SANDBOX:\n\nCalled after the player has spawned a scripted weapon from the spawnmenu with a middle mouse click."
   },
   "SANDBOX:PlayerSpawnedVehicle": {
     "prefix": "PlayerSpawnedVehicle",
     "body": "PlayerSpawnedVehicle(${1:Player ply}, ${2:Entity ent})$0\r\n",
-    "description": "(Server) Method: SANDBOX:PlayerSpawnedVehicle() Called after the player spawned a vehicle."
+    "description": "(Server) Method: SANDBOX:PlayerSpawnedVehicle\n\nCalled after the player spawned a vehicle."
   },
   "SANDBOX:PlayerSpawnEffect": {
     "prefix": "PlayerSpawnEffect",
     "body": "PlayerSpawnEffect(${1:Player ply}, ${2:string model})$0\r\n",
-    "description": "(Server) Method: SANDBOX:PlayerSpawnEffect() Called to ask if player allowed to spawn a particular effect or not."
+    "description": "(Server) Method: SANDBOX:PlayerSpawnEffect\n\nCalled to ask if player allowed to spawn a particular effect or not."
   },
   "SANDBOX:PlayerSpawnNPC": {
     "prefix": "PlayerSpawnNPC",
     "body": "PlayerSpawnNPC(${1:Player ply}, ${2:string npc_type}, ${3:string weapon})$0\r\n",
-    "description": "(Server) Method: SANDBOX:PlayerSpawnNPC() Called to ask if player allowed to spawn a particular NPC or not."
+    "description": "(Server) Method: SANDBOX:PlayerSpawnNPC\n\nCalled to ask if player allowed to spawn a particular NPC or not."
   },
   "SANDBOX:PlayerSpawnObject": {
     "prefix": "PlayerSpawnObject",
     "body": "PlayerSpawnObject(${1:Player ply}, ${2:string model}, ${3:number skin})$0\r\n",
-    "description": "(Server) Method: SANDBOX:PlayerSpawnObject() Called to ask whether player is allowed to spawn any objects."
+    "description": "(Server) Method: SANDBOX:PlayerSpawnObject\n\nCalled to ask whether player is allowed to spawn any objects."
   },
   "SANDBOX:PlayerSpawnProp": {
     "prefix": "PlayerSpawnProp",
     "body": "PlayerSpawnProp(${1:Player ply}, ${2:string model})$0\r\n",
-    "description": "(Server) Method: SANDBOX:PlayerSpawnProp() Called when a player attempts to spawn a prop from the Q menu."
+    "description": "(Server) Method: SANDBOX:PlayerSpawnProp\n\nCalled when a player attempts to spawn a prop from the Q menu."
   },
   "SANDBOX:PlayerSpawnRagdoll": {
     "prefix": "PlayerSpawnRagdoll",
     "body": "PlayerSpawnRagdoll(${1:Player ply}, ${2:string model})$0\r\n",
-    "description": "(Server) Method: SANDBOX:PlayerSpawnRagdoll() Called when a player attempts to spawn a ragdoll from the Q menu."
+    "description": "(Server) Method: SANDBOX:PlayerSpawnRagdoll\n\nCalled when a player attempts to spawn a ragdoll from the Q menu."
   },
   "SANDBOX:PlayerSpawnSENT": {
     "prefix": "PlayerSpawnSENT",
     "body": "PlayerSpawnSENT(${1:Player ply}, ${2:string class})$0\r\n",
-    "description": "(Server) Method: SANDBOX:PlayerSpawnSENT() Called when a player attempts to spawn an Entity from the Q menu."
+    "description": "(Server) Method: SANDBOX:PlayerSpawnSENT\n\nCalled when a player attempts to spawn an Entity from the Q menu."
   },
   "SANDBOX:PlayerSpawnVehicle": {
     "prefix": "PlayerSpawnVehicle",
     "body": "PlayerSpawnVehicle(${1:Player ply}, ${2:string model}, ${3:string name}, ${4:table table})$0\r\n",
-    "description": "(Server) Method: SANDBOX:PlayerSpawnVehicle() Called to ask if player allowed to spawn a particular vehicle or not."
+    "description": "(Server) Method: SANDBOX:PlayerSpawnVehicle\n\nCalled to ask if player allowed to spawn a particular vehicle or not."
   },
   "SANDBOX:PopulatePropMenu": {
     "prefix": "PopulatePropMenu",
     "body": "PopulatePropMenu()$0\r\n",
-    "description": "(Client) Method: SANDBOX:PopulatePropMenu() This hook makes the engine load the spawnlist text files."
+    "description": "(Client) Method: SANDBOX:PopulatePropMenu\n\nThis hook makes the engine load the spawnlist text files."
   },
   "SANDBOX:SpawnMenuEnabled": {
     "prefix": "SpawnMenuEnabled",
     "body": "SpawnMenuEnabled()$0\r\n",
-    "description": "(Client) Method: SANDBOX:SpawnMenuEnabled() If false is returned then the spawn menu is never created."
-  },
-  "SANDBOX:SpawnMenuOpen": {
-    "prefix": "SpawnMenuOpen",
-    "body": "SpawnMenuOpen()$0\r\n",
-    "description": "(Client) Method: SANDBOX:SpawnMenuOpen() Called when spawnmenu is trying to be opened. "
+    "description": "(Client) Method: SANDBOX:SpawnMenuEnabled\n\nIf false is returned then the spawn menu is never created."
   },
   "TOOL:Deploy": {
     "prefix": "Deploy",
     "body": "Deploy()$0\r\n",
-    "description": "(Shared) Method: TOOL:Deploy() Called when {{HookFunction|WEAPON|Deploy}} of the toolgun is called."
+    "description": "(Shared) Method: TOOL:Deploy\n\nCalled when WEAPON.Deploy of the toolgun is called."
   },
   "TOOL:DrawHUD": {
     "prefix": "DrawHUD",
     "body": "DrawHUD()$0\r\n",
-    "description": "(Client) Method: TOOL:DrawHUD() Called when {{HookFunction|WEAPON|DrawHUD}} of the toolgun is called, only when the user has this tool selected."
+    "description": "(Client) Method: TOOL:DrawHUD\n\nCalled when WEAPON.DrawHUD of the toolgun is called, only when the user has this tool selected."
   },
   "TOOL:DrawToolScreen": {
     "prefix": "DrawToolScreen",
     "body": "DrawToolScreen(${1:number width}, ${2:number height})$0\r\n",
-    "description": "(Client) Method: TOOL:DrawToolScreen() Called after the default tool screen has been drawn."
+    "description": "(Client) Method: TOOL:DrawToolScreen\n\nCalled after the default tool screen has been drawn."
   },
   "TOOL:FreezeMovement": {
     "prefix": "FreezeMovement",
     "body": "FreezeMovement()$0\r\n",
-    "description": "(Client) Method: TOOL:FreezeMovement() Called when {{HookFunction|WEAPON|Think}} of the toolgun is called, only when the user has this tool selected."
+    "description": "(Client) Method: TOOL:FreezeMovement\n\nCalled when WEAPON.Think of the toolgun is called, only when the user has this tool selected."
   },
   "TOOL:": {
     "prefix": "",
     "body": "()$0\r\n",
-    "description": "(Shared) Method: TOOL:() Called when {{HookFunction|WEAPON|Holster}} of the toolgun is called, as well as when switching between different toolguns."
+    "description": "(Shared) Method: TOOL:\n\nCalled when WEAPON.Holster of the toolgun is called, as well as when switching between different toolguns."
   },
   "TOOL:LeftClick": {
     "prefix": "LeftClick",
     "body": "LeftClick(${1:table tr})$0\r\n",
-    "description": "(Shared) Method: TOOL:LeftClick() Called when the user left clicks with the tool"
+    "description": "(Shared) Method: TOOL:LeftClick\n\nCalled when the user left clicks with the tool"
   },
   "TOOL:Reload": {
     "prefix": "Reload",
     "body": "Reload(${1:table tr})$0\r\n",
-    "description": "(Shared) Method: TOOL:Reload() Called when the user presses the reload key with the tool out."
+    "description": "(Shared) Method: TOOL:Reload\n\nCalled when the user presses the reload key with the tool out."
   },
   "TOOL:RightClick": {
     "prefix": "RightClick",
     "body": "RightClick(${1:table tr})$0\r\n",
-    "description": "(Shared) Method: TOOL:RightClick() Called when the user right clicks with the tool."
+    "description": "(Shared) Method: TOOL:RightClick\n\nCalled when the user right clicks with the tool."
   },
   "TOOL:Think": {
     "prefix": "Think",
     "body": "Think()$0\r\n",
-    "description": "(Shared) Method: TOOL:Think() Called when {{HookFunction|WEAPON|Think}} of the toolgun is called. This only happens when the tool gun is currently equipped/selected by the player and the selected tool is this tool."
+    "description": "(Shared) Method: TOOL:Think\n\nCalled when WEAPON.Think of the toolgun is called. This only happens when the tool gun is currently equipped/selected by the player and the selected tool is this tool."
   },
   "SWEP:AcceptInput": {
     "prefix": "AcceptInput",
     "body": "AcceptInput(${1:string inputName}, ${2:Entity activator}, ${3:Entity called}, ${4:string data})$0\r\n",
-    "description": "(Server) Method: SWEP:AcceptInput() Called when another entity fires an event to this entity."
+    "description": "(Server) Method: SWEP:AcceptInput\n\nCalled when another entity fires an event to this entity."
   },
   "SWEP:AdjustMouseSensitivity": {
     "prefix": "AdjustMouseSensitivity",
     "body": "AdjustMouseSensitivity()$0\r\n",
-    "description": "(Client) Method: SWEP:AdjustMouseSensitivity() Allows you to adjust the mouse sensitivity. This hook only works if you haven't overridden {{HookFunction|GM|AdjustMouseSensitivity}}."
+    "description": "(Client) Method: SWEP:AdjustMouseSensitivity\n\nAllows you to adjust the mouse sensitivity. This hook only works if you haven't overridden GM.AdjustMouseSensitivity."
   },
   "SWEP:Ammo1": {
     "prefix": "Ammo1",
     "body": "Ammo1()$0\r\n",
-    "description": "(Shared) Method: SWEP:Ammo1() Returns how much of primary ammo the player has."
+    "description": "(Shared) Method: SWEP:Ammo1\n\nReturns how much of primary ammo the player has."
   },
   "SWEP:Ammo2": {
     "prefix": "Ammo2",
     "body": "Ammo2()$0\r\n",
-    "description": "(Shared) Method: SWEP:Ammo2() Returns how much of secondary ammo the player has."
+    "description": "(Shared) Method: SWEP:Ammo2\n\nReturns how much of secondary ammo the player has."
   },
   "SWEP:": {
     "prefix": "",
     "body": "(${1:Player ply}, ${2:Vector pos}, ${3:Angle ang}, ${4:number fov})$0\r\n",
-    "description": "(Client) Method: SWEP:() Allows you to adjust player view while this weapon in use."
+    "description": "(Client) Method: SWEP:\n\nAllows you to adjust player view while this weapon in use."
   },
   "SWEP:CalcViewModelView": {
     "prefix": "CalcViewModelView",
     "body": "CalcViewModelView(${1:Entity vm}, ${2:Vector oldPos}, ${3:Angle oldAng}, ${4:Vector pos}, ${5:Angle ang})$0\r\n",
-    "description": "(Client) Method: SWEP:CalcViewModelView() Allows overriding the position and angle of the viewmodel. This hook only works if you haven't overridden {{HookFunction|GM|CalcViewModelView}}."
+    "description": "(Client) Method: SWEP:CalcViewModelView\n\nAllows overriding the position and angle of the viewmodel. This hook only works if you haven't overridden GM.CalcViewModelView."
   },
   "SWEP:CanPrimaryAttack": {
     "prefix": "CanPrimaryAttack",
     "body": "CanPrimaryAttack()$0\r\n",
-    "description": "(Shared) Method: SWEP:CanPrimaryAttack() Helper function for checking for no ammo."
+    "description": "(Shared) Method: SWEP:CanPrimaryAttack\n\nHelper function for checking for no ammo."
   },
   "SWEP:CanSecondaryAttack": {
     "prefix": "CanSecondaryAttack",
     "body": "CanSecondaryAttack()$0\r\n",
-    "description": "(Shared) Method: SWEP:CanSecondaryAttack() Helper function for checking for no ammo."
+    "description": "(Shared) Method: SWEP:CanSecondaryAttack\n\nHelper function for checking for no ammo."
   },
   "SWEP:CustomAmmoDisplay": {
     "prefix": "CustomAmmoDisplay",
     "body": "CustomAmmoDisplay()$0\r\n",
-    "description": "(Client) Method: SWEP:CustomAmmoDisplay() Allows you to use any numbers you want for the ammo display on the HUD."
+    "description": "(Client) Method: SWEP:CustomAmmoDisplay\n\nAllows you to use any numbers you want for the ammo display on the HUD."
   },
   "SWEP:DoDrawCrosshair": {
     "prefix": "DoDrawCrosshair",
     "body": "DoDrawCrosshair(${1:number x}, ${2:number y})$0\r\n",
-    "description": "(Client) Method: SWEP:DoDrawCrosshair() Called when the crosshair is about to get drawn, and allows you to override it."
+    "description": "(Client) Method: SWEP:DoDrawCrosshair\n\nCalled when the crosshair is about to get drawn, and allows you to override it."
   },
   "SWEP:DoImpactEffect": {
     "prefix": "DoImpactEffect",
     "body": "DoImpactEffect(${1:table tr}, ${2:number damageType})$0\r\n",
-    "description": "(Shared) Method: SWEP:DoImpactEffect() Called so the weapon can override the impact effects it makes."
+    "description": "(Shared) Method: SWEP:DoImpactEffect\n\nCalled so the weapon can override the impact effects it makes."
   },
   "SWEP:DrawHUD": {
     "prefix": "DrawHUD",
     "body": "DrawHUD()$0\r\n",
-    "description": "(Client) Method: SWEP:DrawHUD() This hook allows you to draw on screen while this weapon is in use."
+    "description": "(Client) Method: SWEP:DrawHUD\n\nThis hook allows you to draw on screen while this weapon is in use."
   },
   "SWEP:DrawHUDBackground": {
     "prefix": "DrawHUDBackground",
     "body": "DrawHUDBackground()$0\r\n",
-    "description": "(Client) Method: SWEP:DrawHUDBackground() This hook allows you to draw on screen while this weapon is in use. This hook is called '''before''' {{HookFunction|WEAPON|DrawHUD}} and is equivalent of {{HookFunction|GM|HUDPaintBackground}}."
+    "description": "(Client) Method: SWEP:DrawHUDBackground\n\nThis hook allows you to draw on screen while this weapon is in use. This hook is called '''before''' WEAPON.DrawHUD and is equivalent of GM.HUDPaintBackground."
   },
   "SWEP:DrawWeaponSelection": {
     "prefix": "DrawWeaponSelection",
     "body": "DrawWeaponSelection(${1:number x}, ${2:number y}, ${3:number width}, ${4:number height}, ${5:number alpha})$0\r\n",
-    "description": "(Client) Method: SWEP:DrawWeaponSelection() This hook draws the selection icon in the weapon selection menu."
+    "description": "(Client) Method: SWEP:DrawWeaponSelection\n\nThis hook draws the selection icon in the weapon selection menu."
   },
   "SWEP:DrawWorldModel": {
     "prefix": "DrawWorldModel",
     "body": "DrawWorldModel()$0\r\n",
-    "description": "(Client) Method: SWEP:DrawWorldModel() Called when we are about to draw the world model."
+    "description": "(Client) Method: SWEP:DrawWorldModel\n\nCalled when we are about to draw the world model."
   },
   "SWEP:DrawWorldModelTranslucent": {
     "prefix": "DrawWorldModelTranslucent",
     "body": "DrawWorldModelTranslucent()$0\r\n",
-    "description": "(Client) Method: SWEP:DrawWorldModelTranslucent() Called when we are about to draw the translucent world model."
+    "description": "(Client) Method: SWEP:DrawWorldModelTranslucent\n\nCalled when we are about to draw the translucent world model."
   },
   "SWEP:Equip": {
     "prefix": "Equip",
     "body": "Equip(${1:Entity NewOwner})$0\r\n",
-    "description": "(Server) Method: SWEP:Equip() Called when a player or NPC has picked the weapon up."
+    "description": "(Server) Method: SWEP:Equip\n\nCalled when a player or NPC has picked the weapon up."
   },
   "SWEP:EquipAmmo": {
     "prefix": "EquipAmmo",
     "body": "EquipAmmo(${1:Player ply})$0\r\n",
-    "description": "(Server) Method: SWEP:EquipAmmo() The player has picked up the weapon and has taken the ammo from it."
+    "description": "(Server) Method: SWEP:EquipAmmo\n\nThe player has picked up the weapon and has taken the ammo from it."
   },
   "SWEP:FreezeMovement": {
     "prefix": "FreezeMovement",
     "body": "FreezeMovement()$0\r\n",
-    "description": "(Client) Method: SWEP:FreezeMovement() This hook allows you to freeze players screen.<br>"
+    "description": "(Client) Method: SWEP:FreezeMovement\n\nThis hook allows you to freeze players screen."
   },
   "SWEP:GetCapabilities": {
     "prefix": "GetCapabilities",
     "body": "GetCapabilities()$0\r\n",
-    "description": "(Server) Method: SWEP:GetCapabilities() This hook is for NPCs, you return what they should try to do with it."
+    "description": "(Server) Method: SWEP:GetCapabilities\n\nThis hook is for NPCs, you return what they should try to do with it."
   },
   "SWEP:GetTracerOrigin": {
     "prefix": "GetTracerOrigin",
     "body": "GetTracerOrigin()$0\r\n",
-    "description": "(Client) Method: SWEP:GetTracerOrigin() Allows you to override where the tracer effect comes from. ( Visual bullets )"
+    "description": "(Client) Method: SWEP:GetTracerOrigin\n\nAllows you to override where the tracer effect comes from. ( Visual bullets )"
   },
   "SWEP:GetViewModelPosition": {
     "prefix": "GetViewModelPosition",
     "body": "GetViewModelPosition(${1:Vector pos}, ${2:Angle ang})$0\r\n",
-    "description": "(Client) Method: SWEP:GetViewModelPosition() This hook allows you to adjust view model position and angles."
+    "description": "(Client) Method: SWEP:GetViewModelPosition\n\nThis hook allows you to adjust view model position and angles."
   },
   "SWEP:HUDShouldDraw": {
     "prefix": "HUDShouldDraw",
     "body": "HUDShouldDraw(${1:string element})$0\r\n",
-    "description": "(Client) Method: SWEP:HUDShouldDraw() This hook determines which parts of the HUD to draw."
+    "description": "(Client) Method: SWEP:HUDShouldDraw\n\nThis hook determines which parts of the HUD to draw."
   },
   "SWEP:Initialize": {
     "prefix": "Initialize",
     "body": "Initialize()$0\r\n",
-    "description": "(Shared) Method: SWEP:Initialize() Called when the weapon entity is created."
-  },
-  "SWEP:KeyValue": {
-    "prefix": "KeyValue",
-    "body": "KeyValue(${1:string key}, ${2:string value})$0\r\n",
-    "description": "(Server) Method: SWEP:KeyValue() Called when the engine sets a value for this swep."
-  },
-  "SWEP:OnDrop": {
-    "prefix": "OnDrop",
-    "body": "OnDrop()$0\r\n",
-    "description": "(Server) Method: SWEP:OnDrop() Called when weapon is dropped by {{ClassFunction|Player|DropWeapon}}."
+    "description": "(Shared) Method: SWEP:Initialize\n\nCalled when the weapon entity is created."
   },
   "SWEP:OnReloaded": {
     "prefix": "OnReloaded",
     "body": "OnReloaded()$0\r\n",
-    "description": "(Shared) Method: SWEP:OnReloaded() Called whenever the weapons Lua script is reloaded."
+    "description": "(Shared) Method: SWEP:OnReloaded\n\nCalled whenever the weapons Lua script is reloaded."
   },
   "SWEP:OnRemove": {
     "prefix": "OnRemove",
     "body": "OnRemove()$0\r\n",
-    "description": "(Shared) Method: SWEP:OnRemove() Called when the swep is about to be removed."
-  },
-  "SWEP:OwnerChanged": {
-    "prefix": "OwnerChanged",
-    "body": "OwnerChanged()$0\r\n",
-    "description": "(Shared) Method: SWEP:OwnerChanged() Called when weapon is dropped or picked up by a new player."
-  },
-  "SWEP:PostDrawViewModel": {
-    "prefix": "PostDrawViewModel",
-    "body": "PostDrawViewModel(${1:Entity vm}, ${2:Weapon weapon}, ${3:Player ply})$0\r\n",
-    "description": "(Client) Method: SWEP:PostDrawViewModel() Allows you to modify viewmodel while the weapon in use after the view model has been drawn. This hook only works if you haven't overridden {{HookFunction|GM|PostDrawViewModel}}."
+    "description": "(Shared) Method: SWEP:OnRemove\n\nCalled when the swep is about to be removed."
   },
   "SWEP:PreDrawViewModel": {
     "prefix": "PreDrawViewModel",
     "body": "PreDrawViewModel(${1:Entity vm}, ${2:Weapon weapon}, ${3:Player ply})$0\r\n",
-    "description": "(Client) Method: SWEP:PreDrawViewModel() Allows you to modify viewmodel while the weapon in use before it is drawn. This hook only works if you haven't overridden {{HookFunction|GM|PreDrawViewModel}}."
+    "description": "(Client) Method: SWEP:PreDrawViewModel\n\nAllows you to modify viewmodel while the weapon in use before it is drawn. This hook only works if you haven't overridden GM.PreDrawViewModel."
   },
   "SWEP:PrintWeaponInfo": {
     "prefix": "PrintWeaponInfo",
     "body": "PrintWeaponInfo(${1:number x}, ${2:number y}, ${3:number alpha})$0\r\n",
-    "description": "(Client) Method: SWEP:PrintWeaponInfo() A convenience function that draws the weapon info box, used in {{HookFunction|WEAPON|DrawWeaponSelection}}."
+    "description": "(Client) Method: SWEP:PrintWeaponInfo\n\nA convenience function that draws the weapon info box, used in WEAPON.DrawWeaponSelection."
   },
   "SWEP:Reload": {
     "prefix": "Reload",
     "body": "Reload()$0\r\n",
-    "description": "(Shared) Method: SWEP:Reload() Called when the reload key ( +reload ) is pressed."
+    "description": "(Shared) Method: SWEP:Reload\n\nCalled when the reload key (  reload ) is pressed."
   },
   "SWEP:SecondaryAttack": {
     "prefix": "SecondaryAttack",
     "body": "SecondaryAttack()$0\r\n",
-    "description": "(Shared) Method: SWEP:SecondaryAttack() Called when secondary attack button ( +attack2 ) is pressed."
+    "description": "(Shared) Method: SWEP:SecondaryAttack\n\nCalled when secondary attack button (  attack2 ) is pressed."
   },
   "SWEP:SetDeploySpeed": {
     "prefix": "SetDeploySpeed",
     "body": "SetDeploySpeed(${1:number speed})$0\r\n",
-    "description": "(Shared) Method: SWEP:SetDeploySpeed() Sets the weapon deploy speed. This value needs to match on client and server."
+    "description": "(Shared) Method: SWEP:SetDeploySpeed\n\nSets the weapon deploy speed. This value needs to match on client and server."
   },
   "SWEP:SetupDataTables": {
     "prefix": "SetupDataTables",
     "body": "SetupDataTables()$0\r\n",
-    "description": "(Shared) Method: SWEP:SetupDataTables() Called when the SWEP should set up its [[Networking Entities| Data Tables]]."
+    "description": "(Shared) Method: SWEP:SetupDataTables\n\nCalled when the SWEP should set up its [[Networking Entities. Data Tables]]."
   },
   "SWEP:SetWeaponHoldType": {
     "prefix": "SetWeaponHoldType",
     "body": "SetWeaponHoldType(${1:string name})$0\r\n",
-    "description": "(Shared) Method: SWEP:SetWeaponHoldType() Sets the hold type of the weapon. This must be called on '''both''' the server and the client to work properly."
+    "description": "(Shared) Method: SWEP:SetWeaponHoldType\n\nSets the hold type of the weapon. This must be called on '''both''' the server and the client to work properly."
   },
   "SWEP:ShootEffects": {
     "prefix": "ShootEffects",
     "body": "ShootEffects()$0\r\n",
-    "description": "(Shared) Method: SWEP:ShootEffects() A convenience function to create shoot effects."
+    "description": "(Shared) Method: SWEP:ShootEffects\n\nA convenience function to create shoot effects."
   },
   "SWEP:ShouldDropOnDie": {
     "prefix": "ShouldDropOnDie",
     "body": "ShouldDropOnDie()$0\r\n",
-    "description": "(Server) Method: SWEP:ShouldDropOnDie() Should this weapon be dropped when its owner dies?"
+    "description": "(Server) Method: SWEP:ShouldDropOnDie\n\nShould this weapon be dropped when its owner dies?"
   },
   "SWEP:TakePrimaryAmmo": {
     "prefix": "TakePrimaryAmmo",
     "body": "TakePrimaryAmmo(${1:number amount})$0\r\n",
-    "description": "(Shared) Method: SWEP:TakePrimaryAmmo() A convenience function to remove primary ammo from clip."
+    "description": "(Shared) Method: SWEP:TakePrimaryAmmo\n\nA convenience function to remove primary ammo from clip."
   },
   "SWEP:TakeSecondaryAmmo": {
     "prefix": "TakeSecondaryAmmo",
     "body": "TakeSecondaryAmmo(${1:number amount})$0\r\n",
-    "description": "(Shared) Method: SWEP:TakeSecondaryAmmo() A convenience function to remove secondary ammo from clip."
+    "description": "(Shared) Method: SWEP:TakeSecondaryAmmo\n\nA convenience function to remove secondary ammo from clip."
   },
   "SWEP:TranslateFOV": {
     "prefix": "TranslateFOV",
     "body": "TranslateFOV(${1:number fov})$0\r\n",
-    "description": "(Client) Method: SWEP:TranslateFOV() Allows to change players Field Of View while player holds the weapon."
-  },
-  "SWEP:ViewModelDrawn": {
-    "prefix": "ViewModelDrawn",
-    "body": "ViewModelDrawn(${1:Entity ViewModel})$0\r\n",
-    "description": "(Client) Method: SWEP:ViewModelDrawn() Called straight after the view model has been drawn."
+    "description": "(Client) Method: SWEP:TranslateFOV\n\nAllows to change players Field Of View while player holds the weapon."
   }
 }

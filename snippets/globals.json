@@ -2,1291 +2,1291 @@
   "_G.AccessorFunc": {
     "prefix": "AccessorFunc",
     "body": "AccessorFunc(${1:table tab}, ${2:any key}, ${3:string name}, ${4:number force=nil})$0",
-    "description": "(All) Function: _G.AccessorFunc() Adds simple Get/Set accessor functions on the specified table.<br />"
+    "description": "(All) Function: _G.AccessorFunc\n\nAdds simple Get/Set accessor functions on the specified table."
   },
   "_G.Add_NPC_Class": {
     "prefix": "Add_NPC_Class",
     "body": "Add_NPC_Class(${1:string name})$0",
-    "description": "(All) Function: _G.Add_NPC_Class() Defines a global entity class variable with an automatic value in order to prevent collisions with other {{Enum|CLASS}}. You should prefix your variable with CLASS_ for consistency."
+    "description": "(All) Function: _G.Add_NPC_Class\n\nDefines a global entity class variable with an automatic value in order to prevent collisions with other Enum.CLASS. You should prefix your variable with CLASS_ for consistency."
   },
   "_G.AddBackgroundImage": {
     "prefix": "AddBackgroundImage",
     "body": "AddBackgroundImage(${1:string path})$0",
-    "description": "(Menu) Function: _G.AddBackgroundImage() Adds the specified image path to the main menu background pool. Image can be png or jpeg."
+    "description": "(Menu) Function: _G.AddBackgroundImage\n\nAdds the specified image path to the main menu background pool. Image can be png or jpeg."
   },
   "_G.AddConsoleCommand": {
     "prefix": "AddConsoleCommand",
     "body": "AddConsoleCommand(${1:string name}, ${2:string helpText}, ${3:number flags})$0",
-    "description": "(All) Function: _G.AddConsoleCommand() {{Internal|Use {{LibraryFunction|concommand|Run}} instead.}}Tells the engine to register a console command. If the command was ran, the engine calls {{LibraryFunction|concommand|Run}}."
+    "description": "(All) Function: _G.AddConsoleCommand\n\n[Internal] .Use concommand.Run instead.Tells the engine to register a console command. If the command was ran, the engine calls concommand.Run."
   },
   "_G.AddCSLuaFile": {
     "prefix": "AddCSLuaFile",
     "body": "AddCSLuaFile(${1:string file=current file})$0",
-    "description": "(Shared) Function: _G.AddCSLuaFile() Marks a Lua file to be sent to clients when they join the server. Doesn't do anything on the client - this means you can use it in a shared file without problems."
+    "description": "(Shared) Function: _G.AddCSLuaFile\n\nMarks a Lua file to be sent to clients when they join the server. Doesn't do anything on the client - this means you can use it in a shared file without problems."
   },
   "_G.AddonMaterial": {
     "prefix": "AddonMaterial",
     "body": "AddonMaterial(${1:string name})$0",
-    "description": "(Client and Menu) Function: _G.AddonMaterial() Loads the specified image from the /cache folder, used in combination {{LibraryFunction|steamworks|Download}}."
+    "description": "(Client and Menu) Function: _G.AddonMaterial\n\nLoads the specified image from the /cache folder, used in combination steamworks.Download."
   },
   "_G.AddOriginToPVS": {
     "prefix": "AddOriginToPVS",
     "body": "AddOriginToPVS(${1:Vector position})$0",
-    "description": "(Server) Function: _G.AddOriginToPVS() Adds the specified vector to the PVS which is currently building. This allows all objects in visleafs visible from that vector to be drawn."
+    "description": "(Server) Function: _G.AddOriginToPVS\n\nAdds the specified vector to the PVS which is currently building. This allows all objects in visleafs visible from that vector to be drawn."
   },
   "_G.AddWorldTip": {
     "prefix": "AddWorldTip",
     "body": "AddWorldTip(${1:number entindex=nil}, ${2:string text}, ${3:number dieTime=SysTime() + 0.05}, ${4:Vector pos=ent:GetPos()}, ${5:Entity ent=nil})$0",
-    "description": "(Client) Function: _G.AddWorldTip() This function creates a World Tip, similar to the one shown when aiming at a Thruster where it shows you its force."
+    "description": "(Client) Function: _G.AddWorldTip\n\nThis function creates a World Tip, similar to the one shown when aiming at a Thruster where it shows you its force."
   },
   "_G.Angle": {
     "prefix": "Angle",
     "body": "Angle(${1:number pitch=0}, ${2:number yaw=0}, ${3:number roll=0})$0",
-    "description": "(All) Function: _G.Angle() Creates an <a href=\"http://wiki.garrysmod.com/page/Category:Angle\">Angle</a> object."
+    "description": "(All) Function: _G.Angle\n\nCreates an Angle object."
   },
   "_G.AngleRand": {
     "prefix": "AngleRand",
     "body": "AngleRand()$0",
-    "description": "(All) Function: _G.AngleRand() Returns an angle with a randomized pitch, yaw and roll, first one between -90 and 90, the rest between -180 and 180 degrees."
+    "description": "(All) Function: _G.AngleRand\n\nReturns an angle with a randomized pitch, yaw and roll, first one between -90 and 90, the rest between -180 and 180 degrees."
   },
   "_G.assert": {
     "prefix": "assert",
     "body": "assert(${1:any expression}, ${2:string errorMessage=\"assertion failed!\"})$0",
-    "description": "(All) Function: _G.assert() If the result of the first argument is false or nil, an error is thrown with the second argument as the message."
+    "description": "(All) Function: _G.assert\n\nIf the result of the first argument is false or nil, an error is thrown with the second argument as the message."
   },
   "_G.BroadcastLua": {
     "prefix": "BroadcastLua",
     "body": "BroadcastLua(${1:string code})$0",
-    "description": "(Server) Function: _G.BroadcastLua() Sends the specified Lua code to all connected clients and executes it."
+    "description": "(Server) Function: _G.BroadcastLua\n\nSends the specified Lua code to all connected clients and executes it."
   },
   "_G.BuildNetworkedVarsTable": {
     "prefix": "BuildNetworkedVarsTable",
     "body": "BuildNetworkedVarsTable()$0",
-    "description": "(Shared) Function: _G.BuildNetworkedVarsTable() Dumps the networked variables of all entities into one table and returns it."
+    "description": "(Shared) Function: _G.BuildNetworkedVarsTable\n\nDumps the networked variables of all entities into one table and returns it."
   },
   "_G.CancelLoading": {
     "prefix": "CancelLoading",
     "body": "CancelLoading()$0",
-    "description": "(Menu) Function: _G.CancelLoading() Aborts joining of the server you are currently joining."
+    "description": "(Menu) Function: _G.CancelLoading\n\nAborts joining of the server you are currently joining."
   },
   "_G.ChangeBackground": {
     "prefix": "ChangeBackground",
     "body": "ChangeBackground(${1:string currentgm})$0",
-    "description": "(Menu) Function: _G.ChangeBackground() Sets the active main menu background image to a random entry from the background images pool. Images are added with {{GlobalFunction|AddBackgroundImage}}."
+    "description": "(Menu) Function: _G.ChangeBackground\n\nSets the active main menu background image to a random entry from the background images pool. Images are added with _G.AddBackgroundImage."
   },
   "_G.ChangeTooltip": {
     "prefix": "ChangeTooltip",
     "body": "ChangeTooltip(${1:Panel panel})$0",
-    "description": "(Client and Menu) Function: _G.ChangeTooltip() Automatically called by the engine when a panel is hovered over with the mouse"
+    "description": "(Client and Menu) Function: _G.ChangeTooltip\n\nAutomatically called by the engine when a panel is hovered over with the mouse"
   },
   "_G.ClearBackgroundImages": {
     "prefix": "ClearBackgroundImages",
     "body": "ClearBackgroundImages()$0",
-    "description": "(Menu) Function: _G.ClearBackgroundImages() Empties the pool of main menu background images."
+    "description": "(Menu) Function: _G.ClearBackgroundImages\n\nEmpties the pool of main menu background images."
   },
   "_G.ClientsideModel": {
     "prefix": "ClientsideModel",
     "body": "ClientsideModel(${1:string model}, ${2:number renderGroup=RENDERGROUP_OTHER})$0",
-    "description": "(Client) Function: _G.ClientsideModel() Creates a non physical entity that only exists on the client."
+    "description": "(Client) Function: _G.ClientsideModel\n\nCreates a non physical entity that only exists on the client."
   },
   "_G.ClientsideRagdoll": {
     "prefix": "ClientsideRagdoll",
     "body": "ClientsideRagdoll(${1:string model}, ${2:number renderGroup=RENDER_GROUP_OPAQUE})$0",
-    "description": "(Client) Function: _G.ClientsideRagdoll() Creates a fully clientside ragdoll."
+    "description": "(Client) Function: _G.ClientsideRagdoll\n\nCreates a fully clientside ragdoll."
   },
   "_G.ClientsideScene": {
     "prefix": "ClientsideScene",
     "body": "ClientsideScene(${1:string name}, ${2:Entity targetEnt})$0",
-    "description": "(Client) Function: _G.ClientsideScene() Creates a scene entity based on the scene name and the entity."
+    "description": "(Client) Function: _G.ClientsideScene\n\nCreates a scene entity based on the scene name and the entity."
   },
   "_G.CloseDermaMenus": {
     "prefix": "CloseDermaMenus",
     "body": "CloseDermaMenus()$0",
-    "description": "(Client and Menu) Function: _G.CloseDermaMenus() Closes all Derma menus that have been passed to {{GlobalFunction|RegisterDermaMenuForClose}} and calls {{HookFunction|GM|CloseDermaMenus}}"
+    "description": "(Client and Menu) Function: _G.CloseDermaMenus\n\nCloses all Derma menus that have been passed to _G.RegisterDermaMenuForClose and calls GM.CloseDermaMenus"
   },
   "_G.collectgarbage": {
     "prefix": "collectgarbage",
     "body": "collectgarbage(${1:string action=\"collect\"}, ${2:number arg})$0",
-    "description": "(All) Function: _G.collectgarbage() Executes the specified action on the garbage collector."
+    "description": "(All) Function: _G.collectgarbage\n\nExecutes the specified action on the garbage collector."
   },
   "_G.Color": {
     "prefix": "Color",
     "body": "Color(${1:number r}, ${2:number g}, ${3:number b}, ${4:number a=255})$0",
-    "description": "(All) Function: _G.Color() Creates a {{Struct|Color}}."
+    "description": "(All) Function: _G.Color\n\nCreates a Color."
   },
   "_G.ColorAlpha": {
     "prefix": "ColorAlpha",
     "body": "ColorAlpha(${1:table color}, ${2:number alpha})$0",
-    "description": "(All) Function: _G.ColorAlpha() Returns a new {{Struct|Color}} with the RGB components of the given {{Struct|Color}} and the alpha value specified."
+    "description": "(All) Function: _G.ColorAlpha\n\nReturns a new Color with the RGB components of the given Color and the alpha value specified."
   },
   "_G.ColorRand": {
     "prefix": "ColorRand",
     "body": "ColorRand(${1:boolean a=false})$0",
-    "description": "(All) Function: _G.ColorRand() Creates a {{Struct|Color}} with randomized red, green, and blue components. If the alpha argument is true, alpha will also be randomized."
+    "description": "(All) Function: _G.ColorRand\n\nCreates a Color with randomized red, green, and blue components. If the alpha argument is true, alpha will also be randomized."
   },
   "_G.ColorToHSV": {
     "prefix": "ColorToHSV",
     "body": "ColorToHSV(${1:table color})$0",
-    "description": "(All) Function: _G.ColorToHSV() Converts a {{Struct|Color}} into HSV color space."
+    "description": "(All) Function: _G.ColorToHSV\n\nConverts a Color into HSV color space."
   },
   "_G.CompileFile": {
     "prefix": "CompileFile",
     "body": "CompileFile(${1:string path})$0",
-    "description": "(Shared) Function: _G.CompileFile() Attempts to compile the given file. If successful, returns a function that can be called to perform the actual execution of the script."
+    "description": "(Shared) Function: _G.CompileFile\n\nAttempts to compile the given file. If successful, returns a function that can be called to perform the actual execution of the script."
   },
   "_G.CompileString": {
     "prefix": "CompileString",
     "body": "CompileString(${1:string code}, ${2:string identifier}, ${3:boolean HandleError=true})$0",
-    "description": "(All) Function: _G.CompileString() This function will compile the code argument as lua code and return a function that will execute that code. "
+    "description": "(All) Function: _G.CompileString\n\nThis function will compile the code argument as lua code and return a function that will execute that code. "
   },
   "_G.ConsoleAutoComplete": {
     "prefix": "ConsoleAutoComplete",
     "body": "ConsoleAutoComplete(${1:string text})$0",
-    "description": "(Menu) Function: _G.ConsoleAutoComplete() Returns a table of console command names beginning with the given text."
+    "description": "(Menu) Function: _G.ConsoleAutoComplete\n\nReturns a table of console command names beginning with the given text."
   },
   "_G.ConVarExists": {
     "prefix": "ConVarExists",
     "body": "ConVarExists(${1:string name})$0",
-    "description": "(All) Function: _G.ConVarExists() Returns whether a <a href=\"http://wiki.garrysmod.com/page/Category:ConVar\">ConVar</a> with the given name exists or not"
+    "description": "(All) Function: _G.ConVarExists\n\nReturns whether a ConVar with the given name exists or not"
   },
   "_G.CreateClientConVar": {
     "prefix": "CreateClientConVar",
     "body": "CreateClientConVar(${1:string name}, ${2:string default}, ${3:boolean shouldsave=true}, ${4:boolean userdata=false}, ${5:string helptext=\"\"})$0",
-    "description": "(All) Function: _G.CreateClientConVar() Makes a clientside-only console variable"
+    "description": "(All) Function: _G.CreateClientConVar\n\nMakes a clientside-only console variable"
   },
   "_G.CreateConVar": {
     "prefix": "CreateConVar",
     "body": "CreateConVar(${1:string name}, ${2:string value}, ${3:number flags}, ${4:string helptext})$0",
-    "description": "(All) Function: _G.CreateConVar() Creates a console variable (ConVar), in general these are for things like gamemode/server settings."
+    "description": "(All) Function: _G.CreateConVar\n\nCreates a console variable (ConVar), in general these are for things like gamemode/server settings."
   },
   "_G.CreateMaterial": {
     "prefix": "CreateMaterial",
     "body": "CreateMaterial(${1:string name}, ${2:string shaderName}, ${3:table materialData})$0",
-    "description": "(Client and Menu) Function: _G.CreateMaterial() Creates a new material with the specified name and shader."
+    "description": "(Client and Menu) Function: _G.CreateMaterial\n\nCreates a new material with the specified name and shader."
   },
   "_G.CreateParticleSystem": {
     "prefix": "CreateParticleSystem",
     "body": "CreateParticleSystem(${1:Entity ent}, ${2:string effect}, ${3:number partAttachment}, ${4:number entAttachment=0}, ${5:Vector offset=Vector( 0, 0, 0 )})$0",
-    "description": "(Client) Function: _G.CreateParticleSystem() Creates a new particle system"
+    "description": "(Client) Function: _G.CreateParticleSystem\n\nCreates a new particle system"
   },
   "_G.CreateSound": {
     "prefix": "CreateSound",
     "body": "CreateSound(${1:Entity targetEnt}, ${2:string soundName}, ${3:CRecipientFilter filter=[https://developer.valvesoftware.com/wiki/CRecipientFilter#Derived_classes CPASAttenuationFilter]})$0",
-    "description": "(Shared) Function: _G.CreateSound() Returns a sound parented to the specified entity."
+    "description": "(Shared) Function: _G.CreateSound\n\nReturns a sound parented to the specified entity."
   },
   "_G.CreateSprite": {
     "prefix": "CreateSprite",
     "body": "CreateSprite(${1:IMaterial material})$0",
-    "description": "(Client) Function: _G.CreateSprite() Creates and returns a new <a href=\"http://wiki.garrysmod.com/page/Category:DSprite\">DSprite</a> element with the supplied material."
+    "description": "(Client) Function: _G.CreateSprite\n\nCreates and returns a new DSprite element with the supplied material."
   },
   "_G.CurTime": {
     "prefix": "CurTime",
     "body": "CurTime()$0",
-    "description": "(All) Function: _G.CurTime() Returns the uptime of the server in seconds (to at least 4 decimal places)"
+    "description": "(All) Function: _G.CurTime\n\nReturns the uptime of the server in seconds (to at least 4 decimal places)"
   },
   "_G.DamageInfo": {
     "prefix": "DamageInfo",
     "body": "DamageInfo()$0",
-    "description": "(Shared) Function: _G.DamageInfo() Returns an <a href=\"http://wiki.garrysmod.com/page/Category:CTakeDamageInfo\">CTakeDamageInfo</a> object."
+    "description": "(Shared) Function: _G.DamageInfo\n\nReturns an CTakeDamageInfo object."
   },
   "_G.DebugInfo": {
     "prefix": "DebugInfo",
     "body": "DebugInfo(${1:number slot}, ${2:string info})$0",
-    "description": "(All) Function: _G.DebugInfo() Writes text to the right hand side of the screen, like the old error system. Messages disappear after a couple of seconds."
+    "description": "(All) Function: _G.DebugInfo\n\nWrites text to the right hand side of the screen, like the old error system. Messages disappear after a couple of seconds."
   },
   "_G.DeriveGamemode": {
     "prefix": "DeriveGamemode",
     "body": "DeriveGamemode(${1:string base})$0",
-    "description": "(Shared) Function: _G.DeriveGamemode() Retrieves data from a gamemode to use in yours. This also sets a BaseClass field on your GM table to the gamemode you are deriving from. It appears that this function works by running the init and cl_init Lua files of the target gamemode, then overriding functions that appear in both the target and your gamemode with your gamemode's functions."
+    "description": "(Shared) Function: _G.DeriveGamemode\n\nRetrieves data from a gamemode to use in yours. This also sets a BaseClass field on your GM table to the gamemode you are deriving from. It appears that this function works by running the init and cl_init Lua files of the target gamemode, then overriding functions that appear in both the target and your gamemode with your gamemode's functions."
   },
   "_G.Derma_Anim": {
     "prefix": "Derma_Anim",
     "body": "Derma_Anim(${1:string name}, ${2:Panel panel}, ${3:function func})$0",
-    "description": "(Client and Menu) Function: _G.Derma_Anim() Creates a new derma animation."
+    "description": "(Client and Menu) Function: _G.Derma_Anim\n\nCreates a new derma animation."
   },
   "_G.Derma_DrawBackgroundBlur": {
     "prefix": "Derma_DrawBackgroundBlur",
     "body": "Derma_DrawBackgroundBlur(${1:Panel panel}, ${2:number startTime})$0",
-    "description": "(Client and Menu) Function: _G.Derma_DrawBackgroundBlur() Draws background blur around the given panel."
+    "description": "(Client and Menu) Function: _G.Derma_DrawBackgroundBlur\n\nDraws background blur around the given panel."
   },
   "_G.Derma_Hook": {
     "prefix": "Derma_Hook",
     "body": "Derma_Hook(${1:Panel panel}, ${2:string functionName}, ${3:string hookName}, ${4:string typeName})$0",
-    "description": "(Client and Menu) Function: _G.Derma_Hook() Creates panel method that calls the supplied Derma skin hook via {{LibraryFunction|derma|SkinHook}}"
+    "description": "(Client and Menu) Function: _G.Derma_Hook\n\nCreates panel method that calls the supplied Derma skin hook via derma.SkinHook"
   },
   "_G.Derma_Install_Convar_Functions": {
     "prefix": "Derma_Install_Convar_Functions",
     "body": "Derma_Install_Convar_Functions(${1:Panel target})$0",
-    "description": "(Client and Menu) Function: _G.Derma_Install_Convar_Functions() Makes the panel (usually an input of sorts) respond to changes in console variables by adding next functions to the panel:"
+    "description": "(Client and Menu) Function: _G.Derma_Install_Convar_Functions\n\nMakes the panel (usually an input of sorts) respond to changes in console variables by adding next functions to the panel:"
   },
   "_G.Derma_Message": {
     "prefix": "Derma_Message",
     "body": "Derma_Message(${1:string Text}, ${2:string Title}, ${3:string Button})$0",
-    "description": "(Client and Menu) Function: _G.Derma_Message() Creates a derma window to display information"
+    "description": "(Client and Menu) Function: _G.Derma_Message\n\nCreates a derma window to display information"
   },
   "_G.Derma_Query": {
     "prefix": "Derma_Query",
-    "body": "Derma_Query(${1:string text=\"Message Text (Second Parameter)\"}, ${2:string title=\"Message Title (First Parameter)\"}, ${3:string btn1text}, ${4:function btn1func}, ${5:string btn2text}, ${6:function btn2func}, ${7:string btn3text}, ${8:function btn3func}, ${9:string btn4text}, ${10:function btn4func})$0",
-    "description": "(Client and Menu) Function: _G.Derma_Query() Shows a message box in the middle of the screen, with up to 4 buttons they can press."
+    "body": "Derma_Query(${1:string text=\"Message Text (Second Parameter)\"}, ${2:string title=\"Message Title (First Parameter)\"}, ${3:string btn1text}, ${4:function btn1func=nil}, ${5:string btn2text=nil}, ${6:function btn2func=nil}, ${7:string btn3text=nil}, ${8:function btn3func=nil}, ${9:string btn4text=nil}, ${10:function btn4func=nil})$0",
+    "description": "(Client and Menu) Function: _G.Derma_Query\n\nShows a message box in the middle of the screen, with up to 4 buttons they can press."
   },
   "_G.Derma_StringRequest": {
     "prefix": "Derma_StringRequest",
     "body": "Derma_StringRequest(${1:string title}, ${2:string subtitle}, ${3:string default}, ${4:function confirm}, ${5:function cancel=nil}, ${6:string confirmText=\"OK\"}, ${7:string cancelText=\"Cancel\"})$0",
-    "description": "(Client and Menu) Function: _G.Derma_StringRequest() Creates a derma window asking players to input a string."
+    "description": "(Client and Menu) Function: _G.Derma_StringRequest\n\nCreates a derma window asking players to input a string."
   },
   "_G.DermaMenu": {
     "prefix": "DermaMenu",
     "body": "DermaMenu(${1:Panel parent})$0",
-    "description": "(Client and Menu) Function: _G.DermaMenu() Creates a DMenu similar to a contextmenu and closes any current menus"
+    "description": "(Client and Menu) Function: _G.DermaMenu\n\nCreates a DMenu similar to a contextmenu and closes any current menus"
   },
   "_G.DisableClipping": {
     "prefix": "DisableClipping",
     "body": "DisableClipping(${1:boolean disable})$0",
-    "description": "(Client and Menu) Function: _G.DisableClipping() Sets whether rendering should be limited to being inside a panel or not"
+    "description": "(Client and Menu) Function: _G.DisableClipping\n\nSets whether rendering should be limited to being inside a panel or not."
   },
   "_G.DOF_Kill": {
     "prefix": "DOF_Kill",
     "body": "DOF_Kill()$0",
-    "description": "(Client) Function: _G.DOF_Kill() Cancels current DOF post-process effect started with {{GlobalFunction|DOF_Start}}"
+    "description": "(Client) Function: _G.DOF_Kill\n\nCancels current DOF post-process effect started with _G.DOF_Start"
   },
   "_G.DOF_Start": {
     "prefix": "DOF_Start",
     "body": "DOF_Start()$0",
-    "description": "(Client) Function: _G.DOF_Start() Cancels any existing DOF post-process effects."
+    "description": "(Client) Function: _G.DOF_Start\n\nCancels any existing DOF post-process effects."
   },
   "_G.DOFModeHack": {
     "prefix": "DOFModeHack",
     "body": "DOFModeHack()$0",
-    "description": "(Client) Function: _G.DOFModeHack() A hacky method used to fix some bugs regarding DoF."
+    "description": "(Client) Function: _G.DOFModeHack\n\nA hacky method used to fix some bugs regarding DoF."
   },
   "_G.DrawBackground": {
     "prefix": "DrawBackground",
     "body": "DrawBackground()$0",
-    "description": "(Menu) Function: _G.DrawBackground() {{Internal}} Draws the currently active main menu background image and handles transitioning between background images."
+    "description": "(Menu) Function: _G.DrawBackground\n\n[Internal]  Draws the currently active main menu background image and handles transitioning between background images."
   },
   "_G.DrawBloom": {
     "prefix": "DrawBloom",
     "body": "DrawBloom(${1:number Darken}, ${2:number Multiply}, ${3:number SizeX}, ${4:number SizeY}, ${5:number Passes}, ${6:number ColorMultiply}, ${7:number Red}, ${8:number Green}, ${9:number Blue})$0",
-    "description": "(Client) Function: _G.DrawBloom() Draws the bloom shader, which creates a glowing effect from bright objects."
+    "description": "(Client) Function: _G.DrawBloom\n\nDraws the bloom shader, which creates a glowing effect from bright objects."
   },
   "_G.DrawColorModify": {
     "prefix": "DrawColorModify",
     "body": "DrawColorModify(${1:table modifyParameters})$0",
-    "description": "(Client) Function: _G.DrawColorModify() Draws the Color Modify shader, which can be used to adjust colors on screen."
+    "description": "(Client) Function: _G.DrawColorModify\n\nDraws the Color Modify shader, which can be used to adjust colors on screen."
   },
   "_G.DrawMaterialOverlay": {
     "prefix": "DrawMaterialOverlay",
     "body": "DrawMaterialOverlay(${1:string Material}, ${2:number RefractAmount})$0",
-    "description": "(Client) Function: _G.DrawMaterialOverlay() Draws a material overlay on the screen."
+    "description": "(Client) Function: _G.DrawMaterialOverlay\n\nDraws a material overlay on the screen."
   },
   "_G.DrawMotionBlur": {
     "prefix": "DrawMotionBlur",
     "body": "DrawMotionBlur(${1:number AddAlpha}, ${2:number DrawAlpha}, ${3:number Delay})$0",
-    "description": "(Client) Function: _G.DrawMotionBlur() Creates a motion blur effect by drawing your screen multiple times."
+    "description": "(Client) Function: _G.DrawMotionBlur\n\nCreates a motion blur effect by drawing your screen multiple times."
   },
   "_G.DrawSharpen": {
     "prefix": "DrawSharpen",
     "body": "DrawSharpen(${1:number Contrast}, ${2:number Distance})$0",
-    "description": "(Client) Function: _G.DrawSharpen() Draws the sharpen shader, which creates more contrast."
+    "description": "(Client) Function: _G.DrawSharpen\n\nDraws the sharpen shader, which creates more contrast."
   },
   "_G.DrawSobel": {
     "prefix": "DrawSobel",
     "body": "DrawSobel(${1:number Threshold})$0",
-    "description": "(Client) Function: _G.DrawSobel() Draws the sobel shader, which detects edges and draws a black border."
+    "description": "(Client) Function: _G.DrawSobel\n\nDraws the sobel shader, which detects edges and draws a black border."
   },
   "_G.DrawSunbeams": {
     "prefix": "DrawSunbeams",
     "body": "DrawSunbeams(${1:number darken}, ${2:number multiplier}, ${3:number sunSize}, ${4:number sunX}, ${5:number sunY})$0",
-    "description": "(Client) Function: _G.DrawSunbeams() Renders the post-processing effect of beams of light originating from the map's sun. Utilises the \"pp/sunbeams\" material"
+    "description": "(Client) Function: _G.DrawSunbeams\n\nRenders the post-processing effect of beams of light originating from the map's sun. Utilises the \"pp/sunbeams\" material"
   },
   "_G.DrawTexturize": {
     "prefix": "DrawTexturize",
     "body": "DrawTexturize(${1:number Scale}, ${2:number BaseTexture})$0",
-    "description": "(Client) Function: _G.DrawTexturize() Draws the texturize shader, which replaces each pixel on your screen with a different part of the texture depending on its brightness. See [[Shaders/g_texturize|g_texturize]] for information on making the texture."
+    "description": "(Client) Function: _G.DrawTexturize\n\nDraws the texturize shader, which replaces each pixel on your screen with a different part of the texture depending on its brightness. See [[Shaders/g_texturize.g_texturize]] for information on making the texture."
   },
   "_G.DrawToyTown": {
     "prefix": "DrawToyTown",
     "body": "DrawToyTown(${1:number Passes}, ${2:number Height})$0",
-    "description": "(Client) Function: _G.DrawToyTown() Draws the toy town shader, which blurs the top and bottom of your screen. This can make very large objects look like toys, hence the name."
+    "description": "(Client) Function: _G.DrawToyTown\n\nDraws the toy town shader, which blurs the top and bottom of your screen. This can make very large objects look like toys, hence the name."
   },
   "_G.DropEntityIfHeld": {
     "prefix": "DropEntityIfHeld",
     "body": "DropEntityIfHeld(${1:Entity ent})$0",
-    "description": "(Shared) Function: _G.DropEntityIfHeld() Drops the specified entity if it is being held by any player with Gravity Gun or +use pickup."
+    "description": "(Shared) Function: _G.DropEntityIfHeld\n\nDrops the specified entity if it is being held by any player with Gravity Gun or  use pickup."
   },
   "_G.DynamicLight": {
     "prefix": "DynamicLight",
     "body": "DynamicLight(${1:number index})$0",
-    "description": "(Client) Function: _G.DynamicLight() Creates or replaces a dynamic light with the given id."
+    "description": "(Client) Function: _G.DynamicLight\n\nCreates or replaces a dynamic light with the given id."
   },
   "_G.EffectData": {
     "prefix": "EffectData",
     "body": "EffectData()$0",
-    "description": "(Shared) Function: _G.EffectData() Returns a <a href=\"http://wiki.garrysmod.com/page/Category:CEffectData}} object to be used with {{LibraryFunction|util|Effect\">CEffectData}} object to be used with {{LibraryFunction|util|Effect</a>."
+    "description": "(Shared) Function: _G.EffectData\n\nReturns a CEffectData object to be used with util.Effect."
   },
   "_G.Either": {
     "prefix": "Either",
     "body": "Either(${1:boolean condition}, ${2:any truevar}, ${3:any falsevar})$0",
-    "description": "(All) Function: _G.Either() An 'if then else'. This is ''almost'' equivalent to (''condition'' and ''truevar'' or ''falsevar'') in Lua. The difference is that if ''truevar'' evaluates to false, the plain Lua method stated would return ''falsevar'' regardless of ''condition'' whilst this function would take ''condition'' into account."
+    "description": "(All) Function: _G.Either\n\nAn 'if then else'. This is ''almost'' equivalent to (''condition'' and ''truevar'' or ''falsevar'') in Lua. The difference is that if ''truevar'' evaluates to false, the plain Lua method stated would return ''falsevar'' regardless of ''condition'' whilst this function would take ''condition'' into account."
   },
   "_G.EmitSentence": {
     "prefix": "EmitSentence",
     "body": "EmitSentence(${1:string soundName}, ${2:Vector position}, ${3:number entity}, ${4:number channel=CHAN_AUTO}, ${5:number volume=1}, ${6:number soundLevel=75}, ${7:number soundFlags=0}, ${8:number pitch=100})$0",
-    "description": "(Shared) Function: _G.EmitSentence() Plays a sentence from scripts/sentences.txt"
+    "description": "(Shared) Function: _G.EmitSentence\n\nPlays a sentence from scripts/sentences.txt"
   },
   "_G.EmitSound": {
     "prefix": "EmitSound",
     "body": "EmitSound(${1:string soundName}, ${2:Vector position}, ${3:number entity}, ${4:number channel=CHAN_AUTO}, ${5:number volume=1}, ${6:number soundLevel=75}, ${7:number soundFlags=0}, ${8:number pitch=100})$0",
-    "description": "(Shared) Function: _G.EmitSound() Emits the specified sound at the specified position."
+    "description": "(Shared) Function: _G.EmitSound\n\nEmits the specified sound at the specified position."
   },
   "_G.EndTooltip": {
     "prefix": "EndTooltip",
     "body": "EndTooltip(${1:Panel panel})$0",
-    "description": "(Client and Menu) Function: _G.EndTooltip() Removes the currently active tool tip from the screen."
+    "description": "(Client and Menu) Function: _G.EndTooltip\n\nRemoves the currently active tool tip from the screen."
   },
   "_G.Entity": {
     "prefix": "Entity",
     "body": "Entity(${1:number entityIndex})$0",
-    "description": "(Shared) Function: _G.Entity() Returns the entity with the matching {{ClassFunction|Entity|EntIndex}}."
+    "description": "(Shared) Function: _G.Entity\n\nReturns the entity with the matching Entity.EntIndex."
   },
   "_G.Error": {
     "prefix": "Error",
     "body": "Error(${1:vararg arguments})$0",
-    "description": "(All) Function: _G.Error() Throws a Lua error with the specified message and stack level."
+    "description": "(All) Function: _G.Error\n\nThrows a Lua error with the specified message and stack level."
   },
   "_G.error": {
     "prefix": "error",
     "body": "error(${1:string message}, ${2:number errorLevel=1})$0",
-    "description": "(All) Function: _G.error() Throws a Lua error and breaks out of the current call stack."
+    "description": "(All) Function: _G.error\n\nThrows a Lua error and breaks out of the current call stack."
   },
   "_G.ErrorNoHalt": {
     "prefix": "ErrorNoHalt",
     "body": "ErrorNoHalt(${1:vararg arguments})$0",
-    "description": "(All) Function: _G.ErrorNoHalt() Throws a Lua error but does not break out of the current call stack."
+    "description": "(All) Function: _G.ErrorNoHalt\n\nThrows a Lua error but does not break out of the current call stack."
   },
   "_G.EyeAngles": {
     "prefix": "EyeAngles",
     "body": "EyeAngles()$0",
-    "description": "(Client) Function: _G.EyeAngles() Returns the angles of the players view calculated by {{HookFunction|GM|CalcView}}."
+    "description": "(Client) Function: _G.EyeAngles\n\nReturns the angles of the current render context as calculated by GM.CalcView. This function is only reliable inside rendering hooks."
   },
   "_G.EyePos": {
     "prefix": "EyePos",
     "body": "EyePos()$0",
-    "description": "(Client) Function: _G.EyePos() Returns the position of the local player's view point as calculated by {{HookFunction|GM|CalcView}}."
+    "description": "(Client) Function: _G.EyePos\n\nReturns the origin of the current render context as calculated by GM.CalcView. This function is only reliable inside rendering hooks."
   },
   "_G.EyeVector": {
     "prefix": "EyeVector",
     "body": "EyeVector()$0",
-    "description": "(Client) Function: _G.EyeVector() Returns the normal of the players view calculated by {{HookFunction|GM|CalcView}} similar to {{GlobalFunction|EyeAngles}}."
+    "description": "(Client) Function: _G.EyeVector\n\nReturns the normal vector of the current render context as calculated by GM.CalcView, similar to _G.EyeAngles. This function is only reliable inside rendering hooks."
   },
   "_G.FindMetaTable": {
     "prefix": "FindMetaTable",
     "body": "FindMetaTable(${1:string metaName})$0",
-    "description": "(All) Function: _G.FindMetaTable() Returns the meta table for the class with the matching name."
+    "description": "(All) Function: _G.FindMetaTable\n\nReturns the meta table for the class with the matching name."
   },
   "_G.FindTooltip": {
     "prefix": "FindTooltip",
     "body": "FindTooltip(${1:Panel panel})$0",
-    "description": "(Client and Menu) Function: _G.FindTooltip() Returns the tool-tip text and tool-tip-panel (if any) of the given panel as well as itself"
+    "description": "(Client and Menu) Function: _G.FindTooltip\n\nReturns the tool-tip text and tool-tip-panel (if any) of the given panel as well as itself"
   },
   "_G.Format": {
     "prefix": "Format",
     "body": "Format(${1:string format}, ${2:vararg formatParameters})$0",
-    "description": "(All) Function: _G.Format() Formats the specified values into the string given. Same as {{LibraryFunction|string|format}}."
+    "description": "(All) Function: _G.Format\n\nFormats the specified values into the string given. Same as string.format."
   },
   "_G.FrameNumber": {
     "prefix": "FrameNumber",
     "body": "FrameNumber()$0",
-    "description": "(Client) Function: _G.FrameNumber() Returns the number of frames rendered since the game was launched."
+    "description": "(Client) Function: _G.FrameNumber\n\nReturns the number of frames rendered since the game was launched."
   },
   "_G.FrameTime": {
     "prefix": "FrameTime",
     "body": "FrameTime()$0",
-    "description": "(All) Function: _G.FrameTime() Returns the {{GlobalFunction|CurTime}}-based time in seconds it took to render the last frame."
+    "description": "(All) Function: _G.FrameTime\n\nReturns the _G.CurTime-based time in seconds it took to render the last frame."
   },
   "_G.GameDetails": {
     "prefix": "GameDetails",
     "body": "GameDetails(${1:string servername}, ${2:string serverurl}, ${3:string mapname}, ${4:number maxplayers}, ${5:string steamid}, ${6:string gamemode})$0",
-    "description": "(Menu) Function: _G.GameDetails() Callback function for when the client has joined a server. This function shows the server's loading URL by default."
+    "description": "(Menu) Function: _G.GameDetails\n\nCallback function for when the client has joined a server. This function shows the server's loading URL by default."
   },
   "_G.gcinfo": {
     "prefix": "gcinfo",
     "body": "gcinfo()$0",
-    "description": "(All) Function: _G.gcinfo() {{Deprecated|This function was deprecated in Lua 5.1 and is removed in Lua 5.2. Use {{GlobalFunction|collectgarbage}}( \"count\" ) instead.}} Returns the current floored dynamic memory usage of Lua in kilobytes."
+    "description": "(All) Function: _G.gcinfo\n\n[Deprecated] .This function was deprecated in Lua 5.1 and is removed in Lua 5.2. Use _G.collectgarbage( \"count\" ) instead. Returns the current floored dynamic memory usage of Lua in kilobytes."
   },
   "_G.GetConVar": {
     "prefix": "GetConVar",
     "body": "GetConVar(${1:string name})$0",
-    "description": "(All) Function: _G.GetConVar() Gets the ConVar with the specified name. This function caches the ConVar object internally."
+    "description": "(All) Function: _G.GetConVar\n\nGets the ConVar with the specified name. This function caches the ConVar object internally."
   },
   "_G.GetConVar_Internal": {
     "prefix": "GetConVar_Internal",
     "body": "GetConVar_Internal(${1:string name})$0",
-    "description": "(All) Function: _G.GetConVar_Internal() {{Internal}}Gets the ConVar with the specified name. This function doesn't cache the convar."
+    "description": "(All) Function: _G.GetConVar_Internal\n\n[Internal] Gets the ConVar with the specified name. This function doesn't cache the convar."
   },
   "_G.GetConVarNumber": {
     "prefix": "GetConVarNumber",
     "body": "GetConVarNumber(${1:string name})$0",
-    "description": "(All) Function: _G.GetConVarNumber() {{Deprecated|Store the <a href=\"http://wiki.garrysmod.com/page/Category:ConVar}} object retrieved with {{GlobalFunction|GetConVar}} and call {{ClassFunction|ConVar|GetInt}} or {{ClassFunction|ConVar|GetFloat}} on it.\">ConVar}} object retrieved with {{GlobalFunction|GetConVar}} and call {{ClassFunction|ConVar|GetInt}} or {{ClassFunction|ConVar|GetFloat}} on it.</a>Gets the numeric value ConVar with the specified name."
+    "description": "(All) Function: _G.GetConVarNumber\n\n[Deprecated] .Store the ConVar object retrieved with _G.GetConVar and call ConVar.GetInt or ConVar.GetFloat on it.Gets the numeric value ConVar with the specified name."
   },
   "_G.GetConVarString": {
     "prefix": "GetConVarString",
     "body": "GetConVarString(${1:string name})$0",
-    "description": "(All) Function: _G.GetConVarString() {{Deprecated|Store the <a href=\"http://wiki.garrysmod.com/page/Category:ConVar}} object retrieved with {{GlobalFunction|GetConVar}} and call {{ClassFunction|ConVar|GetString}} on it.\">ConVar}} object retrieved with {{GlobalFunction|GetConVar}} and call {{ClassFunction|ConVar|GetString}} on it.</a>Gets the string value ConVar with the specified name."
+    "description": "(All) Function: _G.GetConVarString\n\n[Deprecated] .Store the ConVar object retrieved with _G.GetConVar and call ConVar.GetString on it.Gets the string value ConVar with the specified name."
   },
   "_G.GetDefaultLoadingHTML": {
     "prefix": "GetDefaultLoadingHTML",
     "body": "GetDefaultLoadingHTML()$0",
-    "description": "(Menu) Function: _G.GetDefaultLoadingHTML() Returns the default loading screen URL (asset://garrysmod/html/loading.html)"
+    "description": "(Menu) Function: _G.GetDefaultLoadingHTML\n\nReturns the default loading screen URL (asset://garrysmod/html/loading.html)"
   },
   "_G.GetDemoFileDetails": {
     "prefix": "GetDemoFileDetails",
     "body": "GetDemoFileDetails(${1:string filename})$0",
-    "description": "(Menu) Function: _G.GetDemoFileDetails() Retrieves data about the demo with the specified filename. Similar to {{GlobalFunction|GetSaveFileDetails}}."
+    "description": "(Menu) Function: _G.GetDemoFileDetails\n\nRetrieves data about the demo with the specified filename. Similar to _G.GetSaveFileDetails."
   },
   "_G.GetDownloadables": {
     "prefix": "GetDownloadables",
     "body": "GetDownloadables()$0",
-    "description": "(Menu) Function: _G.GetDownloadables() Returns a table with the names of files needed from the server you are currently joining."
+    "description": "(Menu) Function: _G.GetDownloadables\n\nReturns a table with the names of files needed from the server you are currently joining."
   },
   "_G.getfenv": {
     "prefix": "getfenv",
     "body": "getfenv(${1:function location=1})$0",
-    "description": "(All) Function: _G.getfenv() Returns the environment table of either the stack level or the function specified."
+    "description": "(All) Function: _G.getfenv\n\nReturns the environment table of either the stack level or the function specified."
   },
   "_G.GetGlobalAngle": {
     "prefix": "GetGlobalAngle",
     "body": "GetGlobalAngle(${1:string index}, ${2:Angle default=Angle( 0, 0, 0 )})$0",
-    "description": "(Shared) Function: _G.GetGlobalAngle() Returns an angle that is shared between the server and all clients."
+    "description": "(Shared) Function: _G.GetGlobalAngle\n\nReturns an angle that is shared between the server and all clients."
   },
   "_G.GetGlobalBool": {
     "prefix": "GetGlobalBool",
     "body": "GetGlobalBool(${1:string index}, ${2:boolean default=false})$0",
-    "description": "(Shared) Function: _G.GetGlobalBool() Returns a boolean that is shared between the server and all clients."
+    "description": "(Shared) Function: _G.GetGlobalBool\n\nReturns a boolean that is shared between the server and all clients."
   },
   "_G.GetGlobalEntity": {
     "prefix": "GetGlobalEntity",
     "body": "GetGlobalEntity(${1:string index}, ${2:Entity default=NULL})$0",
-    "description": "(Shared) Function: _G.GetGlobalEntity() Returns an entity that is shared between the server and all clients."
+    "description": "(Shared) Function: _G.GetGlobalEntity\n\nReturns an entity that is shared between the server and all clients."
   },
   "_G.GetGlobalFloat": {
     "prefix": "GetGlobalFloat",
     "body": "GetGlobalFloat(${1:string index}, ${2:number default=0})$0",
-    "description": "(Shared) Function: _G.GetGlobalFloat() Returns a float that is shared between the server and all clients."
+    "description": "(Shared) Function: _G.GetGlobalFloat\n\nReturns a float that is shared between the server and all clients."
   },
   "_G.GetGlobalInt": {
     "prefix": "GetGlobalInt",
     "body": "GetGlobalInt(${1:string index}, ${2:number default=0})$0",
-    "description": "(Shared) Function: _G.GetGlobalInt() Returns an integer that is shared between the server and all clients."
+    "description": "(Shared) Function: _G.GetGlobalInt\n\nReturns an integer that is shared between the server and all clients."
   },
   "_G.GetGlobalString": {
     "prefix": "GetGlobalString",
     "body": "GetGlobalString(${1:string index}, ${2:string default=\"\"})$0",
-    "description": "(Shared) Function: _G.GetGlobalString() Returns a string that is shared between the server and all clients."
+    "description": "(Shared) Function: _G.GetGlobalString\n\nReturns a string that is shared between the server and all clients."
   },
   "_G.GetGlobalVector": {
     "prefix": "GetGlobalVector",
     "body": "GetGlobalVector(${1:string Index}, ${2:Vector Default})$0",
-    "description": "(Shared) Function: _G.GetGlobalVector() Returns a vector that is shared between the server and all clients."
+    "description": "(Shared) Function: _G.GetGlobalVector\n\nReturns a vector that is shared between the server and all clients."
   },
   "_G.GetHostName": {
     "prefix": "GetHostName",
     "body": "GetHostName()$0",
-    "description": "(Shared) Function: _G.GetHostName() Returns the name of the current server."
+    "description": "(Shared) Function: _G.GetHostName\n\nReturns the name of the current server."
   },
   "_G.GetHUDPanel": {
     "prefix": "GetHUDPanel",
     "body": "GetHUDPanel()$0",
-    "description": "(Client) Function: _G.GetHUDPanel() Returns the panel that is used as a wrapper for the HUD."
+    "description": "(Client) Function: _G.GetHUDPanel\n\nReturns the panel that is used as a wrapper for the HUD."
   },
   "_G.GetLoadPanel": {
     "prefix": "GetLoadPanel",
     "body": "GetLoadPanel()$0",
-    "description": "(Menu) Function: _G.GetLoadPanel() Returns the loading screen panel and creates it if it doesn't exist."
+    "description": "(Menu) Function: _G.GetLoadPanel\n\nReturns the loading screen panel and creates it if it doesn't exist."
   },
   "_G.GetLoadStatus": {
     "prefix": "GetLoadStatus",
     "body": "GetLoadStatus()$0",
-    "description": "(Menu) Function: _G.GetLoadStatus() Returns the current status of the server join progress."
+    "description": "(Menu) Function: _G.GetLoadStatus\n\nReturns the current status of the server join progress."
   },
   "_G.GetMapList": {
     "prefix": "GetMapList",
     "body": "GetMapList()$0",
-    "description": "(Menu) Function: _G.GetMapList() Returns a table with the names of all maps and categories that you have on your client."
+    "description": "(Menu) Function: _G.GetMapList\n\nReturns a table with the names of all maps and categories that you have on your client."
   },
   "_G.getmetatable": {
     "prefix": "getmetatable",
     "body": "getmetatable(${1:any object})$0",
-    "description": "(All) Function: _G.getmetatable() Returns the metatable of an object. This function obeys the metatable's __metatable field, and will return that field if the metatable has it set."
+    "description": "(All) Function: _G.getmetatable\n\nReturns the metatable of an object. This function obeys the metatable's __metatable field, and will return that field if the metatable has it set."
   },
   "_G.GetOverlayPanel": {
     "prefix": "GetOverlayPanel",
     "body": "GetOverlayPanel()$0",
-    "description": "(Menu) Function: _G.GetOverlayPanel() Returns the menu overlay panel, a container for panels like the error panel created in {{HookFunction|GM|OnLuaError}}."
+    "description": "(Menu) Function: _G.GetOverlayPanel\n\nReturns the menu overlay panel, a container for panels like the error panel created in GM.OnLuaError."
   },
   "_G.GetRenderTarget": {
     "prefix": "GetRenderTarget",
     "body": "GetRenderTarget(${1:string name}, ${2:number width}, ${3:number height}, ${4:boolean additive})$0",
-    "description": "(Client) Function: _G.GetRenderTarget() Creates or gets the rendertarget with the given name."
+    "description": "(Client) Function: _G.GetRenderTarget\n\nCreates or gets the rendertarget with the given name."
   },
   "_G.GetRenderTargetEx": {
     "prefix": "GetRenderTargetEx",
     "body": "GetRenderTargetEx(${1:string name}, ${2:number width}, ${3:number height}, ${4:number sizeMode}, ${5:number depthMode}, ${6:number textureFlags}, ${7:number rtFlags}, ${8:number imageFormat})$0",
-    "description": "(Client) Function: _G.GetRenderTargetEx() Creates or gets the rendertarget with the given name, this function allows to adjust the creation of a rendertarget more than {{GlobalFunction|GetRenderTarget}}"
+    "description": "(Client) Function: _G.GetRenderTargetEx\n\nCreates (or gets if it already exsits) the rendertarget with the given name, this function allows to adjust the creation of a rendertarget more than _G.GetRenderTarget."
   },
   "_G.GetSaveFileDetails": {
     "prefix": "GetSaveFileDetails",
     "body": "GetSaveFileDetails(${1:string filename})$0",
-    "description": "(Menu) Function: _G.GetSaveFileDetails() Retrieves data about the save with the specified filename. Similar to {{GlobalFunction|GetDemoFileDetails}}."
+    "description": "(Menu) Function: _G.GetSaveFileDetails\n\nRetrieves data about the save with the specified filename. Similar to _G.GetDemoFileDetails."
   },
   "_G.GetViewEntity": {
     "prefix": "GetViewEntity",
     "body": "GetViewEntity()$0",
-    "description": "(Client) Function: _G.GetViewEntity() Returns the entity the client is using to see from (such as the player itself, the camera, or another entity)."
+    "description": "(Client) Function: _G.GetViewEntity\n\nReturns the entity the client is using to see from (such as the player itself, the camera, or another entity)."
   },
   "_G.HSVToColor": {
     "prefix": "HSVToColor",
     "body": "HSVToColor(${1:number hue}, ${2:number saturation}, ${3:number value})$0",
-    "description": "(All) Function: _G.HSVToColor() Converts a color from HSV color space into RGB color space and returns a {{Struct|Color}}."
+    "description": "(All) Function: _G.HSVToColor\n\nConverts a color from HSV color space into RGB color space and returns a Color."
   },
   "_G.HTTP": {
     "prefix": "HTTP",
     "body": "HTTP(${1:table parameters})$0",
-    "description": "(All) Function: _G.HTTP() Launches a threaded http request with the given parameters"
+    "description": "(All) Function: _G.HTTP\n\nLaunches a threaded http request with the given parameters"
   },
   "_G.include": {
     "prefix": "include",
     "body": "include(${1:string fileName})$0",
-    "description": "(All) Function: _G.include() Executes a Lua script either relative to the current file, or absolute(relative to the /lua/ folder)."
+    "description": "(All) Function: _G.include\n\nExecutes a Lua script either relative to the current file, or absolute(relative to the /lua/ folder)."
   },
   "_G.IncludeCS": {
     "prefix": "IncludeCS",
     "body": "IncludeCS(${1:string filename})$0",
-    "description": "(All) Function: _G.IncludeCS() {{Deprecated|To send the target file to the client simply call AddCSLuaFile() in the target file itself.}}"
+    "description": "(All) Function: _G.IncludeCS\n\n[Deprecated] .To send the target file to the client simply call AddCSLuaFile() in the target file itself."
   },
   "_G.ipairs": {
     "prefix": "ipairs",
     "body": "ipairs(${1:table tab})$0",
-    "description": "(All) Function: _G.ipairs() Returns an iterator function for a for loop, to return ordered key-value pairs from a table."
+    "description": "(All) Function: _G.ipairs\n\nReturns an iterator function for a for loop, to return ordered key-value pairs from a table."
   },
   "_G.isangle": {
     "prefix": "isangle",
     "body": "isangle(${1:any variable})$0",
-    "description": "(All) Function: _G.isangle() Returns if the passed object is an <a href=\"http://wiki.garrysmod.com/page/Category:Angle\">Angle</a>."
+    "description": "(All) Function: _G.isangle\n\nReturns if the passed object is an Angle."
   },
   "_G.isbool": {
     "prefix": "isbool",
     "body": "isbool(${1:any variable})$0",
-    "description": "(All) Function: _G.isbool() Returns if the passed object is a <a href=\"http://wiki.garrysmod.com/page/Category:boolean\">boolean</a>."
+    "description": "(All) Function: _G.isbool\n\nReturns if the passed object is a boolean."
   },
   "_G.IsColor": {
     "prefix": "IsColor",
     "body": "IsColor(${1:any Object})$0",
-    "description": "(All) Function: _G.IsColor() Returns whether the given object does or doesn't have a ''metatable'' of a color."
+    "description": "(All) Function: _G.IsColor\n\nReturns whether the given object does or doesn't have a ''metatable'' of a color."
   },
   "_G.IsEnemyEntityName": {
     "prefix": "IsEnemyEntityName",
     "body": "IsEnemyEntityName(${1:string className})$0",
-    "description": "(All) Function: _G.IsEnemyEntityName() Returns if the given NPC class name is an enemy."
+    "description": "(All) Function: _G.IsEnemyEntityName\n\nReturns if the given NPC class name is an enemy."
   },
   "_G.IsEntity": {
     "prefix": "IsEntity",
     "body": "IsEntity(${1:any variable})$0",
-    "description": "(Shared) Function: _G.IsEntity() Returns if the passed object is an <a href=\"http://wiki.garrysmod.com/page/Category:Entity}}. Alias of {{GlobalFunction|isentity\">Entity}}. Alias of {{GlobalFunction|isentity</a>."
+    "description": "(Shared) Function: _G.IsEntity\n\nReturns if the passed object is an Entity. Alias of _G.isentity."
   },
   "_G.isentity": {
     "prefix": "isentity",
     "body": "isentity(${1:any variable})$0",
-    "description": "(All) Function: _G.isentity() Returns if the passed object is an <a href=\"http://wiki.garrysmod.com/page/Category:Entity\">Entity</a>."
+    "description": "(All) Function: _G.isentity\n\nReturns if the passed object is an Entity."
   },
   "_G.IsFirstTimePredicted": {
     "prefix": "IsFirstTimePredicted",
     "body": "IsFirstTimePredicted()$0",
-    "description": "(Shared) Function: _G.IsFirstTimePredicted() Returns if this is the first time this hook was predicted."
+    "description": "(Shared) Function: _G.IsFirstTimePredicted\n\nReturns if this is the first time this hook was predicted."
   },
   "_G.IsFriendEntityName": {
     "prefix": "IsFriendEntityName",
     "body": "IsFriendEntityName(${1:string className})$0",
-    "description": "(All) Function: _G.IsFriendEntityName() Returns if the given NPC class name is a friend."
+    "description": "(All) Function: _G.IsFriendEntityName\n\nReturns if the given NPC class name is a friend."
   },
   "_G.isfunction": {
     "prefix": "isfunction",
     "body": "isfunction(${1:any variable})$0",
-    "description": "(All) Function: _G.isfunction() Returns if the passed object is a <a href=\"http://wiki.garrysmod.com/page/Category:function\">function</a>."
+    "description": "(All) Function: _G.isfunction\n\nReturns if the passed object is a function."
   },
   "_G.IsInGame": {
     "prefix": "IsInGame",
     "body": "IsInGame()$0",
-    "description": "(Menu) Function: _G.IsInGame() Returns true if the client is currently playing either a singleplayer or multiplayer game."
+    "description": "(Menu) Function: _G.IsInGame\n\nReturns true if the client is currently playing either a singleplayer or multiplayer game."
   },
   "_G.ismatrix": {
     "prefix": "ismatrix",
     "body": "ismatrix(${1:any variable})$0",
-    "description": "(All) Function: _G.ismatrix() Returns whether the passed object is a <a href=\"http://wiki.garrysmod.com/page/Category:VMatrix\">VMatrix</a>."
+    "description": "(All) Function: _G.ismatrix\n\nReturns whether the passed object is a VMatrix."
   },
   "_G.IsMounted": {
     "prefix": "IsMounted",
     "body": "IsMounted(${1:string game})$0",
-    "description": "(All) Function: _G.IsMounted() Checks whether or not a game is currently mounted. Uses data given by {{LibraryFunction|engine|GetGames}}. Currently does not work correctly serverside on dedicated servers."
+    "description": "(All) Function: _G.IsMounted\n\nChecks whether or not a game is currently mounted. Uses data given by engine.GetGames. Currently does not work correctly serverside on dedicated servers."
   },
   "_G.isnumber": {
     "prefix": "isnumber",
     "body": "isnumber(${1:any variable})$0",
-    "description": "(All) Function: _G.isnumber() Returns if the passed object is a <a href=\"http://wiki.garrysmod.com/page/Category:number\">number</a>."
+    "description": "(All) Function: _G.isnumber\n\nReturns if the passed object is a number."
   },
   "_G.ispanel": {
     "prefix": "ispanel",
     "body": "ispanel(${1:any variable})$0",
-    "description": "(All) Function: _G.ispanel() Returns if the passed object is a <a href=\"http://wiki.garrysmod.com/page/Category:Panel\">Panel</a>."
+    "description": "(All) Function: _G.ispanel\n\nReturns if the passed object is a Panel."
   },
   "_G.isstring": {
     "prefix": "isstring",
     "body": "isstring(${1:any variable})$0",
-    "description": "(All) Function: _G.isstring() Returns if the passed object is a <a href=\"http://wiki.garrysmod.com/page/Category:string\">string</a>."
+    "description": "(All) Function: _G.isstring\n\nReturns if the passed object is a string."
   },
   "_G.istable": {
     "prefix": "istable",
     "body": "istable(${1:any variable})$0",
-    "description": "(All) Function: _G.istable() Returns if the passed object is a <a href=\"http://wiki.garrysmod.com/page/Category:table\">table</a>."
+    "description": "(All) Function: _G.istable\n\nReturns if the passed object is a table."
   },
   "_G.IsTableOfEntitiesValid": {
     "prefix": "IsTableOfEntitiesValid",
     "body": "IsTableOfEntitiesValid(${1:table table})$0",
-    "description": "(All) Function: _G.IsTableOfEntitiesValid() Returns whether or not every element within a table is a valid entity"
+    "description": "(All) Function: _G.IsTableOfEntitiesValid\n\nReturns whether or not every element within a table is a valid entity"
   },
   "_G.IsUselessModel": {
     "prefix": "IsUselessModel",
     "body": "IsUselessModel(${1:string modelName})$0",
-    "description": "(All) Function: _G.IsUselessModel() Returns whether or not a model is useless by checking that the file path is that of a proper model."
+    "description": "(All) Function: _G.IsUselessModel\n\nReturns whether or not a model is useless by checking that the file path is that of a proper model."
   },
   "_G.IsValid": {
     "prefix": "IsValid",
     "body": "IsValid(${1:any toBeValidated})$0",
-    "description": "(All) Function: _G.IsValid() Returns whether an object is valid or not. (Such as <a href=\"http://wiki.garrysmod.com/page/Category:Entity}}s, {{Type|Panel}}s, custom {{Type|table\">Entity}}s, {{Type|Panel}}s, custom {{Type|table</a> objects and more)<br />Checks that an object is not nil, has an IsValid method and if this method returns true."
+    "description": "(All) Function: _G.IsValid\n\nReturns whether an object is valid or not. (Such as Entitys, Type.Panels, custom Type.table objects and more)Checks that an object is not nil, has an IsValid method and if this method returns true."
   },
   "_G.isvector": {
     "prefix": "isvector",
     "body": "isvector(${1:any variable})$0",
-    "description": "(All) Function: _G.isvector() Returns if the passed object is a <a href=\"http://wiki.garrysmod.com/page/Category:Vector\">Vector</a>."
+    "description": "(All) Function: _G.isvector\n\nReturns if the passed object is a Vector."
   },
   "_G.JoinServer": {
     "prefix": "JoinServer",
     "body": "JoinServer(${1:string IP})$0",
-    "description": "(Menu) Function: _G.JoinServer() Joins the server with the specified IP."
+    "description": "(Menu) Function: _G.JoinServer\n\nJoins the server with the specified IP."
   },
   "_G.JS_Language": {
     "prefix": "JS_Language",
     "body": "JS_Language(${1:Panel htmlPanel})$0",
-    "description": "(Client and Menu) Function: _G.JS_Language() Adds javascript function 'language.Update' to an HTML panel as a method to call Lua's {{LibraryFunction|language|GetPhrase}} function."
+    "description": "(Client and Menu) Function: _G.JS_Language\n\nAdds javascript function 'language.Update' to an HTML panel as a method to call Lua's language.GetPhrase function."
   },
   "_G.JS_Utility": {
     "prefix": "JS_Utility",
     "body": "JS_Utility(${1:Panel htmlPanel})$0",
-    "description": "(Client and Menu) Function: _G.JS_Utility() Adds javascript function 'util.MotionSensorAvailable' to an HTML panel as a method to call Lua's {{LibraryFunction|motionsensor|IsAvailable}} function."
+    "description": "(Client and Menu) Function: _G.JS_Utility\n\nAdds javascript function 'util.MotionSensorAvailable' to an HTML panel as a method to call Lua's motionsensor.IsAvailable function."
   },
   "_G.JS_Workshop": {
     "prefix": "JS_Workshop",
     "body": "JS_Workshop(${1:Panel htmlPanel})$0",
-    "description": "(Client and Menu) Function: _G.JS_Workshop() Adds workshop related javascript functions to an HTML panel, used by the \"Dupes\" and \"Saves\" tabs in the spawnmenu."
+    "description": "(Client and Menu) Function: _G.JS_Workshop\n\nAdds workshop related javascript functions to an HTML panel, used by the \"Dupes\" and \"Saves\" tabs in the spawnmenu."
   },
   "_G.Label": {
     "prefix": "Label",
     "body": "Label(${1:string text}, ${2:Panel parent=nil})$0",
-    "description": "(Client and Menu) Function: _G.Label() Convenience function that creates a DLabel, sets the text, and returns it"
+    "description": "(Client and Menu) Function: _G.Label\n\nConvenience function that creates a DLabel, sets the text, and returns it"
   },
   "_G.LanguageChanged": {
     "prefix": "LanguageChanged",
     "body": "LanguageChanged(${1:string lang})$0",
-    "description": "(Menu) Function: _G.LanguageChanged() Callback function for when the client's language changes. Called by the engine."
+    "description": "(Menu) Function: _G.LanguageChanged\n\nCallback function for when the client's language changes. Called by the engine."
   },
   "_G.Lerp": {
     "prefix": "Lerp",
     "body": "Lerp(${1:number t}, ${2:number from}, ${3:number to})$0",
-    "description": "(All) Function: _G.Lerp() Performs a linear interpolation from the start number to the end number."
+    "description": "(All) Function: _G.Lerp\n\nPerforms a linear interpolation from the start number to the end number."
   },
   "_G.LerpAngle": {
     "prefix": "LerpAngle",
     "body": "LerpAngle(${1:number ratio}, ${2:Angle angleStart}, ${3:Angle angleEnd})$0",
-    "description": "(All) Function: _G.LerpAngle() Returns point between first and second angle using given fraction and linear interpolation"
+    "description": "(All) Function: _G.LerpAngle\n\nReturns point between first and second angle using given fraction and linear interpolation"
   },
   "_G.LerpVector": {
     "prefix": "LerpVector",
     "body": "LerpVector(${1:number fraction}, ${2:Vector from}, ${3:Vector to})$0",
-    "description": "(All) Function: _G.LerpVector() Linear interpolation between two vectors. It is commonly used to smooth movement between two vectors."
+    "description": "(All) Function: _G.LerpVector\n\nLinear interpolation between two vectors. It is commonly used to smooth movement between two vectors."
   },
   "_G.LoadLastMap": {
     "prefix": "LoadLastMap",
     "body": "LoadLastMap()$0",
-    "description": "(Menu) Function: _G.LoadLastMap() {{Internal}}This function is used to get the last map and category to which the map belongs from the cookie saved with {{GlobalFunction|SaveLastMap}}."
+    "description": "(Menu) Function: _G.LoadLastMap\n\n[Internal] This function is used to get the last map and category to which the map belongs from the cookie saved with _G.SaveLastMap."
   },
   "_G.LoadPresets": {
     "prefix": "LoadPresets",
     "body": "LoadPresets()$0",
-    "description": "(Client) Function: _G.LoadPresets() Loads all preset settings for the {{Lib|presets}} and returns them in a table"
+    "description": "(Client) Function: _G.LoadPresets\n\nLoads all preset settings for the presets and returns them in a table"
   },
   "_G.Localize": {
     "prefix": "Localize",
     "body": "Localize(${1:string localisationToken}, ${2:string default})$0",
-    "description": "(Client and Menu) Function: _G.Localize() Returns a localisation for the given token, if none is found it will return the default(second) parameter."
+    "description": "(Client and Menu) Function: _G.Localize\n\nReturns a localisation for the given token, if none is found it will return the default(second) parameter."
   },
   "_G.LocalPlayer": {
     "prefix": "LocalPlayer",
     "body": "LocalPlayer()$0",
-    "description": "(Client) Function: _G.LocalPlayer() Returns the player object of the current client."
+    "description": "(Client) Function: _G.LocalPlayer\n\nReturns the player object of the current client."
   },
   "_G.LocalToWorld": {
     "prefix": "LocalToWorld",
     "body": "LocalToWorld(${1:Vector localPos}, ${2:Angle localAng}, ${3:Vector originPos}, ${4:Angle originAngle})$0",
-    "description": "(Shared) Function: _G.LocalToWorld() Translates the specified position and angle from the specified coordinate system into worldspace coordinates"
+    "description": "(Shared) Function: _G.LocalToWorld\n\nTranslates the specified position and angle from the specified local coordinate system into worldspace coordinates."
   },
   "_G.Material": {
     "prefix": "Material",
     "body": "Material(${1:string materialName}, ${2:string pngParameters=nil})$0",
-    "description": "(All) Function: _G.Material() Either returns the material with the given name, or loads the material interpreting the first argument as the path."
+    "description": "(All) Function: _G.Material\n\nEither returns the material with the given name, or loads the material interpreting the first argument as the path."
   },
   "_G.Matrix": {
     "prefix": "Matrix",
-    "body": "Matrix(${1:table data=nil})$0",
-    "description": "(Shared) Function: _G.Matrix() Returns a <a href=\"http://wiki.garrysmod.com/page/Category:VMatrix\">VMatrix</a> object."
+    "body": "Matrix(${1:table data={{1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {0, 0, 0, 1}}})$0",
+    "description": "(Shared) Function: _G.Matrix\n\nReturns a VMatrix object."
   },
   "_G.Mesh": {
     "prefix": "Mesh",
     "body": "Mesh(${1:IMaterial mat=nil})$0",
-    "description": "(Client) Function: _G.Mesh() Returns a new mesh object."
+    "description": "(Client) Function: _G.Mesh\n\nReturns a new mesh object."
   },
   "_G.Model": {
     "prefix": "Model",
     "body": "Model(${1:string model})$0",
-    "description": "(All) Function: _G.Model() Runs {{LibraryFunction|util|PrecacheModel}} and returns the string"
+    "description": "(All) Function: _G.Model\n\nRuns util.PrecacheModel and returns the string"
   },
   "_G.module": {
     "prefix": "module",
     "body": "module(${1:string name}, ${2:vararg loaders})$0",
-    "description": "(All) Function: _G.module() Creates a table with the specified module name and sets the function environment for said table."
+    "description": "(All) Function: _G.module\n\nCreates a table with the specified module name and sets the function environment for said table."
   },
   "_G.Msg": {
     "prefix": "Msg",
     "body": "Msg(${1:vararg args})$0",
-    "description": "(All) Function: _G.Msg() Writes every given argument to the console.<br />"
+    "description": "(All) Function: _G.Msg\n\nWrites every given argument to the console."
   },
   "_G.MsgAll": {
     "prefix": "MsgAll",
     "body": "MsgAll(${1:vararg args})$0",
-    "description": "(Shared) Function: _G.MsgAll() Works exactly like {{GlobalFunction|Msg}} except that, if called on the server, will print to all players consoles plus the server console."
+    "description": "(Shared) Function: _G.MsgAll\n\nWorks exactly like _G.Msg except that, if called on the server, will print to all players consoles plus the server console."
   },
   "_G.MsgC": {
     "prefix": "MsgC",
     "body": "MsgC(${1:vararg args})$0",
-    "description": "(All) Function: _G.MsgC() Just like {{GlobalFunction|Msg}}, except it can also print colored text, just like {{LibraryFunction|chat|AddText}}."
+    "description": "(All) Function: _G.MsgC\n\nJust like _G.Msg, except it can also print colored text, just like chat.AddText."
   },
   "_G.MsgN": {
     "prefix": "MsgN",
     "body": "MsgN(${1:vararg args})$0",
-    "description": "(All) Function: _G.MsgN() Same as {{GlobalFunction|print}}, except it concatinates the arguments without inserting any whitespace in between them."
+    "description": "(All) Function: _G.MsgN\n\nSame as _G.print, except it concatinates the arguments without inserting any whitespace in between them."
   },
   "_G.NamedColor": {
     "prefix": "NamedColor",
     "body": "NamedColor(${1:string name})$0",
-    "description": "(Client) Function: _G.NamedColor() Returns named color defined in resource/ClientScheme.res. "
+    "description": "(Client) Function: _G.NamedColor\n\nReturns named color defined in resource/ClientScheme.res. "
   },
   "_G.newproxy": {
     "prefix": "newproxy",
     "body": "newproxy(${1:boolean addMetatable =false})$0",
-    "description": "(All) Function: _G.newproxy() Returns a new userdata object."
+    "description": "(All) Function: _G.newproxy\n\nReturns a new userdata object."
   },
   "_G.next": {
     "prefix": "next",
     "body": "next(${1:table tab}, ${2:any prevKey=nil})$0",
-    "description": "(All) Function: _G.next() Returns the next key and value pair in a table."
+    "description": "(All) Function: _G.next\n\nReturns the next key and value pair in a table."
   },
   "_G.NumDownloadables": {
     "prefix": "NumDownloadables",
     "body": "NumDownloadables()$0",
-    "description": "(Menu) Function: _G.NumDownloadables() Returns the number of files needed from the server you are currently joining."
+    "description": "(Menu) Function: _G.NumDownloadables\n\nReturns the number of files needed from the server you are currently joining."
   },
   "_G.NumModelSkins": {
     "prefix": "NumModelSkins",
     "body": "NumModelSkins(${1:string modelName})$0",
-    "description": "(Client) Function: _G.NumModelSkins() Returns the amount of skins the specified model has"
+    "description": "(Client) Function: _G.NumModelSkins\n\nReturns the amount of skins the specified model has"
   },
   "_G.OnModelLoaded": {
     "prefix": "OnModelLoaded",
     "body": "OnModelLoaded(${1:string modelName}, ${2:number numPostParams}, ${3:number numSeq}, ${4:number numAttachments}, ${5:number numBoneControllers}, ${6:number numSkins}, ${7:number size})$0",
-    "description": "(Client) Function: _G.OnModelLoaded() {{Internal}} Called by the engine when a model has been loaded. Caches model information with the {{Lib|sql}}."
+    "description": "(Client) Function: _G.OnModelLoaded\n\n[Internal]  Called by the engine when a model has been loaded. Caches model information with the sql."
   },
   "_G.OpenFolder": {
     "prefix": "OpenFolder",
     "body": "OpenFolder(${1:string folder})$0",
-    "description": "(Menu) Function: _G.OpenFolder() Opens a folder with the given name in the garrysmod folder using the operating system's file browser. Currently broken on OS X and Linux."
+    "description": "(Menu) Function: _G.OpenFolder\n\nOpens a folder with the given name in the garrysmod folder using the operating system's file browser. Currently broken on OS X and Linux."
   },
   "_G.OrderVectors": {
     "prefix": "OrderVectors",
     "body": "OrderVectors(${1:Vector vector1}, ${2:Vector vector2})$0",
-    "description": "(All) Function: _G.OrderVectors() Modifies the given vectors so that all of vector2's axis are larger than vector1's by switching them around. Also known as ordering vectors."
+    "description": "(All) Function: _G.OrderVectors\n\nModifies the given vectors so that all of vector2's axis are larger than vector1's by switching them around. Also known as ordering vectors."
   },
   "_G.pairs": {
     "prefix": "pairs",
     "body": "pairs(${1:table tab})$0",
-    "description": "(All) Function: _G.pairs() Returns an iterator function({{GlobalFunction|next}}) for a for loop that will return the values of the specified table in an arbitrary order."
+    "description": "(All) Function: _G.pairs\n\nReturns an iterator function(_G.next) for a for loop that will return the values of the specified table in an arbitrary order."
   },
   "_G.Particle": {
     "prefix": "Particle",
     "body": "Particle(${1:string file})$0",
-    "description": "(All) Function: _G.Particle() Calls {{LibraryFunction|game|AddParticles}} and returns given string."
+    "description": "(All) Function: _G.Particle\n\nCalls game.AddParticles and returns given string."
   },
   "_G.ParticleEffect": {
     "prefix": "ParticleEffect",
     "body": "ParticleEffect(${1:string particleName}, ${2:Vector position}, ${3:Angle angles}, ${4:Entity parent=NULL})$0",
-    "description": "(Shared) Function: _G.ParticleEffect() Creates a particle effect."
+    "description": "(Shared) Function: _G.ParticleEffect\n\nCreates a particle effect."
   },
   "_G.ParticleEffectAttach": {
     "prefix": "ParticleEffectAttach",
     "body": "ParticleEffectAttach(${1:string particleName}, ${2:number attachType}, ${3:Entity entity}, ${4:number attachmentID})$0",
-    "description": "(Shared) Function: _G.ParticleEffectAttach() Creates a particle effect with specialized parameters."
+    "description": "(Shared) Function: _G.ParticleEffectAttach\n\nCreates a particle effect with specialized parameters."
   },
   "_G.ParticleEmitter": {
     "prefix": "ParticleEmitter",
     "body": "ParticleEmitter(${1:Vector position}, ${2:boolean use3D})$0",
-    "description": "(Client) Function: _G.ParticleEmitter() Creates a new <a href=\"http://wiki.garrysmod.com/page/Category:CLuaEmitter\">CLuaEmitter</a>."
+    "description": "(Client) Function: _G.ParticleEmitter\n\nCreates a new CLuaEmitter."
   },
   "_G.Path": {
     "prefix": "Path",
     "body": "Path(${1:string type})$0",
-    "description": "(Server) Function: _G.Path() Creates a path for the bot to follow"
+    "description": "(Server) Function: _G.Path\n\nCreates a path for the bot to follow"
   },
   "_G.pcall": {
     "prefix": "pcall",
     "body": "pcall(${1:function func}, ${2:vararg arguments})$0",
-    "description": "(All) Function: _G.pcall() Calls a function and catches an error that can be thrown while the execution of the call."
+    "description": "(All) Function: _G.pcall\n\nCalls a function and catches an error that can be thrown while the execution of the call."
   },
   "_G.Player": {
     "prefix": "Player",
     "body": "Player(${1:number playerIndex})$0",
-    "description": "(Shared) Function: _G.Player() Returns the player with the matching {{ClassFunction|Player|UserID}}."
+    "description": "(Shared) Function: _G.Player\n\nReturns the player with the matching Player.UserID."
   },
   "_G.PositionSpawnIcon": {
     "prefix": "PositionSpawnIcon",
     "body": "PositionSpawnIcon(${1:Entity model}, ${2:Vector position})$0",
-    "description": "(Client) Function: _G.PositionSpawnIcon() Moves the given model to the given position and returns view information based on its properties"
+    "description": "(Client) Function: _G.PositionSpawnIcon\n\nMoves the given model to the given position and returns view information based on its properties"
   },
   "_G.PrecacheParticleSystem": {
     "prefix": "PrecacheParticleSystem",
     "body": "PrecacheParticleSystem(${1:string particleSystemName})$0",
-    "description": "(Shared) Function: _G.PrecacheParticleSystem() Precaches the particle with the specified name."
+    "description": "(Shared) Function: _G.PrecacheParticleSystem\n\nPrecaches the particle with the specified name."
   },
   "_G.PrecacheScene": {
     "prefix": "PrecacheScene",
     "body": "PrecacheScene(${1:string scene})$0",
-    "description": "(Server) Function: _G.PrecacheScene() Precaches a scene file."
+    "description": "(Server) Function: _G.PrecacheScene\n\nPrecaches a scene file."
   },
   "_G.PrecacheSentenceFile": {
     "prefix": "PrecacheSentenceFile",
     "body": "PrecacheSentenceFile(${1:string filename})$0",
-    "description": "(Server) Function: _G.PrecacheSentenceFile() Load and precache a custom sentence file."
+    "description": "(Server) Function: _G.PrecacheSentenceFile\n\nLoad and precache a custom sentence file."
   },
   "_G.PrecacheSentenceGroup": {
     "prefix": "PrecacheSentenceGroup",
     "body": "PrecacheSentenceGroup(${1:string group})$0",
-    "description": "(Server) Function: _G.PrecacheSentenceGroup() Precache a sentence group in a sentences.txt definition file."
+    "description": "(Server) Function: _G.PrecacheSentenceGroup\n\nPrecache a sentence group in a sentences.txt definition file."
   },
   "_G.print": {
     "prefix": "print",
     "body": "print(${1:vararg args})$0",
-    "description": "(All) Function: _G.print() Writes every given argument to the console.<br />"
+    "description": "(All) Function: _G.print\n\nWrites every given argument to the console."
   },
   "_G.PrintMessage": {
     "prefix": "PrintMessage",
     "body": "PrintMessage(${1:number type}, ${2:string message})$0",
-    "description": "(Server) Function: _G.PrintMessage() Displays a message in the chat, console, or center of screen of every player."
+    "description": "(Server) Function: _G.PrintMessage\n\nDisplays a message in the chat, console, or center of screen of every player."
   },
   "_G.PrintTable": {
     "prefix": "PrintTable",
     "body": "PrintTable(${1:table tableToPrint}, ${2:number indent=0}, ${3:table done={}})$0",
-    "description": "(All) Function: _G.PrintTable() Recursively prints the contents of a table to the console."
+    "description": "(All) Function: _G.PrintTable\n\nRecursively prints the contents of a table to the console."
   },
   "_G.ProjectedTexture": {
     "prefix": "ProjectedTexture",
     "body": "ProjectedTexture()$0",
-    "description": "(Client) Function: _G.ProjectedTexture() Creates a new <a href=\"http://wiki.garrysmod.com/page/Category:ProjectedTexture\">ProjectedTexture</a>."
+    "description": "(Client) Function: _G.ProjectedTexture\n\nCreates a new ProjectedTexture."
   },
   "_G.ProtectedCall": {
     "prefix": "ProtectedCall",
     "body": "ProtectedCall(${1:function func})$0",
-    "description": "(Shared) Function: _G.ProtectedCall() Runs a function without stopping the whole script on error."
+    "description": "(Shared) Function: _G.ProtectedCall\n\nRuns a function without stopping the whole script on error."
   },
   "_G.RandomPairs": {
     "prefix": "RandomPairs",
     "body": "RandomPairs(${1:table table}, ${2:boolean descending})$0",
-    "description": "(All) Function: _G.RandomPairs() Returns an iterator function that can be used to loop through a table in random order"
+    "description": "(All) Function: _G.RandomPairs\n\nReturns an iterator function that can be used to loop through a table in random order"
   },
   "_G.rawequal": {
     "prefix": "rawequal",
     "body": "rawequal(${1:any value1}, ${2:any value2})$0",
-    "description": "(All) Function: _G.rawequal() Compares the two values without calling their __eq operator."
+    "description": "(All) Function: _G.rawequal\n\nCompares the two values without calling their __eq operator."
   },
   "_G.rawget": {
     "prefix": "rawget",
     "body": "rawget(${1:table table}, ${2:any index})$0",
-    "description": "(All) Function: _G.rawget() Gets the value with the specified key from the table without calling the __index method."
+    "description": "(All) Function: _G.rawget\n\nGets the value with the specified key from the table without calling the __index method."
   },
   "_G.rawset": {
     "prefix": "rawset",
     "body": "rawset(${1:table table}, ${2:any index}, ${3:any value})$0",
-    "description": "(All) Function: _G.rawset() Sets the value with the specified key from the table without calling the __newindex method."
+    "description": "(All) Function: _G.rawset\n\nSets the value with the specified key from the table without calling the __newindex method."
   },
   "_G.RealFrameTime": {
     "prefix": "RealFrameTime",
     "body": "RealFrameTime()$0",
-    "description": "(Client) Function: _G.RealFrameTime() Returns the real frame-time which is unaffected by host_timescale. To be used for GUI effects (for example)"
+    "description": "(Client) Function: _G.RealFrameTime\n\nReturns the real frame-time which is unaffected by host_timescale. To be used for GUI effects (for example)"
   },
   "_G.RealTime": {
     "prefix": "RealTime",
     "body": "RealTime()$0",
-    "description": "(Shared) Function: _G.RealTime() Returns the uptime of the game/server in seconds (to at least 4 decimal places)"
+    "description": "(Shared) Function: _G.RealTime\n\nReturns the uptime of the game/server in seconds (to at least 4 decimal places)"
   },
   "_G.RecipientFilter": {
     "prefix": "RecipientFilter",
     "body": "RecipientFilter()$0",
-    "description": "(Server) Function: _G.RecipientFilter() Creates a new <a href=\"http://wiki.garrysmod.com/page/Category:CRecipientFilter\">CRecipientFilter</a>."
+    "description": "(Server) Function: _G.RecipientFilter\n\nCreates a new CRecipientFilter."
   },
   "_G.RecordDemoFrame": {
     "prefix": "RecordDemoFrame",
     "body": "RecordDemoFrame()$0",
-    "description": "(Menu) Function: _G.RecordDemoFrame() {{Internal}}"
+    "description": "(Menu) Function: _G.RecordDemoFrame\n\n[Internal] "
   },
   "_G.RegisterDermaMenuForClose": {
     "prefix": "RegisterDermaMenuForClose",
     "body": "RegisterDermaMenuForClose(${1:Panel menu})$0",
-    "description": "(Client and Menu) Function: _G.RegisterDermaMenuForClose() Registers a Derma element to be closed the next time {{GlobalFunction|CloseDermaMenus}} is called"
+    "description": "(Client and Menu) Function: _G.RegisterDermaMenuForClose\n\nRegisters a Derma element to be closed the next time _G.CloseDermaMenus is called"
   },
   "_G.RememberCursorPosition": {
     "prefix": "RememberCursorPosition",
     "body": "RememberCursorPosition()$0",
-    "description": "(Client and Menu) Function: _G.RememberCursorPosition() Saves position of your cursor on screen. You can restore it by using {{GlobalFunction|RestoreCursorPosition}}."
+    "description": "(Client and Menu) Function: _G.RememberCursorPosition\n\nSaves position of your cursor on screen. You can restore it by using _G.RestoreCursorPosition."
   },
   "_G.RemoveTooltip": {
     "prefix": "RemoveTooltip",
     "body": "RemoveTooltip()$0",
-    "description": "(Client and Menu) Function: _G.RemoveTooltip() Does the removing of the tooltip panel. Called by {{GlobalFunction|EndTooltip}}."
+    "description": "(Client and Menu) Function: _G.RemoveTooltip\n\nDoes the removing of the tooltip panel. Called by _G.EndTooltip."
   },
   "_G.RenderAngles": {
     "prefix": "RenderAngles",
     "body": "RenderAngles()$0",
-    "description": "(Client) Function: _G.RenderAngles() Returns the angle that the clients view is being rendered at"
+    "description": "(Client) Function: _G.RenderAngles\n\nReturns the angle that the clients view is being rendered at"
   },
   "_G.RenderDoF": {
     "prefix": "RenderDoF",
     "body": "RenderDoF(${1:Vector origin}, ${2:Angle angle}, ${3:Vector usableFocusPoint}, ${4:number angleSize}, ${5:number radialSteps}, ${6:number passes}, ${7:boolean spin}, ${8:table inView}, ${9:number fov})$0",
-    "description": "(Client) Function: _G.RenderDoF() Renders a Depth of Field effect"
+    "description": "(Client) Function: _G.RenderDoF\n\nRenders a Depth of Field effect"
   },
   "_G.RenderStereoscopy": {
     "prefix": "RenderStereoscopy",
     "body": "RenderStereoscopy(${1:Vector viewOrigin}, ${2:Angle viewAngles})$0",
-    "description": "(Client) Function: _G.RenderStereoscopy() Renders the stereoscopic post-process effect"
+    "description": "(Client) Function: _G.RenderStereoscopy\n\nRenders the stereoscopic post-process effect"
   },
   "_G.RenderSuperDoF": {
     "prefix": "RenderSuperDoF",
     "body": "RenderSuperDoF(${1:Vector viewOrigin}, ${2:Angle viewAngles}, ${3:number viewFOV})$0",
-    "description": "(Client) Function: _G.RenderSuperDoF() Renders the Super Depth of Field post-process effect"
+    "description": "(Client) Function: _G.RenderSuperDoF\n\nRenders the Super Depth of Field post-process effect"
   },
   "_G.require": {
     "prefix": "require",
     "body": "require(${1:string name})$0",
-    "description": "(All) Function: _G.require() First tries to load a binary module with the given name, if unsuccessful, it tries to load a Lua module with the given name."
+    "description": "(All) Function: _G.require\n\nFirst tries to load a binary module with the given name, if unsuccessful, it tries to load a Lua module with the given name."
   },
   "_G.RestoreCursorPosition": {
     "prefix": "RestoreCursorPosition",
     "body": "RestoreCursorPosition()$0",
-    "description": "(Client and Menu) Function: _G.RestoreCursorPosition() Restores position of your cursor on screen. You can save it by using {{GlobalFunction|RememberCursorPosition}}."
+    "description": "(Client and Menu) Function: _G.RestoreCursorPosition\n\nRestores position of your cursor on screen. You can save it by using _G.RememberCursorPosition."
   },
   "_G.RunConsoleCommand": {
     "prefix": "RunConsoleCommand",
     "body": "RunConsoleCommand(${1:string command}, ${2:vararg arguments})$0",
-    "description": "(All) Function: _G.RunConsoleCommand() Executes the given console command with the parameters."
+    "description": "(All) Function: _G.RunConsoleCommand\n\nExecutes the given console command with the parameters."
   },
   "_G.RunGameUICommand": {
     "prefix": "RunGameUICommand",
     "body": "RunGameUICommand(${1:string command})$0",
-    "description": "(Menu) Function: _G.RunGameUICommand() Runs a menu command. Equivalent to {{GlobalFunction|RunConsoleCommand}}( \"gamemenucommand\", command ) unless the command starts with the \"engine\" keyword in which case it is equivalent to {{GlobalFunction|RunConsoleCommand}}( command )."
+    "description": "(Menu) Function: _G.RunGameUICommand\n\nRuns a menu command. Equivalent to _G.RunConsoleCommand( \"gamemenucommand\", command ) unless the command starts with the \"engine\" keyword in which case it is equivalent to _G.RunConsoleCommand( command )."
   },
   "_G.RunString": {
     "prefix": "RunString",
     "body": "RunString(${1:string code}, ${2:string identifier=\"RunString\"}, ${3:boolean handleError=true})$0",
-    "description": "(All) Function: _G.RunString() Evaluates and executes the given code, will throw an error on failure."
+    "description": "(All) Function: _G.RunString\n\nEvaluates and executes the given code, will throw an error on failure."
   },
   "_G.RunStringEx": {
     "prefix": "RunStringEx",
     "body": "RunStringEx()$0",
-    "description": "(All) Function: _G.RunStringEx() Alias of {{GlobalFunction|RunString}}."
+    "description": "(All) Function: _G.RunStringEx\n\nAlias of _G.RunString."
   },
   "_G.SafeRemoveEntity": {
     "prefix": "SafeRemoveEntity",
     "body": "SafeRemoveEntity(${1:Entity ent})$0",
-    "description": "(All) Function: _G.SafeRemoveEntity() Removes the given entity unless it is a player or the world entity"
+    "description": "(All) Function: _G.SafeRemoveEntity\n\nRemoves the given entity unless it is a player or the world entity"
   },
   "_G.SafeRemoveEntityDelayed": {
     "prefix": "SafeRemoveEntityDelayed",
     "body": "SafeRemoveEntityDelayed(${1:Entity entity}, ${2:number delay})$0",
-    "description": "(All) Function: _G.SafeRemoveEntityDelayed() Removes entity after delay using {{GlobalFunction|SafeRemoveEntity}}"
+    "description": "(All) Function: _G.SafeRemoveEntityDelayed\n\nRemoves entity after delay using _G.SafeRemoveEntity"
   },
   "_G.SaveLastMap": {
     "prefix": "SaveLastMap",
     "body": "SaveLastMap(${1:string map}, ${2:string category})$0",
-    "description": "(Menu) Function: _G.SaveLastMap() {{Internal}}"
+    "description": "(Menu) Function: _G.SaveLastMap\n\n[Internal] "
   },
   "_G.SavePresets": {
     "prefix": "SavePresets",
     "body": "SavePresets(${1:table presets})$0",
-    "description": "(Client) Function: _G.SavePresets() Overwrites all presets with the supplied table. Used by the {{Lib|presets}} for preset saving"
+    "description": "(Client) Function: _G.SavePresets\n\nOverwrites all presets with the supplied table. Used by the presets for preset saving"
   },
   "_G.ScreenScale": {
     "prefix": "ScreenScale",
     "body": "ScreenScale(${1:number Size})$0",
-    "description": "(Client) Function: _G.ScreenScale() Returns a number based on the Size argument and your screen's width. The screen's width is always equal to size 640. This function is primarily used for scaling font sizes."
+    "description": "(Client) Function: _G.ScreenScale\n\nReturns a number based on the Size argument and your screen's width. The screen's width is always equal to size 640. This function is primarily used for scaling font sizes."
   },
   "_G.ScrH": {
     "prefix": "ScrH",
     "body": "ScrH()$0",
-    "description": "(Client and Menu) Function: _G.ScrH() Returns the height of GMod's window (in pixels)."
+    "description": "(Client and Menu) Function: _G.ScrH\n\nReturns the height of GMod's window (in pixels)."
   },
   "_G.ScrW": {
     "prefix": "ScrW",
     "body": "ScrW()$0",
-    "description": "(Client and Menu) Function: _G.ScrW() Gets the width of GMod window (in pixels)."
+    "description": "(Client and Menu) Function: _G.ScrW\n\nGets the width of GMod window (in pixels)."
   },
   "_G.select": {
     "prefix": "select",
     "body": "select(${1:any parameter}, ${2:vararg vararg})$0",
-    "description": "(All) Function: _G.select() Used to select single values from a vararg or get the count of values in it."
+    "description": "(All) Function: _G.select\n\nUsed to select single values from a vararg or get the count of values in it."
   },
   "_G.SendUserMessage": {
     "prefix": "SendUserMessage",
     "body": "SendUserMessage(${1:string name}, ${2:any recipients}, ${3:vararg args})$0",
-    "description": "(Shared) Function: _G.SendUserMessage() Send a usermessage"
+    "description": "(Shared) Function: _G.SendUserMessage\n\nSend a usermessage"
   },
   "_G.ServerLog": {
     "prefix": "ServerLog",
     "body": "ServerLog(${1:string parameter})$0",
-    "description": "(Server) Function: _G.ServerLog() Prints \"ServerLog: PARAM\" without a newline, to the server log and console."
+    "description": "(Server) Function: _G.ServerLog\n\nPrints \"ServerLog: PARAM\" without a newline, to the server log and console."
   },
   "_G.SetClipboardText": {
     "prefix": "SetClipboardText",
     "body": "SetClipboardText(${1:string text})$0",
-    "description": "(Client and Menu) Function: _G.SetClipboardText() Adds the given string to the computers clipboard, which can then be pasted in or outside of GMod with Ctrl + V."
+    "description": "(Client and Menu) Function: _G.SetClipboardText\n\nAdds the given string to the computers clipboard, which can then be pasted in or outside of GMod with Ctrl   V."
   },
   "_G.setfenv": {
     "prefix": "setfenv",
     "body": "setfenv(${1:function location}, ${2:table enviroment})$0",
-    "description": "(All) Function: _G.setfenv() Sets the enviroment for a function or a stack level, if a function is passed, the return value will be the function, otherwise nil."
+    "description": "(All) Function: _G.setfenv\n\nSets the enviroment for a function or a stack level, if a function is passed, the return value will be the function, otherwise nil."
   },
   "_G.SetGlobalAngle": {
     "prefix": "SetGlobalAngle",
     "body": "SetGlobalAngle(${1:any index}, ${2:Angle angle})$0",
-    "description": "(Shared) Function: _G.SetGlobalAngle() Defines an angle to be automatically networked to clients"
+    "description": "(Shared) Function: _G.SetGlobalAngle\n\nDefines an angle to be automatically networked to clients"
   },
   "_G.SetGlobalBool": {
     "prefix": "SetGlobalBool",
     "body": "SetGlobalBool(${1:any index}, ${2:boolean bool})$0",
-    "description": "(Shared) Function: _G.SetGlobalBool() Defined a boolean to be automatically networked to clients"
+    "description": "(Shared) Function: _G.SetGlobalBool\n\nDefined a boolean to be automatically networked to clients"
   },
   "_G.SetGlobalEntity": {
     "prefix": "SetGlobalEntity",
     "body": "SetGlobalEntity(${1:any index}, ${2:Entity ent})$0",
-    "description": "(Shared) Function: _G.SetGlobalEntity() Defines an entity to be automatically networked to clients"
+    "description": "(Shared) Function: _G.SetGlobalEntity\n\nDefines an entity to be automatically networked to clients"
   },
   "_G.SetGlobalFloat": {
     "prefix": "SetGlobalFloat",
     "body": "SetGlobalFloat(${1:any index}, ${2:number float})$0",
-    "description": "(Shared) Function: _G.SetGlobalFloat() Defines a floating point number to be automatically networked to clients"
+    "description": "(Shared) Function: _G.SetGlobalFloat\n\nDefines a floating point number to be automatically networked to clients"
   },
   "_G.SetGlobalInt": {
     "prefix": "SetGlobalInt",
     "body": "SetGlobalInt(${1:string Index}, ${2:number Value})$0",
-    "description": "(Shared) Function: _G.SetGlobalInt() Sets an integer that is shared between the server and all clients."
+    "description": "(Shared) Function: _G.SetGlobalInt\n\nSets an integer that is shared between the server and all clients."
   },
   "_G.SetGlobalString": {
     "prefix": "SetGlobalString",
     "body": "SetGlobalString(${1:any index}, ${2:string string})$0",
-    "description": "(Shared) Function: _G.SetGlobalString() Defines a string with a maximum of 199 characters to be automatically networked to clients"
+    "description": "(Shared) Function: _G.SetGlobalString\n\nDefines a string with a maximum of 199 characters to be automatically networked to clients"
   },
   "_G.SetGlobalVector": {
     "prefix": "SetGlobalVector",
     "body": "SetGlobalVector(${1:any index}, ${2:Vector vec})$0",
-    "description": "(Shared) Function: _G.SetGlobalVector() Defines a vector to be automatically networked to clients"
+    "description": "(Shared) Function: _G.SetGlobalVector\n\nDefines a vector to be automatically networked to clients"
   },
   "_G.setmetatable": {
     "prefix": "setmetatable",
     "body": "setmetatable(${1:table Tab}, ${2:table Metatable})$0",
-    "description": "(All) Function: _G.setmetatable() Sets, changes or removes a table's metatable. Returns Tab (the first argument)."
+    "description": "(All) Function: _G.setmetatable\n\nSets, changes or removes a table's metatable. Returns Tab (the first argument)."
   },
   "_G.SetPhysConstraintSystem": {
     "prefix": "SetPhysConstraintSystem",
     "body": "SetPhysConstraintSystem(${1:Entity constraintSystem})$0",
-    "description": "(Shared) Function: _G.SetPhysConstraintSystem() Called by the engine to set which constraint system [https://developer.valvesoftware.com/wiki/Phys_constraintsystem] the next created constraints should use"
+    "description": "(Shared) Function: _G.SetPhysConstraintSystem\n\nCalled by the engine to set which constraint system [https://developer.valvesoftware.com/wiki/Phys_constraintsystem] the next created constraints should use"
   },
   "_G.SortedPairs": {
     "prefix": "SortedPairs",
     "body": "SortedPairs(${1:table table}, ${2:boolean desc=false})$0",
-    "description": "(All) Function: _G.SortedPairs() This function can be used in a for loop instead of {{GlobalFunction|pairs}}. It sorts all '''keys''' alphabetically."
+    "description": "(All) Function: _G.SortedPairs\n\nThis function can be used in a for loop instead of _G.pairs. It sorts all '''keys''' alphabetically."
   },
   "_G.SortedPairsByMemberValue": {
     "prefix": "SortedPairsByMemberValue",
     "body": "SortedPairsByMemberValue(${1:table table}, ${2:any memberKey}, ${3:boolean descending=false})$0",
-    "description": "(All) Function: _G.SortedPairsByMemberValue() Returns an iterator function that can be used to loop through a table in order of member values, when the values of the table are also tables and contain that member."
+    "description": "(All) Function: _G.SortedPairsByMemberValue\n\nReturns an iterator function that can be used to loop through a table in order of member values, when the values of the table are also tables and contain that member."
   },
   "_G.SortedPairsByValue": {
     "prefix": "SortedPairsByValue",
     "body": "SortedPairsByValue(${1:table table}, ${2:boolean descending=false})$0",
-    "description": "(All) Function: _G.SortedPairsByValue() Returns an iterator function that can be used to loop through a table in order of its '''values'''."
+    "description": "(All) Function: _G.SortedPairsByValue\n\nReturns an iterator function that can be used to loop through a table in order of its '''values'''."
   },
   "_G.Sound": {
     "prefix": "Sound",
     "body": "Sound(${1:string soundPath})$0",
-    "description": "(All) Function: _G.Sound() Runs {{LibraryFunction|util|PrecacheSound}} and returns the string"
+    "description": "(All) Function: _G.Sound\n\nRuns util.PrecacheSound and returns the string"
   },
   "_G.SoundDuration": {
     "prefix": "SoundDuration",
     "body": "SoundDuration(${1:string soundName})$0",
-    "description": "(Shared) Function: _G.SoundDuration() Returns the duration of the sound specified in seconds."
+    "description": "(Shared) Function: _G.SoundDuration\n\nReturns the duration of the sound specified in seconds."
   },
   "_G.SQLStr": {
     "prefix": "SQLStr",
     "body": "SQLStr(${1:string input}, ${2:boolean noQuotes=false})$0",
-    "description": "(All) Function: _G.SQLStr() Returns the input value in an escaped form so that it can safely be used inside of queries. The returned value is surrounded by quotes unless noQuotes is true. Alias of {{LibraryFunction|sql|SQLStr}}"
+    "description": "(All) Function: _G.SQLStr\n\nReturns the input value in an escaped form so that it can safely be used inside of queries. The returned value is surrounded by quotes unless noQuotes is true. Alias of sql.SQLStr"
   },
   "_G.SScale": {
     "prefix": "SScale",
     "body": "SScale(${1:number Size})$0",
-    "description": "(Client) Function: _G.SScale() {{Deprecated|You should be using {{GlobalFunction|ScreenScale}} instead.}}"
+    "description": "(Client) Function: _G.SScale\n\n[Deprecated] .You should be using _G.ScreenScale instead."
   },
   "_G.STNDRD": {
     "prefix": "STNDRD",
     "body": "STNDRD(${1:number number})$0",
-    "description": "(All) Function: _G.STNDRD() Returns the ordinal suffix of a given number."
+    "description": "(All) Function: _G.STNDRD\n\nReturns the ordinal suffix of a given number."
   },
   "_G.SuppressHostEvents": {
     "prefix": "SuppressHostEvents",
     "body": "SuppressHostEvents(${1:Player suppressPlayer})$0",
-    "description": "(Server) Function: _G.SuppressHostEvents() Suppress any networking from the server to the specified player. This is automatically called by the engine before/after a player fires their weapon, reloads, or causes any other similar shared-predicted event to occur."
+    "description": "(Server) Function: _G.SuppressHostEvents\n\nSuppress any networking from the server to the specified player. This is automatically called by the engine before/after a player fires their weapon, reloads, or causes any other similar shared-predicted event to occur."
   },
   "_G.SysTime": {
     "prefix": "SysTime",
     "body": "SysTime()$0",
-    "description": "(All) Function: _G.SysTime() Returns a highly accurate time since the start up, ideal for benchmarking."
+    "description": "(All) Function: _G.SysTime\n\nReturns a highly accurate time in seconds since the start up, ideal for benchmarking."
   },
   "_G.TauntCamera": {
     "prefix": "TauntCamera",
     "body": "TauntCamera()$0",
-    "description": "(Shared) Function: _G.TauntCamera() Returns a TauntCamera object"
+    "description": "(Shared) Function: _G.TauntCamera\n\nReturns a TauntCamera object"
   },
   "_G.TextEntryLoseFocus": {
     "prefix": "TextEntryLoseFocus",
     "body": "TextEntryLoseFocus()$0",
-    "description": "(Client and Menu) Function: _G.TextEntryLoseFocus() Clears focus from any text entries player may have focused."
+    "description": "(Client and Menu) Function: _G.TextEntryLoseFocus\n\nClears focus from any text entries player may have focused."
   },
   "_G.TimedCos": {
     "prefix": "TimedCos",
     "body": "TimedCos(${1:number frequency}, ${2:number min}, ${3:number max}, ${4:number offset})$0",
-    "description": "(All) Function: _G.TimedCos() Returns a cosine value that fluctuates based on the current time"
+    "description": "(All) Function: _G.TimedCos\n\nReturns a cosine value that fluctuates based on the current time"
   },
   "_G.TimedSin": {
     "prefix": "TimedSin",
     "body": "TimedSin(${1:number frequency}, ${2:number origin}, ${3:number max}, ${4:number offset})$0",
-    "description": "(All) Function: _G.TimedSin() Returns a sine value that fluctuates based on {{GlobalFunction|CurTime}}. The value returned will be between the start value plus/minus the range value."
+    "description": "(All) Function: _G.TimedSin\n\nReturns a sine value that fluctuates based on _G.CurTime. The value returned will be between the start value plus/minus the range value."
   },
   "_G.tobool": {
     "prefix": "tobool",
     "body": "tobool(${1:any val})$0",
-    "description": "(All) Function: _G.tobool() Attempts to return an appropriate boolean for the given value"
+    "description": "(All) Function: _G.tobool\n\nAttempts to return an appropriate boolean for the given value"
   },
   "_G.ToggleFavourite": {
     "prefix": "ToggleFavourite",
     "body": "ToggleFavourite(${1:string map})$0",
-    "description": "(Menu) Function: _G.ToggleFavourite() Toggles whether or not the named map is favorited in the new game list."
+    "description": "(Menu) Function: _G.ToggleFavourite\n\nToggles whether or not the named map is favorited in the new game list."
   },
   "_G.tonumber": {
     "prefix": "tonumber",
     "body": "tonumber(${1:any value}, ${2:number base=10})$0",
-    "description": "(All) Function: _G.tonumber() Attempts to convert the value to a number."
+    "description": "(All) Function: _G.tonumber\n\nAttempts to convert the value to a number."
   },
   "_G.tostring": {
     "prefix": "tostring",
     "body": "tostring(${1:any value})$0",
-    "description": "(All) Function: _G.tostring() Attempts to convert the value to a string. If the value is an object and its metatable has defined the __tostring metamethod, this will call that function."
+    "description": "(All) Function: _G.tostring\n\nAttempts to convert the value to a string. If the value is an object and its metatable has defined the __tostring metamethod, this will call that function."
   },
   "_G.TranslateDownloadableName": {
     "prefix": "TranslateDownloadableName",
     "body": "TranslateDownloadableName(${1:string filename})$0",
-    "description": "(Menu) Function: _G.TranslateDownloadableName() {{Stub}}"
+    "description": "(Menu) Function: _G.TranslateDownloadableName\n\n[Deprecated] "
   },
   "_G.type": {
     "prefix": "type",
     "body": "type(${1:any var})$0",
-    "description": "(All) Function: _G.type() Returns a string representing the name of the type of the passed object."
+    "description": "(All) Function: _G.type\n\nReturns a string representing the name of the type of the passed object."
   },
   "_G.TypeID": {
     "prefix": "TypeID",
     "body": "TypeID(${1:any variable})$0",
-    "description": "(Shared) Function: _G.TypeID() Gets the associated type ID of the variable."
+    "description": "(Shared) Function: _G.TypeID\n\nGets the associated type ID of the variable."
   },
   "_G.unpack": {
     "prefix": "unpack",
     "body": "unpack(${1:table tbl}, ${2:number startIndex=1}, ${3:number endIndex=#tbl})$0",
-    "description": "(All) Function: _G.unpack() This function takes a numeric indexed table and return all the members as a vararg. If specified, it will start at the given index and end at end index."
+    "description": "(All) Function: _G.unpack\n\nThis function takes a numeric indexed table and return all the members as a vararg. If specified, it will start at the given index and end at end index."
   },
   "_G.UnPredictedCurTime": {
     "prefix": "UnPredictedCurTime",
     "body": "UnPredictedCurTime()$0",
-    "description": "(All) Function: _G.UnPredictedCurTime() Returns the current asynchronous in-game time."
+    "description": "(All) Function: _G.UnPredictedCurTime\n\nReturns the current asynchronous in-game time."
   },
   "_G.UpdateLoadPanel": {
     "prefix": "UpdateLoadPanel",
     "body": "UpdateLoadPanel(${1:string javascript})$0",
-    "description": "(Menu) Function: _G.UpdateLoadPanel() Runs JavaScript on the loading screen panel ({{GlobalFunction|GetLoadPanel}})."
+    "description": "(Menu) Function: _G.UpdateLoadPanel\n\nRuns JavaScript on the loading screen panel (_G.GetLoadPanel)."
   },
   "_G.UTIL_IsUselessModel": {
     "prefix": "UTIL_IsUselessModel",
     "body": "UTIL_IsUselessModel(${1:string modelName})$0",
-    "description": "(All) Function: _G.UTIL_IsUselessModel() {{Deprecated|You should use {{GlobalFunction|IsUselessModel}} instead.}}"
+    "description": "(All) Function: _G.UTIL_IsUselessModel\n\n[Deprecated] .You should use _G.IsUselessModel instead."
   },
   "_G.ValidPanel": {
     "prefix": "ValidPanel",
     "body": "ValidPanel(${1:Panel panel})$0",
-    "description": "(Client and Menu) Function: _G.ValidPanel() {{Deprecated|You should use {{GlobalFunction|IsValid}} instead}}"
+    "description": "(Client and Menu) Function: _G.ValidPanel\n\n[Deprecated] .You should use _G.IsValid instead"
   },
   "_G.Vector": {
     "prefix": "Vector",
     "body": "Vector(${1:number x=0}, ${2:number y=0}, ${3:number z=0})$0",
-    "description": "(All) Function: _G.Vector() Creates a <a href=\"http://wiki.garrysmod.com/page/Category:Vector\">Vector</a> object."
+    "description": "(All) Function: _G.Vector\n\nCreates a Vector object."
   },
   "_G.VectorRand": {
     "prefix": "VectorRand",
     "body": "VectorRand()$0",
-    "description": "(All) Function: _G.VectorRand() Returns a random vector whose components are each between -1 and 1"
+    "description": "(All) Function: _G.VectorRand\n\nReturns a random vector whose components are each between -1 and 1"
   },
   "_G.VGUIFrameTime": {
     "prefix": "VGUIFrameTime",
     "body": "VGUIFrameTime()$0",
-    "description": "(Client and Menu) Function: _G.VGUIFrameTime() Returns the time in seconds it took to render the VGUI."
+    "description": "(Client and Menu) Function: _G.VGUIFrameTime\n\nReturns the time in seconds it took to render the VGUI."
   },
   "_G.VGUIRect": {
     "prefix": "VGUIRect",
     "body": "VGUIRect(${1:number x}, ${2:number y}, ${3:number w}, ${4:number h})$0",
-    "description": "(Client) Function: _G.VGUIRect() Returns a DShape Derma element with the given dimensions"
+    "description": "(Client) Function: _G.VGUIRect\n\nReturns a DShape Derma element with the given dimensions"
   },
   "_G.VisualizeLayout": {
     "prefix": "VisualizeLayout",
     "body": "VisualizeLayout(${1:Panel panel})$0",
-    "description": "(Client and Menu) Function: _G.VisualizeLayout() Briefly displays layout details of the given panel on-screen"
+    "description": "(Client and Menu) Function: _G.VisualizeLayout\n\nBriefly displays layout details of the given panel on-screen"
   },
   "_G.WorkshopFileBase": {
     "prefix": "WorkshopFileBase",
     "body": "WorkshopFileBase(${1:string namespace}, ${2:table requiredTags})$0",
-    "description": "(Client and Menu) Function: _G.WorkshopFileBase() {{Internal}}Returns a new WorkshopFileBase element"
+    "description": "(Client and Menu) Function: _G.WorkshopFileBase\n\n[Internal] Returns a new WorkshopFileBase element"
   },
   "_G.WorldToLocal": {
     "prefix": "WorldToLocal",
     "body": "WorldToLocal(${1:Vector position}, ${2:Angle angle}, ${3:Vector newSystemOrigin}, ${4:Angle newSystemAngles})$0",
-    "description": "(Shared) Function: _G.WorldToLocal() Translates the specified position and angle into the specified coordinate system."
+    "description": "(Shared) Function: _G.WorldToLocal\n\nTranslates the specified position and angle into the specified coordinate system."
   }
 }

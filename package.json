@@ -1,65 +1,69 @@
 {
-    "name": "glua",
-    "description": "GLua language support for Visual Studio Code",
-    "version": "1.0.0",
-    "engines": {
-        "vscode": "^0.10.1"
-    },
-    "icon": "images/logo.png",
-    "publisher": "aStonedPenguin",
-    "categories": [
-        "Languages",
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "glua",
-                "path": "./snippets/custom.json"
-            },
-            {
-                "language": "glua",
-                "path": "./snippets/enums.json"
-            },
-            {
-                "language": "glua",
-                "path": "./snippets/classFuncs.json"
-            },
-            {
-                "language": "glua",
-                "path": "./snippets/funcs.json"
-            },
-            {
-                "language": "glua",
-                "path": "./snippets/globals.json"
-            },
-            {
-                "language": "glua",
-                "path": "./snippets/hooks.json"
-            },
-            {
-                "language": "glua",
-                "path": "./snippets/panelFuncs.json"
-            }
-        ],
-        "languages": [
-            {
-                "id": "glua",
-                "aliases": [
-                    "GLua"
-                ],
-                "extensions": [
-                    ".lua"
-                ],
-                "configuration": "./language-configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "glua",
-                "scopeName": "source.lua",
-                "path": "./syntaxes/lua.tmLanguage"
-            }
-        ]
-    }
+	"name": "glua",
+	"description": "GLua language support for Visual Studio Code",
+	"version": "1.1.0",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"icon": "images/logo.png",
+	"publisher": "aStonedPenguin",
+	"categories": [
+		"Languages",
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "glua",
+				"path": "./snippets/custom.json"
+			},
+			{
+				"language": "glua",
+				"path": "./snippets/enums.json"
+			},
+			{
+				"language": "glua",
+				"path": "./snippets/classFuncs.json"
+			},
+			{
+				"language": "glua",
+				"path": "./snippets/funcs.json"
+			},
+			{
+				"language": "glua",
+				"path": "./snippets/globals.json"
+			},
+			{
+				"language": "glua",
+				"path": "./snippets/hooks.json"
+			},
+			{
+				"language": "glua",
+				"path": "./snippets/panelFuncs.json"
+			},
+			{
+				"language": "glua",
+				"path": "./snippets/keywords.json"
+			}
+		],
+		"languages": [
+			{
+				"id": "glua",
+				"aliases": [
+					"GLua"
+				],
+				"extensions": [
+					".lua"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "glua",
+				"scopeName": "source.lua",
+				"path": "./syntaxes/lua.tmLanguage"
+			}
+		]
+	}
 }

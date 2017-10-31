@@ -21,17 +21,6 @@
 		"prefix": "a-forloop",
 		"description": "Makes a for loop"
 	},
-	"a-whileloop":
-	{
-		"body":
-		[
-			"while (${1:condition}) do",
-			"\t$0",
-			"end"
-		],
-		"prefix": "a-whileloop",
-		"description": "Makes a while loop"
-	},
 	"a-pairsloop":
 	{
 		"body":
@@ -53,16 +42,5 @@
 		],
 		"prefix": "a-ipairsloop",
 		"description": "Makes an ipairs loop"
-	},
-	"a-if":
-	{
-		"body":
-		[
-			"if (${1:condition}) then",
-			"\t$0",
-			"end"
-		],
-		"prefix": "a-if",
-		"description": "Makes an if statement"
 	}
 }

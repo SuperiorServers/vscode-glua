@@ -2,4 +2,4 @@ VSCode GLua syntax highlighting, autocomplete and useful snippets. It will autom
 
 Credits to Falco for lua.tmLanguage and JohnnyCrazy for glua-scrapper
 
-Get it here: https://marketplace.visualstudio.com/items?itemName=aStonedPenguin.glua#review-details
+Get it here: https://marketplace.visualstudio.com/items?itemName=aStonedPenguin.glua
