@@ -1,6 +1,6 @@
 VSCode GLua syntax highlighting, autocomplete and useful snippets. It will automatically work on any .lua file you open.
 
-![giff](https://fi1.es/lsJlS)
+![giff](https://fi1.es/lsJlS/download)
 
 Credits to Falco for lua.tmLanguage and JohnnyCrazy for glua-scrapper
 
